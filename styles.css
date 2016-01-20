@@ -1,14 +1,30 @@
+
+@font-face {
+  font-family: JohnBrown;
+  src:
+    url('JohnBrown.otf');
+}
+
+@font-face {
+  font-family: Quicksand;
+  src:
+    url('Quicksand.otf');
+}
+
 li{
   list-style: none;
   float: left;
-  margin-left: 30px;
-  font-size: 1.5em;
+  margin-left: 35px;
+  font-size: 1.7em;
+  font-family: "JohnBrown";
+
 }
 
 #title{
-float:left;
-margin-left:5px;
-font-size: 1.5em;
+  font-family: "JohnBrown";
+  float:left;
+  margin-left:5px;
+  font-size: 1.7em;
 }
 
 #content {width: 65%;
@@ -22,12 +38,19 @@ ul{float: left;}
 
 #about{clear: both;}
 
-h2 {font-size: 1.5em;}
+h2 {font-size: 1.7em;
+  font-family: "JohnBrown";}
 
-p{font-size: 1.5em;}
+p{font-size: 1.4em;
+font-family: "Quicksand";}
 
 a{color:black;
 text-decoration: none;}
+
+#linkedin{font-size: 1.4em;
+  font-family: "Quicksand";
+  text-decoration: underline;}
+}
 
 a:hover{text-shadow: 4px 4px 4px lightgray;}
 
