@@ -1,0 +1,39 @@
+@import 'desktop.css';
+
+
+.main{
+  clear:both;
+}
+.container{
+  width: 100%;
+}
+
+li{
+  font-size:1em;
+  width: 80%;
+  margin-left: 10%;
+  margin-right:10%;
+  text-align: center;
+}
+
+
+
+.main-image{
+  height: 400px;
+}
+
+img{
+  clear:both;
+  width: 100%;
+  margin: 0;
+  height:auto;
+}
+
+.content{
+  font-size: 20px;
+  width: 100%;
+  height:auto;
+  margin:0;
+  padding:0;
+  text-align:center;
+}

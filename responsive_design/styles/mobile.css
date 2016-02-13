@@ -1,0 +1,25 @@
+@import 'desktop.css';
+
+li, .main{
+  /*clear:both;*/
+  text-align: center;
+  position:relative;
+}
+
+.main-image{
+  height: 300px;
+}
+
+img{clear:both;
+width: 100%;
+margin: 0;
+height: 300px;}
+
+.content{
+  font-size: 1.2em;
+  width: 100%;
+  height:auto;
+  margin:0;
+  padding:0;
+  text-align:center;
+}

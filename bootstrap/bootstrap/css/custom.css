@@ -1,0 +1,108 @@
+@font-face{
+  font-family: Raleway;
+  src:
+    url('../fonts/raleway_thin-webfont.svg'),
+    url('../fonts/raleway_thin-webfont.ttf'),
+    url('../fonts/raleway_thin-webfont.woff'),
+    url('../fonts/raleway_thin-webfont.eot');
+}
+
+@font-face{
+  font-family: Junction;
+  src:
+    url('fonts/junction-regular.svg'),
+    url('fonts/junction-regular.ttf'),
+    url('fonts/junction-regular.woff'),
+    url('fonts/junction-regular.eot'),
+
+}
+body {
+  padding-top: 50px;
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  padding-top: 10px;
+  background: linear-gradient(#A19A9E,black);
+}
+
+p.text-muted
+{
+  color: white;
+  font-size: 14px;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header,.navbar.navbar-inverse
+{
+  margin-right: -15px;
+  margin-left: -15px;
+  background: linear-gradient(black,#A19A9E);
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
+{
+  color: white;
+  background-color:pink;
+  font-family:  Raleway, Helvetica, Arial, sans-serif;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    color:white;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    margin-left: 10px;
+}
+.navbar-inverse
+{
+  border-color: white;
+}
+
+h1,h2,h3, p{
+  font-family:  Raleway, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+div.col-sm-6 > img {
+  margin-bottom: 20px;
+}
+
+
+h1{
+  font-weight: bold;
+}
+
+.carousel {
+  margin-bottom: 20px;
+  height: auto;
+  width: auto;
+
+}
+
+.carousel-inner > .item > img {
+  min-width: 100%;
+}
+
+
+.contact-info{
+  list-style: none;
+  font-family:  Raleway, Helvetica, Arial, sans-serif;
+  padding-left: 0;
+}
+
+.paragraph-text{
+  font-family:"Century Gothic", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.btn-default {
+  border-color: pink;
+  color: black;
+}
+
+.page-header {
+    border-bottom: 1px solid pink;
+  }
