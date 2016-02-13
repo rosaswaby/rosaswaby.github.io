@@ -56,4 +56,6 @@ a:hover{text-shadow: 4px 4px 4px lightgray;}
 
 a:active{font-weight: bold;}
 
+li {margin-bottom: 10px;}
+
 #projects {clear: both;}
