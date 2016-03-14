@@ -20,8 +20,7 @@ body{background-color:black;}
   margin-left: 85px;
   font-size: 1.4em;
   font-family: "JohnBrown";
-  color:white;}
-
+  color:white;
 }
 
 #title{
@@ -29,7 +28,7 @@ body{background-color:black;}
   float:left;
   margin-left:5px;
   font-size: 1.4em;
-  color:white;}
+  color:white;
 }
 
 #content {width: 65%;
@@ -61,7 +60,7 @@ text-decoration: underline;}
   color:white;
 }
 
-a:hover{text-shadow: 4px 4px 4px lightgray;}
+a:hover{text-shadow: 4px 4px 4px darkgray;}
 
 a:active{font-weight: bold;}
 
