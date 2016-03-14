@@ -35,7 +35,7 @@ body{background-color:black;}
 #content {width: 65%;
 margin-left:auto;
 margin-right: auto;
-color:white;}}
+color:white;}
 
 hr {clear:both;
 border: 1px solid pink;}
@@ -45,11 +45,12 @@ ul{float: left;}
 #about{clear: both;}
 
 h2 {font-size: 1.4em;
-  font-family: "JohnBrown";}
+  font-family: "JohnBrown";
+  color:white;}
 
 p, li{font-size: 1em;
 font-family: "Quicksand";
-color:white;}}
+color:white;}
 
 a{color:white;
 text-decoration: underline;}
@@ -57,7 +58,7 @@ text-decoration: underline;}
 .personal_links{font-size: 1em;
   font-family: "Quicksand";
   text-decoration: underline;
-  color:white;}}
+  color:white;
 }
 
 a:hover{text-shadow: 4px 4px 4px lightgray;}
