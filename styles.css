@@ -1,5 +1,5 @@
 body{background-color:black;}
-h1,h2,h3,h4,p,li,a {color:white;}
+h1,h2,h3,h4,p,li,a{color:white;}
 
 
 @font-face {
@@ -20,6 +20,7 @@ h1,h2,h3,h4,p,li,a {color:white;}
   margin-left: 85px;
   font-size: 1.4em;
   font-family: "JohnBrown";
+  color:white;}
 
 }
 
@@ -28,6 +29,7 @@ h1,h2,h3,h4,p,li,a {color:white;}
   float:left;
   margin-left:5px;
   font-size: 1.4em;
+  color:white;}
 }
 
 #content {width: 65%;
