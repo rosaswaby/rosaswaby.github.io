@@ -1,6 +1,3 @@
-body{background-color:black;}
-/*h1,h2,h3,h4,p,li,a{color:white;}*/
-
 
 @font-face {
   font-family: JohnBrown;
@@ -13,6 +10,8 @@ body{background-color:black;}
   src:
     url('Quicksand.otf');
 }
+
+body{background-color:black;}
 
 .header{
   list-style: none;
