@@ -67,4 +67,5 @@ li {margin-bottom: 10px;}
 
 #projects {clear: both;}
 
-#footer {text-align: center;}
+#footer { margin-top: 10px;
+  text-align: center;}
