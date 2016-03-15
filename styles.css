@@ -11,8 +11,9 @@
     url('Quicksand.otf');
 }
 
-body{background-color:black;}
 #loading_page{background-color:white;}
+body{background-color:black;}
+
 
 .header{
   list-style: none;
