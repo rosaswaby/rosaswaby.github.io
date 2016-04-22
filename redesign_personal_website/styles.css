@@ -1,0 +1,158 @@
+
+#projects, #skills {
+    width: 100%;
+    height: 500px;
+}
+ #about_me {
+    width: 100%;
+    height: 600px;
+}
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 25px;
+}
+.name {
+    text-align: center;
+    position: relative;
+    bottom: 125px;
+    font-size: 25px;
+}
+#nav {
+    border: 1px solid gray;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+#nav li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#nav ul {
+    text-align: center;
+    padding: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#nav a:hover {
+    text-decoration: underline;
+    color: pink;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+#view_all_button {
+    background-color: white;
+    border-color: black;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin-left: 90%;
+    padding: 5px;
+}
+
+hr {
+    width: 100%;
+}
+#skills {
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+#skill_icons {
+  position: relative;
+  bottom: 100px;
+  padding:0;
+  margin:0;
+}
+.skill_buttons {
+    margin: 10%;
+    font-weight: bold;
+    text-align: center;
+    width: 13%;
+}
+.skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
+    background-color: pink;
+}
+button {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+#about_me{
+  text-align: center;
+  margin: auto;
+}
+
+#about_me_image{
+  position: relative;
+  margin: auto;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+#about_me_text {
+  float:right;
+  border: 1px solid gray;
+  width: 400px;
+  height: 350px;
+  font-size: 18px;
+  margin: auto;
+  margin-right: 10%;
+  margin-top: 2%;
+  padding: 2%;
+  position: relative;
+  /*moving the text box to the right place */
+
+}
+
+.about_me_icons {
+    text-align: center;
+    position: relative;
+    margin-top: 15%;
+    padding: 0;
+}
+
+#about_me_icons li{
+  list-style-type: none;
+  display: inline;
+  margin: auto;
+  padding:3%;
+}
+
+
+#resume {
+    background-color: black;
+    width: 15%;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 5%;
+    display:block;
+    padding: 0;
+}
+#resume a {
+  color: white;
+  text-decoration: none;
+}
+#footer {
+    text-align: center;
+}
