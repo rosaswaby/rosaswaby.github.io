@@ -78,7 +78,15 @@ hr {
   position: relative;
   bottom: 100px;
   padding:0;
-  margin:0;
+}
+
+#skill_icons img {
+  text-align: center;
+  margin:auto;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding:0;
 }
 .skill_buttons {
     margin: 10%;
@@ -105,7 +113,7 @@ button {
   position: relative;
   margin: auto;
   margin-left: 10%;
-  margin-top: 2%;
+  margin-top: 7%;
 }
 
 #about_me_text {
@@ -126,7 +134,7 @@ button {
 .about_me_icons {
     text-align: center;
     position: relative;
-    margin-top: 15%;
+    margin-top: 10%;
     padding: 0;
 }
 
@@ -155,4 +163,5 @@ button {
 }
 #footer {
     text-align: center;
+    font-size: 16px;
 }
