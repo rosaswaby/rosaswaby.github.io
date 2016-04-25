@@ -5499,17 +5499,6 @@ button.close {
     margin: 0;
     background-color: #fff
 }
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: -20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: black;
-    text-align: center;
-}
 .carousel-caption .btn {
     text-shadow: none
 }

@@ -1,9 +1,8 @@
-
 #projects, #skills {
     width: 100%;
-    height: 500px;
+    height: 450px;
 }
- #about_me {
+#about_me {
     width: 100%;
     height: 600px;
 }
@@ -51,9 +50,19 @@
     text-decoration: underline;
     color: pink;
 }
+#myCarousel {
+    margin-top: 5%;
+    height: 300px;
+}
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 70%;
+    width: 40%;
     margin: auto;
+}
+.caption {
+    position: relative padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    text-align: center;
 }
 #view_all_button {
     background-color: white;
@@ -64,7 +73,6 @@
     margin-left: 90%;
     padding: 5px;
 }
-
 hr {
     width: 100%;
 }
@@ -73,20 +81,18 @@ hr {
     position: relative;
     bottom: 100px;
 }
-
 #skill_icons {
-  position: relative;
-  bottom: 100px;
-  padding:0;
+    position: relative;
+    bottom: 100px;
+    padding: 0;
 }
-
 #skill_icons img {
-  text-align: center;
-  margin:auto;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding:0;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
 }
 .skill_buttons {
     margin: 10%;
@@ -104,64 +110,76 @@ button {
     border-radius: 5px;
     padding: 5px;
 }
-#about_me{
-  text-align: center;
-  margin: auto;
+#about_me {
+    text-align: center;
+    margin: auto;
 }
-
-#about_me_image{
-  position: relative;
-  margin: auto;
-  margin-left: 10%;
-  margin-top: 7%;
+#about_me_image {
+    position: relative;
+    margin: auto;
+    margin-left: 10%;
+    margin-top: 7%;
+    border-radius: 5px;
 }
-
 #about_me_text {
-  float:right;
-  border: 1px solid gray;
-  width: 400px;
-  height: 350px;
-  font-size: 18px;
-  margin: auto;
-  margin-right: 10%;
-  margin-top: 2%;
-  padding: 2%;
-  position: relative;
-  /*moving the text box to the right place */
-
+    float: right;
+    border: 1px solid gray;
+    width: 400px;
+    height: 350px;
+    font-size: 18px;
+    margin: auto;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding: 2%;
+    position: relative;
+    border-radius: 5px;
+    /*moving the text box to the right place */
 }
-
 .about_me_icons {
     text-align: center;
     position: relative;
     margin-top: 10%;
     padding: 0;
 }
-
-#about_me_icons li{
-  list-style-type: none;
-  display: inline;
-  margin: auto;
-  padding:3%;
+#about_me_icons li {
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+    padding: 3%;
 }
-
-
 #resume {
     background-color: black;
     width: 15%;
     font-size: 20px;
     position: relative;
     text-align: center;
-    margin:auto;
+    margin: auto;
     margin-bottom: 5%;
-    display:block;
+    display: block;
     padding: 0;
 }
 #resume a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
+
+#resume:hover, #view_all_button:hover{
+  background-color: pink
+}
+
 #footer {
     text-align: center;
     font-size: 16px;
+    height: 20%;
+}
+#up_arrow {
+    width: 4%;
+    float: right;
+    height: 8%;
+    background-color: lightgray;
+    opacity: .5;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
 }
