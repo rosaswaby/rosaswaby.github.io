@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
     <script src="jquery-1.12.3.min.js"></script>
+    <script src="my_jquery.js"></script>
     <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 </head>
 
@@ -20,7 +21,7 @@
         <div id="nav">
             <ul>
                 <li><a href="#projects"> projects </a></li>
-                <li><a  href="#skills"> skills </a></li>
+                <li><a href="#skills"> skills </a></li>
                 <li><a href="#about_me"> about me </a></li>
             </ul>
 
@@ -38,32 +39,21 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-<<<<<<< HEAD
-                            <img class = "carousel_img" src="images/move_me.png" alt="move_me">
-                            <div class = "caption">
-=======
-                            <img src="images/move_me.PNG" alt="move_me">
-                            <div class="carousel-caption">
->>>>>>> origin/master
+                            <img class="carousel_img" src="images/move_me.png" alt="move_me">
+                            <div class="caption">
                                 <h3>move me</h3>
                                 <p>Body Labs Hackathon: Spring 2015</p>
                             </div>
                         </div>
 
                         <div class="item">
-<<<<<<< HEAD
-                            <img class = "carousel_img" src="images/move_me.png" alt="wireframe">
-                            <div class = "caption">
-                              <h3> Technology & Education Wireframe </h3>
-                              <p> Wireframing Project: Web Design Fall 2015</p>
-=======
-                            <img src="images/move_me.PNG" alt="move_me">
-                            <div class="carousel-caption">
-                              <h3>move me TWO </h3>
-                              <p>Body Labs Hackathon: Spring 2015</p>
->>>>>>> origin/master
+                            <img class="carousel_img" src="images/move_me.png" alt="wireframe">
+                            <div class="caption">
+                                <h3> Technology & Education Wireframe </h3>
+                                <p> Wireframing Project: Web Design Fall 2015</p>
                             </div>
                         </div>
+
 
                         <!-- Left and right controls -->
                         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -75,11 +65,9 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-
-
-
                     <!-- closing carousel div -->
                 </div>
+                <!-- View all button -->
                 <button id="view_all_button"> View All </button>
                 <!-- closing project div -->
             </div>
@@ -87,20 +75,19 @@
             <hr>
             <!-- skills div -->
             <div id="skills">
-                <button class="skill_buttons"> Computer Science </button>
-                <button class="skill_buttons"> Web Developing </button>
-                <button class="skill_buttons"> Design </button>
-                <div id = "skill_icons">
-                  <img src = "images/C.png">
-                  <img src = "images/CSS.png">
-                  <img src = "images/HTML.png">
-                  <img src = "images/InDesign.png">
-                  <img src = "images/Java.png">
-                  <img src = "images/MySQL.png">
-                  <img src = "images/photoshop.png">
-                  <img src = "images/php.png">
-                  <img src = "images/python.png">
-                  <img src = "images/php.png">
+                <button id = "cs_button" class="skill_buttons"> Computer Science </button>
+                <button id = "wd_button" class="skill_buttons"> Web Developing </button>
+                <button id = "d_button" class="skill_buttons"> Design </button>
+                <div id="skill_icons">
+                    <img class = "CS" src="images/C.png">
+                    <img class = "WD" src="images/CSS.png">
+                    <img class = "WD" src="images/HTML.png">
+                    <img class = "D" src="images/InDesign.png">
+                    <img class = "CS" src="images/Java.png">
+                    <img class = "WD" src="images/MySQL.png">
+                    <img class = "D" src="images/photoshop.png">
+                    <img class = "WD" src="images/php.png">
+                    <img class = "CS" src="images/python.png">
                 </div>
 
             </div>
@@ -109,31 +96,39 @@
             <!-- about me div -->
             <div id="about_me">
                 <!-- an image of me and some intro text -->
-                <img id = "about_me_image" src = "images/rosaswaby.jpg">
-                <div id = "about_me_text">
-                  <p> Hi! My name is Rosa Swaby and I am a Computer Science student at NYU - College of Arts and Science. I enjoy working on web developing and design and I hope to be able to be a web developer / designer in the future. I am also really into music, dance and singing. I really enjoy eating as well, so if you want to check out some cool places in the city to eat, or just want to hang out, I am definitely in. Check out my resume below and send me a message if you want to chat! Thanks for checking out my page!</p>
+                <img id="about_me_image" src="images/rosaswaby.jpg">
+                <div id="about_me_text">
+                    <p> Hi! My name is Rosa Swaby and I am a Computer Science student at NYU - College of Arts and Science. I enjoy working on web developing and design and I hope to be able to be a web developer / designer in the future. I am also really
+                        into music, dance and singing. I really enjoy eating as well, so if you want to check out some cool places in the city to eat, or just want to hang out, I am definitely in. Check out my resume below and send me a message if you
+                        want to chat! Thanks for checking out my page!</p>
+                </div>
+
+                <div class="about_me_icons">
+                    <button id="resume"><a href="Rosa_Swaby_Resume.pdf" target = "_blank"> resume </a></button>
+                        <ul id="about_me_icons">
+                            <li> <img src="images/email.png"> </li>
+                            <li>
+                                <a href="https://github.com/rosaswaby" target="_blank"> <img src="images/github.png"> </li>
+                            </a>
+                            <li>
+                                <a href="https://www.linkedin.com/in/rosaswaby" target="_blank"> <img src="images/linkedin.png"> </li>
+                            </a>
+                            <li>
+                                <a href="https://www.facebook.com/rosa.swaby.7" target="_blank"> <img src="images/facebook.png"> </li>
+                            </a>
+                            <ul>
+                </div>
+                <!-- closing div for content -->
             </div>
 
-            <div class = "about_me_icons">
-              <button id="resume"><a href = "Rosa_Swaby_Resume"> resume </a></button>
-              <ul id = "about_me_icons">
-                <li> <img src = "images/email.png"> </li>
-                <li> <img src = "images/github.png"> </li>
-                <li> <img src = "images/linkedin.png"> </li>
-                <li> <img src = "images/facebook.png"> </li>
-              <ul>
+            <hr>
+            <!-- footer of the page -->
+            <div id="footer">
+                <p> Made with &hearts; </p>
+                <a href="#logo"> <img id="up_arrow" src="images/up_arrow.png"> </a>
             </div>
-            <!-- closing div for content -->
+            <!-- closing container div -->
         </div>
-
-        <hr>
-        <!-- footer of the page -->
-        <div id="footer">
-            <p> Made with &hearts; </p>
-            <img id = "up_arrow" src = "images/up_arrow.png">
-        </div>
-        <!-- closing container div -->
-    </div>
 
 </body>
 
