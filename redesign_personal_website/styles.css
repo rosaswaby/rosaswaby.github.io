@@ -1,18 +1,22 @@
 @font-face {
-  font-family: Quicksand;
-  src:
-    url('Quicksand.otf');
+    font-family: Quicksand;
+    src: url('fonts/Quicksand.otf');
 }
-
-
 #projects, #skills {
     width: 100%;
-    height: 450px;
+    height: 500px;
 }
 #about_me {
     width: 100%;
-    height: 600px;
+    height: 560px;
 }
+#contact {
+    width: 100%;
+    height: 520px;
+}
+
+/*landing page*/
+
 #logo {
     display: block;
     margin-left: auto;
@@ -25,6 +29,7 @@
     position: relative;
     bottom: 125px;
     font-size: 25px;
+    font-family: Quicksand;
 }
 #nav {
     border: 1px solid gray;
@@ -44,6 +49,7 @@
 }
 #nav a {
     color: black;
+    font-family: Quicksand;
     text-decoration: none;
     font-weight: bold;
 }
@@ -55,23 +61,19 @@
 }
 #nav a:hover {
     text-decoration: underline;
-    color: pink;
+    color: #ef9ea4;
 }
-#myCarousel {
-    margin-top: 5%;
-    height: 300px;
-}
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 40%;
-    margin: auto;
-}
-.caption {
+
+/*.caption {
     position: relative padding-top: 20px;
     padding-bottom: 20px;
     color: black;
+    font-family: Quicksand;
     text-align: center;
-}
-#view_all_button {
+}*/
+
+
+/*#view_all_button {
     background-color: white;
     border-color: black;
     text-align: center;
@@ -79,10 +81,14 @@
     position: relative;
     margin-left: 90%;
     padding: 5px;
-}
+}*/
+
 hr {
     width: 100%;
 }
+
+/*skills*/
+
 #skills {
     text-align: center;
     position: relative;
@@ -104,11 +110,12 @@ hr {
 .skill_buttons {
     margin: 10%;
     font-weight: bold;
+    font-family: Quicksand;
     text-align: center;
     width: 13%;
 }
 .skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
-    background-color: pink;
+    background-color: #ef9ea4;
 }
 button {
     background-color: white;
@@ -117,44 +124,32 @@ button {
     border-radius: 5px;
     padding: 5px;
 }
-#about_me {
-    text-align: center;
-    margin: auto;
-}
+
+/*about me*/
+
 #about_me_image {
     position: relative;
     margin: auto;
-    margin-left: 10%;
+    margin-left: 26%;
     margin-top: 5%;
     border-radius: 5px;
-    border: 10px solid pink;
+    border: 10px solid #ef9ea4;
 }
 #about_me_text {
     font-family: Quicksand;
+    text-align: center;
     float: right;
     border: 1px solid gray;
-    width: 400px;
-    height: 350px;
-    font-size: 14px;
+    width: 315px;
+    height: 300px;
+    font-size: 16px;
     margin: auto;
-    margin-right: 10%;
+    margin-right: 22%;
     margin-top: 2%;
-    padding: 2%;
+    padding: 1%;
     position: relative;
+    /*round corners*/
     border-radius: 5px;
-    /*moving the text box to the right place */
-}
-.about_me_icons {
-    text-align: center;
-    position: relative;
-    margin-top: 10%;
-    padding: 0;
-}
-#about_me_icons li {
-    list-style-type: none;
-    display: inline;
-    margin: auto;
-    padding: 3%;
 }
 #resume {
     background-color: black;
@@ -164,31 +159,91 @@ button {
     text-align: center;
     margin: auto;
     margin-bottom: 5%;
+    margin-top: 5%;
     display: block;
-    padding: 0;
+    padding: 0px;
 }
 #resume a {
     color: white;
+    font-family: Quicksand;
     text-decoration: none;
 }
-
-#resume:hover, #view_all_button:hover{
-  background-color: pink
+#social_media_icons {
+    margin-left: 38%;
+}
+#social_media_icons li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5%;
+    position: relative;
+}
+#social_media_icons a {
+    text-decoration: none;
+}
+#resume:hover, #view_all_button:hover {
+    background-color: #ef9ea4
 }
 
+/*contact*/
+
+#contact {
+    background-color: black;
+    opacity: .75;
+    border-radius: 5px;
+    text-align: center;
+}
+#contact h1, #contact label, #contact p {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: Quicksand;
+}
+
+#name, #email {
+  background-color: #f8f8f8;
+  font-size: 16px;
+  padding: 10px;
+  margin: 1%;
+  border-radius: 4px;
+  font-family: Quicksand;
+  resize: none;
+}
+
+#message {
+    margin: auto;
+    margin: 1%;
+    height: 150px;
+    padding: 1%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    font-family: Quicksand;
+    resize: none;
+}
+#send, #reset {
+    background-color: #f8f8f8;
+    border: 3px solid #ef9ea4;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Quicksand;
+    margin-left: 5%;
+}
 #footer {
     text-align: center;
-    font-size: 16px;
-    height: 20%;
+    font-size: 18px;
+    font-family: Quicksand;
 }
 #up_arrow {
-    width: 4%;
+    width: 3%;
     float: right;
-    height: 8%;
+    height: 6%;
     background-color: lightgray;
     opacity: .5;
     border-radius: 5px;
     position: fixed;
-    bottom: 20px;
+    bottom: 9px;
     right: 25px;
 }
