@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Quicksand;
+  src:
+    url('Quicksand.otf');
+}
+
+
 #projects, #skills {
     width: 100%;
     height: 450px;
@@ -123,6 +130,7 @@ button {
     border: 10px solid pink;
 }
 #about_me_text {
+    font-family: Quicksand;
     float: right;
     border: 1px solid gray;
     width: 400px;
