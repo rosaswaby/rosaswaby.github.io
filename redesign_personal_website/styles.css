@@ -102,7 +102,7 @@ hr {
 #skill_icons img {
     text-align: center;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 0;
@@ -185,6 +185,9 @@ button {
 }
 
 /*contact*/
+input, textarea {
+  box-shadow:0 0 5px #ef9ea4;
+}
 
 #contact {
     background-color: black;
@@ -212,6 +215,7 @@ button {
 #message {
     margin: auto;
     margin: 1%;
+    margin-left: 4%;
     height: 150px;
     padding: 1%;
     border: 2px solid #ccc;
@@ -221,15 +225,16 @@ button {
     font-family: Quicksand;
     resize: none;
 }
-#send, #reset {
+#send {
     background-color: #f8f8f8;
     border: 3px solid #ef9ea4;
     color: black;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: Quicksand;
-    margin-left: 5%;
+    margin-right: 25%;
+    float: right;
 }
 #footer {
     text-align: center;
