@@ -38,6 +38,7 @@
             <hr class="hr_section_div">
             <!-- skills div -->
             <div id="skills">
+                <h2 id = "my_skills"> My Skills </h2>
                 <button id="cs_button" class="skill_buttons"> Computer Science </button>
                 <button id="wd_button" class="skill_buttons"> Web Developing </button>
                 <button id="d_button" class="skill_buttons"> Design </button>
@@ -61,17 +62,16 @@
             <div id="about_me">
                 <!-- an image of me and some intro text -->
 
-                <img id="about_me_image" src="images/rosaswaby.jpg">
+                <img id="about_me_image" src="images/rosa_swaby.jpg">
 
                 <div id="about_me_text">
-                    <p> Hi! My name is Rosa Swaby and I am a Computer Science student at NYU - College of Arts and Science. I enjoy working on web developing and design and I hope to be able to be a web developer / designer in the future. I am also really
-                        into music, dance and singing. I really enjoy eating as well, so if you want to check out some cool places in the city to eat, or just want to hang out, I am definitely in. Check out my resume below and send me a message if you
-                        want to chat! Thanks for checking out my page!</p>
+                    <p> Hi! My name is Rosa Swaby and I am a Computer Science student at NYU - College of Arts and Science. I am originally from Georgia and I have been living in NYC for 2 years. I enjoy working on web developing and design and I hope to be able to be a web developer / designer in the future. I am also really into music, dance and singing. Recently I have been listening to Lemonade (BEYONCE), and I definitely recommend it! I really enjoy eating as well, so if you want to check out some cool places in the city to eat, or just want to hang out, I am definitely in. Check out my resume below and send me a message if you want to chat! </p>
+                    <p> Thanks for checking out my page!</p>
                 </div>
 
                 <div class="about_me_icons">
                     <button id="resume"><a href="Rosa_Swaby_Resume.pdf" target="_blank"> resume </a></button>
-
+                    <br>
                     <ul id="social_media_icons">
                         <li>
                             <a href="https://github.com/rosaswaby" target="_blank"> <img src="images/github.png"> </li>
@@ -95,17 +95,21 @@
               <br>
               <h1> Contact me! </h1>
               <br>
-              <p> Message me by filling in the information below or email me directly at rosa.swaby@nyu.edu </p>
+              <p id = "contact_message"> Message me by filling in the information below or email me directly at <span style = "color: #ef9ea4"> rosa.swaby@nyu.edu. </span> </p>
+              <br>
               <br>
                 <form id = "contact_form" action="MAILTO:rosa.swaby@nyu.edu" method="post" enctype="text/plain">
-                    <label> name: </label>
-                    <input id = "name" type="text" name="name" value="name" size = "50">
+                    <label> Name: </label>
                     <br>
-                    <label> email: </label>
-                    <input id = "email" type="email" name="email" value="email" size = "50">
+                    <input id = "name" type="text" name="name" value="name">
                     <br>
-                    <!-- <label> message: </label> -->
-                    <textarea cols = "65" id = "message" > send me a message! </textarea>
+                    <label> Email: </label>
+                    <br>
+                    <input id = "email" type="email" name="email" value="email">
+                    <br>
+                    <label> Message: </label>
+                    <br>
+                    <textarea id = "message" > send me a message! </textarea>
                     <br>
                     <br>
                     <input id = "send" type="submit" value="send">
