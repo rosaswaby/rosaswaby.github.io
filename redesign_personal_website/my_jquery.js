@@ -8,14 +8,14 @@ $(document).ready(function() {
     $("#wd_button").css("background-color", "#ef9ea4");
     $("#d_button").css("background-color", "#ef9ea4");
 
-    $("#my_skills").click(function() {
-        $("#wd_button").css("background-color", "#ef9ea4");
-        $("#d_button").css("background-color", "#ef9ea4");
-        $("#cs_button").css("background-color", "#ef9ea4");
-        $("img.CS").show();
-        $("img.WD").show();
-        $("img.D").show();
-    });
+    // $("#my_skills").click(function() {
+    //     $("#wd_button").css("background-color", "#ef9ea4");
+    //     $("#d_button").css("background-color", "#ef9ea4");
+    //     $("#cs_button").css("background-color", "#ef9ea4");
+    //     $("img.CS").show();
+    //     $("img.WD").show();
+    //     $("img.D").show();
+    // });
 
     $("#cs_button").click(function() {
         $("#wd_button").css("background-color", "white");
