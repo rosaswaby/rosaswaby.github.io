@@ -16,7 +16,7 @@
 }
 #contact {
     width: 100%;
-    height: 610px;
+    height: 630px;
 }
 
 /*landing page*/
@@ -119,8 +119,8 @@ hr {
 
 #skill_icons img {
     margin: auto;
-    width:90px;
-    height:90px;
+    width:95px;
+    height:95px;
 }
 
 .skill_buttons {
@@ -154,8 +154,7 @@ button {
     float: left;
     height: 50%;
     width: 100%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: auto;
 
 }
 #about_me_text {
@@ -178,6 +177,7 @@ button {
     position: relative;
     text-align: center;
     margin-top: 3%;
+    margin-left: 5%;
     float: left;
 }
 
@@ -194,7 +194,7 @@ button {
     float:left;
     width: 40px;
     height: 40px;
-    margin-left: 8%;
+    margin-left: 10%;
     margin-bottom: 15%;
 }
 
@@ -218,6 +218,7 @@ input, textarea {
 }
 #contact_message{
   font-size: 18px;
+  padding: 5%;
 }
 
 #contact {
@@ -264,14 +265,14 @@ input, textarea {
     resize: none;
 }
 #send {
-    width: 42%;
-    padding: 10px;
+    width: 30%;
+    padding: 4px;
     background-color: black;
     border: 1px solid #ef9ea4;
     color: white;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 14px;
     font-family: Quicksand;
     margin: auto;
 }
