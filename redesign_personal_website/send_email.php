@@ -1,8 +1,8 @@
 <?php
-$action=$_REQUEST['action'];
-$name=$_REQUEST['name'];
-$email=$_REQUEST['email'];
-$message=$_REQUEST['message'];
+// $action=$_REQUEST['action'];
+$name=$_GET['name'];
+$email=$_GET['email'];
+$message=$_GET['message'];
 if (($name=="")||($email=="")||($message==""))
     {
     echo "All fields are required, please fill <a href=\"\">the form</a> again.";
@@ -10,7 +10,7 @@ if (($name=="")||($email=="")||($message==""))
 else{
     $from="From: $name<$email>\r\nReturn-path: $email";
     $subject="Message sent using your contact form";
-    mail("youremail@yoursite.com", $subject, $message, $from);
+    mail("rosa.swaby@nyu.edu", $subject, $message, $from);
     echo "Email sent!";
     }
 ?>
