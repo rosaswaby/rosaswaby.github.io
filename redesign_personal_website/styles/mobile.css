@@ -16,7 +16,7 @@
 }
 #contact {
     width: 100%;
-    height: 630px;
+    height: 50%;
 }
 
 /*landing page*/
@@ -76,7 +76,7 @@
 
 #projects a{
   display: inline-block;
-  margin-left: 15%;
+  margin-left: auto;
   margin-right: auto;
   text-decoration: none;
   color: black;
@@ -85,9 +85,8 @@
 
 #projects figure {
   /*position: relative;*/
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
+  margin-left: 5%;
+  margin-right: 5%;
   overflow: hidden;
   display: block;
 }
@@ -164,20 +163,16 @@ hr {
   font-family: Quicksand;
   text-align: center;
   border: .5px solid #ef9ea4;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
 }
 .skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
     background-color: #ef9ea4;
     box-shadow: 2px 2px 2px #b0adad;
     outline: none;
-}
-button {
-    background-color: white;
-    color: black;
-    border-color: black;
-    border-radius: 5px;
-    padding: 5px;
-}
-
+  }
 /*about me*/
 
 #about_me{
@@ -206,7 +201,6 @@ button {
 }
 #resume {
     background-color: black;
-    width: 30%;
     font-size: 16px;
     position: relative;
     text-align: center;
@@ -219,6 +213,15 @@ button {
     color: white;
     font-family: Quicksand;
     text-decoration: none;
+}
+
+
+#social_media_icons button{
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: black;
 }
 
 #social_media_icons li {
@@ -309,6 +312,7 @@ input, textarea {
     font-size: 14px;
     font-family: Quicksand;
     margin: auto;
+    margin-bottom: 5%;
 }
 
 #send:hover {

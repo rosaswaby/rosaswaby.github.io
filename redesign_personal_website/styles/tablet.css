@@ -16,7 +16,7 @@
 }
 #contact {
     width: 100%;
-    height: 610px;
+    height: 50%;
 }
 
 /*landing page*/
@@ -68,7 +68,7 @@
     color: #ef9ea4;
 }
 
-*projects*/
+/*projects*/
 
 #projects {
   display: flex;
@@ -78,16 +78,15 @@
 
 #projects a{
   display: inline-block;
-  margin: auto;
+  margin-left: 20%;
+  margin-right: 20%;
   text-decoration: none;
   color: black;
 }
 
 
 #projects figure {
-  position: relative;
   top: -80px;
-  margin:0;
   overflow: hidden;
 }
 
@@ -167,18 +166,15 @@ hr {
     text-align: center;
     width: 25%;
     border: .5px solid #ef9ea4;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
 }
 .skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
     background-color: #ef9ea4;
     box-shadow: 2px 2px 2px #b0adad;
     outline: none;
-}
-button {
-    background-color: white;
-    color: black;
-    border-color: black;
-    border-radius: 5px;
-    padding: 5px;
 }
 
 /*about me*/
@@ -210,12 +206,13 @@ button {
 }
 #resume {
     background-color: black;
-    width: 17%;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 1px;
     position: relative;
     text-align: center;
     margin: auto;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-top: 2%;
     float: left;
 }
 
@@ -230,6 +227,14 @@ button {
     float: left;
     margin-left:12%;
     margin-bottom: 5%;
+}
+
+#social_media_icons button{
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: black;
 }
 
 #social_media_icons a {
@@ -307,6 +312,7 @@ input, textarea {
     font-size: 20px;
     font-family: Quicksand;
     margin: auto;
+    margin-bottom: 5%;
 }
 
 #send:hover {
