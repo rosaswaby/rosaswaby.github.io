@@ -4,15 +4,15 @@
 }
 #projects{
     width: 100%;
-    height: 480px;
+    height: 30%;
 }
 #skills {
     width: 100%;
-    height: 480px;
+    height: 35%;
 }
 #about_me {
     width: 100%;
-    height: 570px;
+    height: 50%;
 }
 #contact {
     width: 100%;
@@ -68,13 +68,47 @@
     color: #ef9ea4;
 }
 
-/*.caption {
-    position: relative padding-top: 20px;
-    padding-bottom: 20px;
-    color: black;
-    font-family: Quicksand;
-    text-align: center;
-}*/
+*projects*/
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+#projects a{
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+}
+
+
+#projects figure {
+  position: relative;
+  top: -80px;
+  margin:0;
+  overflow: hidden;
+}
+
+#projects figcaption {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Quicksand;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+#projects img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: gray;
+}
+
+
 
 
 /*#view_all_button {
@@ -115,6 +149,7 @@ hr {
 #skill_icons {
     position: relative;
     margin-top: 5%;
+    margin-bottom: 5%;
     padding: 0;
 }
 #skill_icons img {

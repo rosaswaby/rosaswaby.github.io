@@ -4,15 +4,15 @@
 }
 #projects{
     width: 100%;
-    height: 600px;
+    height:30%;
 }
 #skills {
     width: 100%;
-    height: 480px;
+    height:35%
 }
 #about_me {
     width: 100%;
-    height: 400px;
+    height: 50%;
 }
 #contact {
     width: 100%;
@@ -146,6 +146,8 @@ hr {
     position: relative;
 }
 #skill_icons {
+    margin-top: 5%;
+    margin-bottom: 5%;
     position: relative;
     padding: 0;
 }
@@ -155,6 +157,8 @@ hr {
     margin-top: auto;
     margin-right: 5%;
     margin-bottom: auto;
+    width: 110px;
+    height: 110px;
     padding: 0;
 }
 .skill_buttons {
