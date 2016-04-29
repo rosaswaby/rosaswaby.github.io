@@ -16,5 +16,5 @@
 //     mail($my_email, $subject, $message, $headers);
 //     }
 
-echo "PHP IS WORKING";
+//SO GITHUB DOES NOT SUPPORT PHP HAHAHAH WHAT
 ?>
