@@ -10,7 +10,8 @@ if (($name=="")||($email=="")||($message==""))
 else{
     $from="From: $name<$email>\r\nReturn-path: $email";
     $subject="Message sent using your contact form";
-    mail("rosa.swaby@nyu.edu", $subject, $message, $from);
+    $my_email = "rosa.swaby@nyu.edu";
+    mail($my_email, $subject, $message, $from);
     // header('Location: index.html');
     }
 ?>
