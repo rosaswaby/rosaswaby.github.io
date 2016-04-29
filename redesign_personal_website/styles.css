@@ -12,7 +12,7 @@
 }
 #about_me {
     width: 100%;
-    height: 560px;
+    height: 570px;
 }
 #contact {
     width: 100%;
@@ -95,17 +95,18 @@ hr {
 
 /*skills*/
 
-#skills h2 {
+#skills h2, #about_me h2 {
   font-family: Quicksand;
   font-size: 24px;
   color: black;
   margin-top: 10%;
 }
 
-/*#skills h2:hover{
+#skills h2:hover{
   text-decoration: underline;
-  color: #ef9ea4;
-}*/
+  text-decoration-color: pink;
+  color: black;
+}
 
 #skills {
     text-align: center;
@@ -150,7 +151,9 @@ button {
 
 /*about me*/
 
-
+#about_me{
+  /*padding: 50px;*/
+}
 #about_me_image {
     border-radius: 5px;
     float: left;
