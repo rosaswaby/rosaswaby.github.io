@@ -95,11 +95,11 @@ hr {
 
 /*skills*/
 
-#skills h2, #about_me h2 {
+#skills h2 {
   font-family: Quicksand;
   font-size: 24px;
   color: black;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #skills h2:hover{
@@ -111,31 +111,25 @@ hr {
 #skills {
     text-align: center;
     position: relative;
-    bottom: 100px;
 }
 #skill_icons {
     position: relative;
-    bottom: 100px;
     padding: 0;
 }
 #skill_icons img {
     text-align: center;
     margin: auto;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
     padding: 0;
 }
 .skill_buttons {
   font-size: 16px;
-    margin: 8%;
-    margin-top: 2%;
-    padding: 1%;
-    font-weight: bold;
-    font-family: Quicksand;
-    text-align: center;
-    width: 15%;
-    border: .5px solid #ef9ea4;
+  margin: 4%;
+  padding: 1%;
+  font-weight: bold;
+  font-family: Quicksand;
+  text-align: center;
+  width: 20%;
+  border: .5px solid #ef9ea4;
 }
 .skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
     background-color: #ef9ea4;
@@ -155,28 +149,30 @@ button {
 #about_me{
   /*padding: 50px;*/
 }
+
 #about_me_image {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
-    float: left;
-    height: 100%;
-    margin-top: 1%;
-    margin-bottom: 2%;
+    width: 60%;
+    height: 80%;
 
 }
 #about_me_text {
     font-family: Quicksand;
     text-align: center;
-    float: right;
-    width: 600px;
-    font-size: 20px;
-    padding: 1%;
-    margin: auto;
-    margin-right: .5%;
-    position: relative;
+    width: 80%;
+    font-size: 18px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: 10%;
     color: black;
     font-weight: bold;
     border-radius: 5px;
-
+    float:right;
 }
 #resume {
     background-color: black;
@@ -185,8 +181,8 @@ button {
     position: relative;
     text-align: center;
     margin: auto;
-    margin-right: 16%;
-    float: right;
+    margin-left: 25%;
+    float: left;
 }
 
 #resume a {
@@ -195,24 +191,17 @@ button {
     text-decoration: none;
 }
 
-#social_media_icons{
-  margin-top: 32%;
-  margin-left: 58%;
-}
 #social_media_icons li {
     list-style: none;
-    display: inline-block;
+    float: left;
     position: relative;
-    margin-right: 8%;
-    margin-left: 8%;
+    margin-left: 6%;
+    margin-bottom: 4%;
+
 }
 
 #social_media_icons a {
     text-decoration: none;
-}
-
-#social_media_icons:hover {
-
 }
 
 #resume:hover, #view_all_button:hover {
@@ -231,6 +220,7 @@ input, textarea {
 }
 #contact_message{
   font-size: 18px;
+  padding: 1%;
 }
 
 #contact {
@@ -248,12 +238,12 @@ input, textarea {
 
 #contact label {
   float: left;
-  margin-left: 29%;
+  margin-left: 14%;
 }
 
 #name, #email {
   background-color: #f8f8f8;
-  width: 40%;
+  width: 70%;
   font-size: 16px;
   padding: 10px;
   margin: 1%;
@@ -263,7 +253,7 @@ input, textarea {
 }
 
 #message {
-    width: 40%;
+    width: 70%;
     margin: auto;
     margin: 1%;
     height: 150px;
@@ -276,8 +266,8 @@ input, textarea {
     resize: none;
 }
 #send {
-    width: 42%;
-    padding: 10px;
+    width: 30%;
+    padding: .2%;
     background-color: black;
     border: 1px solid #ef9ea4;
     color: white;
@@ -299,9 +289,9 @@ input, textarea {
     font-family: Quicksand;
 }
 #up_arrow {
-    width: 3%;
+    width: 40px;
     float: right;
-    height: 6%;
+    height: 40px;
     background-color: lightgray;
     opacity: .5;
     border-radius: 5px;
