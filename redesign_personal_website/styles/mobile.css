@@ -1,0 +1,311 @@
+@font-face {
+    font-family: Quicksand;
+    src: url('fonts/Quicksand.otf');
+}
+#projects{
+    width: 100%;
+    height: 480px;
+}
+#skills {
+    width: 100%;
+    height: 480px;
+}
+#about_me {
+    width: 100%;
+    height: 570px;
+}
+#contact {
+    width: 100%;
+    height: 610px;
+}
+
+/*landing page*/
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 25px;
+}
+.name {
+    text-align: center;
+    position: relative;
+    bottom: 125px;
+    font-size: 20px;
+    font-family: Quicksand;
+}
+#nav {
+    border: 1px solid gray;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+#nav li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#nav a {
+    color: black;
+    font-family: Quicksand;
+    text-decoration: none;
+    font-weight: bold;
+}
+#nav ul {
+    text-align: center;
+    padding: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#nav a:hover {
+    text-decoration: underline;
+    color: #ef9ea4;
+}
+
+/*.caption {
+    position: relative padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    font-family: Quicksand;
+    text-align: center;
+}*/
+
+
+/*#view_all_button {
+    background-color: white;
+    border-color: black;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin-left: 90%;
+    padding: 5px;
+}*/
+
+hr {
+    width: 100%;
+    border-color: gray;
+    border-style: dashed;
+}
+
+/*skills*/
+
+#skills h2, #about_me h2 {
+  font-family: Quicksand;
+  font-size: 24px;
+  color: black;
+  margin-top: 10%;
+}
+
+#skills h2:hover{
+  text-decoration: underline;
+  text-decoration-color: pink;
+  color: black;
+}
+
+#skills {
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+#skill_icons {
+    position: relative;
+    bottom: 100px;
+    padding: 0;
+}
+#skill_icons img {
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+}
+.skill_buttons {
+  font-size: 16px;
+    margin: 8%;
+    margin-top: 2%;
+    padding: 1%;
+    font-weight: bold;
+    font-family: Quicksand;
+    text-align: center;
+    width: 15%;
+    border: .5px solid #ef9ea4;
+}
+.skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
+    background-color: #ef9ea4;
+    box-shadow: 2px 2px 2px #b0adad;
+    outline: none;
+}
+button {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*about me*/
+
+#about_me{
+  /*padding: 50px;*/
+}
+#about_me_image {
+    border-radius: 5px;
+    float: left;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+}
+#about_me_text {
+    font-family: Quicksand;
+    text-align: center;
+    float: right;
+    width: 600px;
+    font-size: 20px;
+    padding: 1%;
+    margin: auto;
+    margin-right: .5%;
+    position: relative;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+#resume {
+    background-color: black;
+    width: 15%;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-right: 16%;
+    float: right;
+}
+
+#resume a {
+    color: white;
+    font-family: Quicksand;
+    text-decoration: none;
+}
+
+#social_media_icons{
+  margin-top: 32%;
+  margin-left: 58%;
+}
+#social_media_icons li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+#social_media_icons a {
+    text-decoration: none;
+}
+
+#social_media_icons:hover {
+
+}
+
+#resume:hover, #view_all_button:hover {
+    background-color: #ef9ea4;
+    border-color: #ef9ea4;
+}
+
+/*contact*/
+input, textarea {
+  box-shadow:0 0 5px #ef9ea4;
+  outline: none;
+}
+
+#contact_message h1 {
+  font-size: 18px;
+}
+#contact_message{
+  font-size: 18px;
+}
+
+#contact {
+    background-color: black;
+    opacity: .8;
+    border-radius: 5px;
+    text-align: center;
+}
+#contact h1, #contact label, #contact p {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: Quicksand;
+}
+
+#contact label {
+  float: left;
+  margin-left: 29%;
+}
+
+#name, #email {
+  background-color: #f8f8f8;
+  width: 40%;
+  font-size: 16px;
+  padding: 10px;
+  margin: 1%;
+  border-radius: 4px;
+  font-family: Quicksand;
+  resize: none;
+}
+
+#message {
+    width: 40%;
+    margin: auto;
+    margin: 1%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    font-family: Quicksand;
+    resize: none;
+}
+#send {
+    width: 42%;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid #ef9ea4;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Quicksand;
+    margin: auto;
+}
+
+#send:hover {
+  background-color: #ef9ea4;
+  border-color: #ef9ea4;
+}
+
+#footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: Quicksand;
+}
+#up_arrow {
+    width: 3%;
+    float: right;
+    height: 6%;
+    background-color: lightgray;
+    opacity: .5;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 9px;
+    right: 25px;
+}

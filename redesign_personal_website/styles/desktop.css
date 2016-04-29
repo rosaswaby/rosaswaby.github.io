@@ -127,18 +127,19 @@ hr {
     padding: 0;
 }
 .skill_buttons {
-    margin: 10%;
+  font-size: 16px;
+    margin: 8%;
     margin-top: 2%;
     padding: 1%;
     font-weight: bold;
     font-family: Quicksand;
     text-align: center;
-    width: 13%;
+    width: 15%;
     border: .5px solid #ef9ea4;
 }
 .skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
     background-color: #ef9ea4;
-    box-shadow: 2px 2px 2px #888888;
+    box-shadow: 2px 2px 2px #b0adad;
     outline: none;
 }
 button {
@@ -229,7 +230,7 @@ input, textarea {
   font-size: 18px;
 }
 #contact_message{
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #contact {
