@@ -2,21 +2,22 @@
     font-family: Quicksand;
     src: url('fonts/Quicksand.otf');
 }
+
 #projects{
     width: 100%;
-    height:30%;
+    /*height: 30%;*/
 }
 #skills {
     width: 100%;
-    height:35%
+    /*height: 35%;*/
 }
 #about_me {
     width: 100%;
-    height: 30%;
+    /*height: 50%;*/
 }
 #contact {
     width: 100%;
-    height: 50%;
+    /*height: 50%;*/
 }
 
 /*landing page*/
@@ -28,19 +29,46 @@
     position: relative;
     bottom: 25px;
 }
+
 #main_name{
     text-align: center;
     position: relative;
     bottom: 125px;
-    font-size: 25px;
+    font-size: 18px;
     font-family: Quicksand;
 }
+
+/*keep the same for the rest of the css files*/
+.social_media_icons{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  bottom: 130px;
+}
+
+.social_media_icons ul{
+  list-style: none;
+  padding: 0;
+
+}
+.social_media_icons li{
+  display: inline-block;;
+  padding: 0;
+}
+
+.social_media_icons img{
+  width: 70%;
+  height: 70%;
+}
+
 #nav {
     border: 1px solid gray;
     border-width: 1px 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    /*list-style: none;*/
+    /*margin: 0;
+    padding: 0;*/
     text-align: center;
     position: relative;
     bottom: 100px;
@@ -48,21 +76,24 @@
 #nav li {
     display: inline;
     list-style-type: none;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 #nav a {
     color: black;
     font-family: Quicksand;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
 }
+
 #nav ul {
-    text-align: center;
-    padding: 0px;
+    /*text-align: center;*/
+    /*padding: 0px;*/
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 #nav a:hover {
     text-decoration: underline;
     color: #ef9ea4;
@@ -70,30 +101,26 @@
 
 /*projects*/
 
-#projects {
-  display: flex;
-  flex-wrap: wrap;
-  /*margin-bottom: 60px;*/
-}
-
 #projects a{
   display: inline-block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
-  color: black;
+  /*color: black;*/
 }
 
 
 #projects figure {
-  position: relative;
-  top: -80px;
-  margin:0;
+  /*position: relative;*/
+  margin-left: 5%;
+  margin-right: 5%;
   overflow: hidden;
+  display: block;
 }
 
 #projects figcaption {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-family: Quicksand;
   color: black;
   font-size: 16px;
@@ -109,17 +136,6 @@
 }
 
 
-
-/*#view_all_button {
-    background-color: white;
-    border-color: black;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
-    margin-left: 90%;
-    padding: 5px;
-}*/
-
 hr {
     width: 100%;
     border-color: gray;
@@ -128,16 +144,15 @@ hr {
 
 /*skills*/
 
-#skills h2 {
+#skills h2{
   font-family: Quicksand;
-  font-size: 24px;
+  font-size: 18px;
   color: black;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 #skills h2:hover{
   text-decoration: underline;
-  text-decoration-color: pink;
   color: black;
 }
 
@@ -145,72 +160,67 @@ hr {
     text-align: center;
     position: relative;
 }
-#skill_icons {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    position: relative;
-    padding: 0;
-}
-#skill_icons img {
-    text-align: center;
-    margin-left: 5%;
-    margin-top: auto;
-    margin-right: 5%;
-    margin-bottom: auto;
-    width: 110px;
-    height: 110px;
-    padding: 0;
-}
 .skill_buttons {
-  font-size: 16px;
-  margin: 3%;
-  padding: 2%;
+  font-size: 14px;
+  margin-top: 5%;
   font-weight: bold;
   font-family: Quicksand;
   text-align: center;
-  width: 20%;
-  border: .5px solid #ef9ea4;
+  border: 2px solid #ef9ea4;
   background-color: white;
   color: black;
   border-radius: 5px;
   padding: 5px;
 }
+
+#skill_icons {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#skill_icons img {
+    margin: auto;
+    width:95px;
+    height:95px;
+}
+
 .skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
     background-color: #ef9ea4;
     box-shadow: 2px 2px 2px #b0adad;
     outline: none;
-}
-
-
+  }
 /*about me*/
 
-#about_me{
-  /*padding: 50px;*/
-}
-
 #about_me_image {
-    display: block;
-    margin-top: 5%;
-    margin-left: 5%;;
-    margin-bottom: 5%;
-    margin-right: auto;
     border-radius: 5px;
-    width: 40%;
-    float:left;
+    float: left;
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    margin-top: 3%;
 
 }
 #about_me_text {
     font-family: Quicksand;
     text-align: center;
-    float:right;
-    width: 43%;
-    height:50%;
-    padding: 3%;
-    font-size: 18px;
+    float: right;
+    width: 100%;
+    font-size: 14px;
+    margin: auto;
+    position: relative;
     color: black;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 2%;
+
+}
+#resume {
+    background-color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: black;
+    margin-left: 35%;;
+    margin-right: auto;
+    margin-bottom: 3%;
 }
 
 
@@ -220,32 +230,6 @@ hr {
     text-decoration: none;
 }
 
-#social_media_icons button{
-    background-color: black;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    border-color: black;
-    bottom: 10px;
-    position: relative;
-}
-
-#social_media_icons{
-  margin-left: 60%;
-  margin-right: 5%;
-}
-
-#social_media_icons li {
-    list-style: none;
-    padding: 5px;
-    margin: 1%;
-    position: relative;
-    display: inline-block;
-}
-
-#social_media_icons a {
-    text-decoration: none;
-}
 
 #resume:hover, #view_all_button:hover {
     background-color: #ef9ea4;
@@ -253,6 +237,14 @@ hr {
 }
 
 /*contact*/
+
+#contact {
+    background-color: black;
+    opacity: .8;
+    border-radius: 5px;
+    text-align: center;
+}
+
 input, textarea {
   box-shadow:0 0 5px #ef9ea4;
   outline: none;
@@ -263,17 +255,9 @@ input, textarea {
 }
 #contact_message{
   font-size: 18px;
-  padding: 1%;
+  padding: 5%;
 }
 
-#contact {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-color: black;
-    opacity: .8;
-    border-radius: 5px;
-    text-align: center;
-}
 #contact h1, #contact label, #contact p {
     color: white;
     margin: 0;
@@ -283,22 +267,23 @@ input, textarea {
 
 #contact label {
   float: left;
-  margin-left: 24%;
+  text-align: center;
+  margin-left: 15%;
 }
 
 #name, #email {
   background-color: #f8f8f8;
-  width: 50%;
+  width: 60%;
   font-size: 16px;
   padding: 10px;
-  margin: 1%;
+  margin: 2%;
   border-radius: 4px;
   font-family: Quicksand;
   resize: none;
 }
 
 #message {
-    width: 50%;
+    width: 60%;
     margin: auto;
     margin: 1%;
     height: 150px;
@@ -311,14 +296,14 @@ input, textarea {
     resize: none;
 }
 #send {
-    width: 20%;
-    padding: .2%;
+    width: 40%;
+    padding: 5px;
     background-color: black;
     border: 1px solid #ef9ea4;
     color: white;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 14px;
     font-family: Quicksand;
     margin: auto;
     margin-bottom: 5%;
@@ -345,9 +330,3 @@ input, textarea {
     bottom: 9px;
     right: 25px;
 }
-
-
-
-/*EFFECTS*/
-
-/*hover css*/

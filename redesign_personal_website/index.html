@@ -6,24 +6,30 @@
     <title> Rosa Swaby </title>
 
     <!-- Media query for narrow browser width -->
-    <link rel="stylesheet" media="only screen and (max-width: 420px)" href="styles/mobile.css">
+    <link rel="stylesheet" media="only screen and (max-width: 420px)" href="styles/fixed_styles/mobile.css">
 
     <!-- Media query for medium browser width -->
-    <link rel="stylesheet" media="only screen and (min-width: 421px) and (max-width: 839px)" href="styles/tablet.css">
+    <link rel="stylesheet" media="only screen and (min-width: 421px) and (max-width: 839px)" href="styles/fixed_styles/tablet.css">
 
     <!-- Media query for full browser width -->
-    <link rel="stylesheet" media="only screen and (min-width: 840px)" href="styles/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 840px)" href="styles/fixed_styles/desktop.css">
 
-
+    <!-- javascript -->
     <script src="jquery-1.12.3.min.js"></script>
     <script src="my_jquery.js"></script>
 </head>
 
 <body>
     <div class="container">
+
         <!-- logo -->
         <img id="logo" src="images/icons/logo.png" alt="logo" width="200" height="250">
-        <h1 class="name"> Rosa Swaby </h1>
+        <h1 id="main_name"> Rosa Swaby </h1>
+        <ul class = "social_media_icons">
+            <li> <a href="https://github.com/rosaswaby" target="_blank"> <img src="images/icons/github.png"> </a> </li>
+            <li> <a href="https://www.linkedin.com/in/rosaswaby" target="_blank"> <img src="images/icons/linkedin.png"> </a> </li>
+            <li> <a href="https://www.facebook.com/rosa.swaby.7" target="_blank"> <img src="images/icons/facebook.png"> </a> </li>
+        </ul>
         <!-- div for the navbar of website -->
 
         <div id="nav">
@@ -132,70 +138,56 @@
                 <div id="about_me_text">
                     <p> Hi! My name is Rosa Swaby and I am a Computer Science student at NYU - College of Arts and Science. I am originally from Georgia and I have been living in NYC for 2 years. I enjoy working on web developing and design and I hope to
                         be able to be a web developer / designer in the future.</p>
-                    </p>I am also really into music, dance and singing. Recently I have been listening to Lemonade (BEYONCE), and I definitely recommend it! I really enjoy eating as well, so if you want to check out some cool places in the city to eat, or
+
+                    <p>I am also really into music, dance and singing. Recently I have been listening to Lemonade (BEYONCE), and I definitely recommend it! I really enjoy eating as well, so if you want to check out some cool places in the city to eat, or
                     just want to hang out, I am definitely in. Check out my resume below and send me a message if you want to chat! </p>
+
                     <p> Thanks for checking out my page!</p>
                 </div>
                 <br>
-
-                <div class="about_me_icons">
-                    <br>
-                    <ul id="social_media_icons">
-                        <li> <button id="resume"> <a href="Rosa_Swaby_Resume.pdf" target="_blank"> resume </a> </button> </li>
-                        <li>
-                            <a href="https://github.com/rosaswaby" target="_blank"> <img src="images/icons/github.png"> </li>
-                        </a>
-                        <li>
-                            <a href="https://www.linkedin.com/in/rosaswaby" target="_blank"> <img src="images/icons/linkedin.png"> </li>
-                        </a>
-                        <li>
-                            <a href="https://www.facebook.com/rosa.swaby.7" target="_blank"> <img src="images/icons/facebook.png"> </li>
-                        </a>
-                    </ul>
-                </div>
-
-                <!-- closing about me div -->
+                <button id="resume"> <a href="Rosa_Swaby_Resume.pdf" target="_blank"> resume </a> </button>
             </div>
 
 
-            <hr class="hr_section_div">
-            <!-- contact div -->
-            <div id="contact">
+
+        <hr class="hr_section_div">
+        <!-- contact div -->
+        <div id="contact">
+            <br>
+            <h1> Contact me! </h1>
+            <br>
+            <p id="contact_message"> Message me by filling in the information below or email me directly at <span style="color: #ef9ea4; font-weight: bold"> rosa.swaby@nyu.edu. </span> </p>
+            <br>
+            <br>
+            <form id="contact_form" action="contact_me_email_form.php" method="post">
+                <label> Name: </label>
                 <br>
-                <h1> Contact me! </h1>
+                <input id="name" type="text" name="name" value="name">
                 <br>
-                <p id="contact_message"> Message me by filling in the information below or email me directly at <span style="color: #ef9ea4; font-weight: bold"> rosa.swaby@nyu.edu. </span> </p>
+                <label> Email: </label>
+                <br>
+                <input id="email" type="text" name="email" value="email">
+                <br>
+                <label> Message: </label>
+                <br>
+                <textarea id="message" name="message"> send me a message! </textarea>
                 <br>
                 <br>
-                <form id="contact_form" action="contact_me_email_form.php" method="post">
-                    <label> Name: </label>
-                    <br>
-                    <input id="name" type="text" name="name" value="name">
-                    <br>
-                    <label> Email: </label>
-                    <br>
-                    <input id="email" type="text" name="email" value="email">
-                    <br>
-                    <label> Message: </label>
-                    <br>
-                    <textarea id="message" name="message"> send me a message! </textarea>
-                    <br>
-                    <br>
-                    <input id="send" type="submit" value="send">
-                </form>
-                <!-- closing contact div -->
-            </div>
-            <!-- closing content div -->
+                <input id="send" type="submit" value="send">
+            </form>
+            <!-- closing contact div -->
         </div>
+        <!-- closing content div -->
+    </div>
 
 
-        <!-- footer of the page -->
-        <hr>
-        <div id="footer">
-            <p> Made with &hearts; </p>
-            <a href="#logo"> <img id="up_arrow" src="images/icons/up_arrow.png"> </a>
-        </div>
-        <!-- closing container div -->
+    <!-- footer of the page -->
+    <hr>
+    <div id="footer">
+        <p> Made with &hearts; </p>
+        <a href="#logo"> <img id="up_arrow" src="images/icons/up_arrow.png"> </a>
+    </div>
+    <!-- closing container div -->
     </div>
 
 </body>

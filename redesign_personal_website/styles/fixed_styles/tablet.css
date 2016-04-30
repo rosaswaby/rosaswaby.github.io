@@ -1,0 +1,80 @@
+/*Import styles from mobile.css*/
+
+@import "mobile.css";
+
+/*changes from mobile css*/
+
+#name {
+    font-size: 25px;
+}
+#nav li {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+#projects a {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#projects figure {
+    top: -80px;
+}
+#skills h2 {
+    font-size: 24px;
+}
+
+#skill_icons {
+    position: relative;
+    padding: 0;
+}
+#skill_icons img {
+    width: 110px;
+    height: 110px;
+    padding: 0;
+}
+
+.skill_buttons {
+    font-size: 16px;
+    margin: 3%;
+    width: 25%;
+}
+#about_me_image {
+    height: 70%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+#about_me_text {
+    font-size: 18px;
+}
+
+#resume {
+  font-size: 18px;
+  padding: 1px;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#social_media_icons li {
+    float: left;
+    margin-left:12%;
+    margin-bottom: 5%;
+}
+
+#contact label {
+  margin-left: 18%;
+}
+
+
+#name, #email {
+  margin: 1%;
+}
+
+#send {
+    width: 42%;
+    padding: 10px;
+    font-size: 20px;
+}

@@ -28,7 +28,7 @@
     position: relative;
     bottom: 25px;
 }
-.name {
+#main_name{
     text-align: center;
     position: relative;
     bottom: 125px;

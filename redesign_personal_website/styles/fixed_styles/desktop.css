@@ -1,0 +1,132 @@
+@import "mobile.css";
+
+#about_me {
+    height: 30%;
+}
+
+#main_name{
+    font-size: 25px;
+}
+
+#nav li {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects a{
+  margin: auto;
+}
+
+#projects figure {
+  position: relative;
+  top: -80px;
+  margin:0;
+}
+
+#projects figcaption {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*skills*/
+
+#skills h2 {
+  font-size: 24px;
+  margin-top: 3%;
+}
+
+#skill_icons {
+    position: relative;
+    padding: 0;
+}
+
+#skill_icons img {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-right: 5%;
+    margin-bottom: auto;
+    width: 110px;
+    height: 110px;
+    padding: 0;
+}
+
+.skill_buttons {
+  font-size: 16px;
+  margin: 3%;
+  width: 20%;
+}
+
+#about_me_image {
+    display: block;
+    margin-top: 5%;
+    margin-left: 5%;;
+    margin-bottom: 5%;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 40%;
+    float:left;
+}
+
+#about_me_text {
+    font-family: Quicksand;
+    text-align: center;
+    float:right;
+    width: 43%;
+    height:50%;
+    padding: 3%;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+#social_media_icons button{
+    bottom: 10px;
+    position: relative;
+}
+
+#social_media_icons{
+  margin-left: 60%;
+  margin-right: 5%;
+}
+
+#social_media_icons li {
+    padding: 5px;
+    margin: 1%;
+    position: relative;
+}
+
+#contact_message{
+  padding: 1%;
+}
+
+#contact {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#contact label {
+  margin-left: 24%;
+}
+
+#name, #email {
+  width: 50%;
+  margin: 1%;
+}
+
+#message {
+    width: 50%;
+}
+
+#send {
+    width: 20%;
+    padding: .2%;
+    font-size: 20px;
+}
