@@ -16,10 +16,6 @@
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
-#projects a {
-    margin-left: 20%;
-    margin-right: 20%;
-}
 #projects figure {
     top: -80px;
 }
@@ -42,6 +38,7 @@
     margin: 3%;
     width: 25%;
 }
+
 #about_me_image {
     height: 70%;
     margin-top: 1%;
@@ -53,9 +50,8 @@
 
 #resume {
   font-size: 18px;
-  padding: 1px;
-  margin: auto;
-  margin-top: 2%;
+  padding: 2%;
+  margin-bottom:5%;
 }
 
 #social_media_icons li {
@@ -69,12 +65,10 @@
 }
 
 
-#name, #email {
+#contact_name, #email {
   margin: 1%;
 }
 
 #send {
-    width: 42%;
-    padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }

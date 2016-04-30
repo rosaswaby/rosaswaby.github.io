@@ -46,6 +46,7 @@
   position: relative;
   padding: 0;
   bottom: 130px;
+  margin-top: 2%;
 }
 
 .social_media_icons ul{
@@ -59,8 +60,8 @@
 }
 
 .social_media_icons img{
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
 }
 
 #nav {
@@ -92,6 +93,7 @@
     /*padding: 0px;*/
     margin-top: 1%;
     margin-bottom: 1%;
+    padding: 0;
 }
 
 #nav a:hover {
@@ -101,7 +103,10 @@
 
 /*projects*/
 
+
 #projects a{
+  top: -70px;
+  position: relative;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -112,14 +117,12 @@
 
 #projects figure {
   /*position: relative;*/
-  margin-left: 5%;
-  margin-right: 5%;
   overflow: hidden;
   display: block;
 }
 
 #projects figcaption {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   font-family: Quicksand;
   color: black;
@@ -129,7 +132,7 @@
 
 #projects img {
   border: none;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   background: gray;
@@ -190,6 +193,9 @@ hr {
     outline: none;
   }
 /*about me*/
+#about_me{
+  text-align: center;
+}
 
 #about_me_image {
     border-radius: 5px;
@@ -214,15 +220,16 @@ hr {
 
 }
 #resume {
+    text-align: center;
     background-color: black;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 5px;
     border-color: black;
-    margin-left: 35%;;
     margin-right: auto;
-    margin-bottom: 3%;
+    margin-left: auto;
+    padding: 2%;
+    margin-bottom: 5%;
 }
-
 
 #resume a {
     color: white;
@@ -271,12 +278,12 @@ input, textarea {
   margin-left: 15%;
 }
 
-#name, #email {
+#contact_name, #email {
   background-color: #f8f8f8;
   width: 60%;
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px;
-  margin: 2%;
+  margin: 1%;
   border-radius: 4px;
   font-family: Quicksand;
   resize: none;
