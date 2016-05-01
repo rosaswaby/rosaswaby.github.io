@@ -73,7 +73,6 @@ text-decoration: underline;}
   color:white;
 }
 
-a:hover{text-shadow: 4px 4px 4px darkgray;}
 
 a:active{font-weight: bold;}
 
@@ -89,6 +88,6 @@ li {margin-bottom: 10px;}
 display: block;}
 
 #enter{color:black;
-font-family: JohnBrown;
+font-family: Quicksand;
 text-align:center;
 margin-top: -200px;}
