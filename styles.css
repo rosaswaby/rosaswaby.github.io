@@ -1,93 +1,24 @@
 
 @font-face {
-  font-family: JohnBrown;
-  src:
-    url('JohnBrown.otf');
-}
-
-@font-face {
   font-family: Quicksand;
   src:
     url('Quicksand.otf');
 }
 
 #loading_page{background-color:white;}
-body{background-color:black;}
-
-#loading_page p {color: black;}
-
-.header{
-  list-style: none;
-  float: left;
-  margin-left: 85px;
-  font-size: 1.4em;
-  font-family: "JohnBrown";
-  text-decoration: none;
-  color:white;
-}
-
-#title{
-  font-family: "JohnBrown";
-  float:left;
-  margin-left:5px;
-  font-size: 1.4em;
-  color:white;
-}
-
-#content {width: 65%;
-margin-left:auto;
-margin-right: auto;
-color:white;}
-
-hr {clear:both;
-border: 1px solid pink;}
-
-ul{float: left;}
-
-#navbar2{clear: both;
-border-style: dashed;
-border-width: 2px;
-border-color: pink;
-width: 300px;
-height: 1000px;
-text-align: center;
-line-height: 250px;
-}
-
-#about{clear: both;}
-
-h2 {font-size: 1.4em;
-  font-family: "JohnBrown";
-  color:white;}
-
-p, li{font-size: 1em;
-font-family: "Quicksand";
-color:white;}
-
-a{color:white;
-text-decoration: underline;}
-
-.personal_links{font-size: 1em;
-  font-family: "Quicksand";
-  text-decoration: underline;
-  color:white;
-}
-
-
-a:active{font-weight: bold;}
-
-li {margin-bottom: 10px;}
-
-#projects {clear: both;}
-
-#footer { margin-top: 20px;
-  text-align: center;}
 
   /*loading page stuff*/
 #logo {margin: auto;
 display: block;}
 
-#enter{color:black;
+#under_construction{color:black;
 font-family: Quicksand;
 text-align:center;
-margin-top: -160px;}
+text-decoration: none;
+font-size: 20px;
+position: relative;
+bottom: 230px;}
+/*
+#under_construction h1, h1:hover, h1:active{
+  text-decoration: none;
+}*/
