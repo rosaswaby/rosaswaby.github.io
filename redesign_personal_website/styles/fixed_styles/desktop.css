@@ -27,7 +27,7 @@
 
 #about_me {
   background-color:#F6CACA;
-  box-shadow: 0px 0px 15px gray;
+  box-shadow: 0px 0px 10px gray;
   position: relative;
   padding-bottom: 150px;
   bottom: 240px;
@@ -52,9 +52,15 @@
   padding-bottom: 50px;
   border-radius: 5px;
   border:white;
-  box-shadow: 0px 0px 5px gray;
 }
 
+#top {
+    width: 100%;
+    border-color: gray;
+    border-style: dashed;
+    position:relative;
+    bottom: 100px;
+}
 /*styling of the page*/
 
 #main_name{

@@ -20,8 +20,6 @@
 
 }
 
-/*landing page*/
-
 #logo {
     display: block;
     margin-left: auto;
@@ -37,7 +35,6 @@
     font-family: Quicksand;
 }
 #nav {
-    border: 1px solid gray;
     border-width: 1px 0;
     list-style: none;
     margin: 0;
@@ -308,6 +305,20 @@ input, textarea {
     text-align: center;
     font-size: 18px;
     font-family: Quicksand;
+}
+
+#top hr {
+    width: 100%;
+    border-color: gray;
+    border-style: dashed;
+    position:relative;
+    bottom: 100px;
+}
+
+hr {
+    width: 100%;
+    border-color: gray;
+    border-style: dashed;
 }
 
 #up_arrow {
