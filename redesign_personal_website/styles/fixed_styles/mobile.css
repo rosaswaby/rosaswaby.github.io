@@ -169,7 +169,9 @@
   width: 100%;
   height: auto;
   display: block;
-  background: gray;
+  width: 90%;
+  height: 90%;
+  margin-left: 5%
 }
 
 
@@ -209,8 +211,8 @@ hr, #top {
   font-weight: bold;
   font-family: Quicksand;
   text-align: center;
-  border: 2px solid #ef9ea4;
-  background-color: white;
+  border: 3px solid  #ef9ea4;
+  /*background-color: white;*/
   color: black;
   border-radius: 5px;
   padding: 5px;
@@ -229,7 +231,7 @@ hr, #top {
 
 .skill_buttons:active, .skill_buttons:focus, .skill_buttons:hover {
     background-color: #ef9ea4;
-    box-shadow: 2px 2px 2px #b0adad;
+    box-shadow: 0px 2px 1px gray;
     outline: none;
   }
 /*about me*/
