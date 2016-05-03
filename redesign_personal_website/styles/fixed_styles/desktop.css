@@ -2,45 +2,58 @@
 
 /*background colors and shadows of each section*/
 .container{
-  height:3400px;
+  height:3000px;
 }
+
 #projects{
-  background-color: #EF9EA4;
-  box-shadow: 0px 0px 10px black;
+  background-color:#F6CACA;
+  box-shadow: 0px 0px 10px gray;
   position: relative;
-  bottom: 50px;
+  bottom: 130px;
   padding-bottom: 50px;
   margin: 0;
+  border-radius: 5px;
 }
 
 #skills {
-  background-color:#BBE5ED;
-  box-shadow: 0px 0px 10px black;
+  background-color:#2F323A;
+  box-shadow: 0px 0px 15px #888888;
   position: relative;
   padding-bottom: 50px;
-  bottom: 130px;
+  bottom: 210px;
   margin: 0;
+  border-radius: 5px;
 }
 
 #about_me {
-  background-color: #B4EDD2;
-  box-shadow: 0px 0px 10px black;
+  background-color:#F6CACA;
+  box-shadow: 0px 0px 15px gray;
   position: relative;
   padding-bottom: 150px;
-  bottom: 150px;
+  bottom: 240px;
   margin: 0;
+  border-radius: 5px;
 }
 
 #contact {
-  opacity: .8;
-  background-color: #A3A3A3;
-  box-shadow: 0px 0px 10px black;
+  opacity: 1;
+  background-color: #2F323A;
+  box-shadow: 0px 0px 15px #888888;
   position: relative;
   padding-bottom: 80px;
-  bottom: 150px;
+  bottom: 250px;
   margin: 0;
+  border-radius: 5px;
 }
 
+#nav{
+  padding-top: 5px;
+  background-color: white;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  border:white;
+  box-shadow: 0px 0px 5px gray;
+}
 
 /*styling of the page*/
 
@@ -54,7 +67,7 @@
 }
 
 #nav a {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 #projects {
@@ -62,6 +75,10 @@
   flex-wrap: wrap;
 }
 
+#projects_title{
+  text-align: center;
+  font-family: Quickand;
+}
 #projects a{
   top:0;
   position: relative;
@@ -152,7 +169,7 @@
 }
 
 #resume{
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 5px black;
     font-size: 20px;
     padding: 1%;
     margin-bottom:5%;
@@ -161,6 +178,14 @@
 
 }
 
+#skills h2{
+  color: white;
+}
+
+#skills h2:hover{
+  color:white;
+  text-decoration: underline;
+}
 #contact_message{
   padding: 1%;
 }
@@ -190,5 +215,6 @@
 
 #footer{
   position: relative;
-  bottom: 130px;
+  margin-bottom: 12px;
+  bottom: 220px;
 }

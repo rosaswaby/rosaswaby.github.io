@@ -121,13 +121,12 @@
 #skills h2{
   font-family: Quicksand;
   font-size: 18px;
-  color: black;
+  color: white;
   margin-top: 5%;
 }
 
 #skills h2:hover{
   text-decoration: underline;
-  color: black;
 }
 
 #skills {
@@ -152,7 +151,7 @@
   font-weight: bold;
   font-family: Quicksand;
   text-align: center;
-  border: .5px solid #ef9ea4;
+  border: 1px solid #ef9ea4;
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -226,7 +225,7 @@
 }
 
 #resume:hover, #view_all_button:hover {
-    background-color: #ef9ea4;
+    background-color: #FAE8EB;
     border-color: #ef9ea4;
 }
 
