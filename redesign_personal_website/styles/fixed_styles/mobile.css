@@ -76,7 +76,7 @@
     position: relative;
     bottom: 125px;
     font-size: 18px;
-    font-family: Quicksand;
+    font-family: Quicksand, "Century Gothic";
 }
 
 /*keep the same for the rest of the css files*/
@@ -119,7 +119,7 @@
 }
 #nav a {
     color: black;
-    font-family: Quicksand;
+    font-family: Quicksand, "Century Gothic";;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -157,7 +157,7 @@
 #projects figcaption {
   margin-top: 5px;
   margin-bottom: 10px;
-  font-family: Quicksand;
+  font-family: Quicksand, "Century Gothic";;
   color: black;
   font-size: 16px;
   text-align: center;
@@ -189,7 +189,7 @@ hr, #top {
 /*skills*/
 
 #skills h2{
-  font-family: Quicksand;
+  font-family: Quicksand, "Century Gothic";;
   font-size: 18px;
   color: white;
   margin-top: 5%;
@@ -209,7 +209,7 @@ hr, #top {
   font-size: 14px;
   margin-top: 5%;
   font-weight: bold;
-  font-family: Quicksand;
+  font-family: Quicksand, "Century Gothic";;
   text-align: center;
   border: 3px solid  #ef9ea4;
   /*background-color: white;*/
@@ -240,7 +240,7 @@ hr, #top {
 }
 
 #about_me h2 {
-  font-family: Quicksand;
+  font-family: Quicksand, "Century Gothic";;
   padding-top: 40px;
   font-size: 24px;;
 }
@@ -256,7 +256,7 @@ hr, #top {
 
 }
 #about_me_text {
-    font-family: Quicksand;
+    font-family: Quicksand, "Century Gothic";
     text-align: center;
     float: right;
     width: 100%;
@@ -282,7 +282,7 @@ hr, #top {
 
 #resume a {
     color: white;
-    font-family: Quicksand;
+    font-family: Quicksand, , "Century Gothic";
     text-decoration: none;
 }
 
@@ -315,7 +315,7 @@ input, textarea {
     color: white;
     margin: 0;
     text-align: center;
-    font-family: Quicksand;
+    font-family: Quicksand, "Century Gothic";
 }
 
 #contact label {
@@ -331,7 +331,7 @@ input, textarea {
   padding: 10px;
   margin: 1%;
   border-radius: 4px;
-  font-family: Quicksand;
+  font-family: Quicksand, "Century Gothic";
   resize: none;
 }
 
@@ -345,7 +345,7 @@ input, textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     font-size: 16px;
-    font-family: Quicksand;
+    font-family: Quicksand, "Century Gothic";
     resize: none;
 }
 #send {
@@ -357,7 +357,7 @@ input, textarea {
     font-weight: bold;
     border-radius: 5px;
     font-size: 14px;
-    font-family: Quicksand;
+    font-family: Quicksand, "Century Gothic";
     margin: auto;
     margin-bottom: 5%;
 }
@@ -370,7 +370,7 @@ input, textarea {
 #footer {
     text-align: center;
     font-size: 18px;
-    font-family: Quicksand;
+    font-family: Quicksand, "Century Gothic";
     position: relative;
     margin-bottom: 12px;
     bottom: 220px;
