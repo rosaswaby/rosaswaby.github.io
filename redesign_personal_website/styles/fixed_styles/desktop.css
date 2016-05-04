@@ -83,7 +83,7 @@
 
 #projects_title{
   text-align: center;
-  font-family: Quickand, "Century Gothic";
+  font-family: Quickand, 'Century Gothic';
 }
 #projects a{
   top:0;
@@ -138,7 +138,7 @@
 /*about me*/
 
 #about_me h2 {
-  font-family: Quicksand, "Century Gothic";
+  font-family: Quicksand, 'Century Gothic';
   padding-top: 40px;
   font-size: 24px;;
 }
@@ -160,7 +160,7 @@
 }
 
 #about_me_text {
-    font-family: Quicksand, "Century Gothic";
+    font-family: Quicksand, 'Century Gothic';
     text-align: center;
     float:right;
     width: 40%;
