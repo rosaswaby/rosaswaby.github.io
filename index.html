@@ -1,12 +1,148 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset = 'utf-8'>
-  <title> Rosa Swaby </title>
-  <link rel = "stylesheet" href = "styles.css">
+    <meta charset="UTF-8">
+    <title> Rosa Swaby </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body id = "loading_page">
-  <img id = "logo" src = 'Logo.png'alt="My Logo" style="width:570px; height:600:px;" >
-  <h1 id = "under_construction"> Version 2 Coming Soon! Currently being redesigned! </h1>
+
+<body>
+    <div class="container">
+        <!--     navigation bar -->
+        <ul class="navbar">
+            <li class="logo"> <a href="#"> rosa swaby  </a> </li>
+            <div class="div_navbar_items">
+                <li class="navbar_items"> <a href="#about_me"> about me </a> </li>
+                <li class="navbar_items"> <a href="#skills"> skills </a> </li>
+                <li class="navbar_items"> <a href="#projects"> projects </a> </li>
+                <li class="navbar_items"> <a href="#contact"> contact </a> </li>
+            </div>
+            <li class="icon">
+                <a href="#" onclick="myFunction()">&#9776;</a>
+            </li>
+        </ul>
+        <!--     end of navigation bar -->
+
+        <!--     about me section -->
+        <div class="content">
+            <div id="about_me">
+                <hr class="section_borders">
+                <h2> about me </h2>
+                <img src="images/rosa_swaby.jpg">
+                <div id="about_me_text">
+                    <p> Hi! My name is Rosa Swaby and I am a Computer Science student at NYU - College of Arts and Science. I am originally from Georgia and I have been living in NYC for 2 years. I enjoy working on web developing and design and I hope to
+                        be able to be a web developer / designer in the future.</p>
+                    <p>I am also really into music, dance and singing. Recently I have been listening to Lemonade (BEYONCE), and I definitely recommend it! I really enjoy eating as well, so if you want to check out some cool places in the city to eat, or
+                        just want to hang out, I am definitely in. Check out my resume below and send me a message if you want to chat! </p>
+                    <p> Thanks for checking out my page!</p>
+                    <div style="clear: both;"></div>
+                </div>
+                <hr class="section_borders">
+                <!--     end of about me div -->
+            </div>
+
+            <!--         beginning of skills section -->
+            <div id="skills">
+                <h2> skills </h2>
+                <ul id="skill_buttons" style="padding: 0;">
+
+                    <li id="section"> Computer Science </li>
+                    <ul id="skill_icons" style="padding:0;">
+                        <li> <img src="icons/skills/java.png"> </li>
+                        <li> <img src="icons/skills/ds.png"> </li>
+                        <li> <img src="icons/skills/python.png"> </li>
+                        <li> <img src="icons/skills/c.png"> </li>
+
+                    </ul>
+                    <br>
+
+                    <li id="section"> Web Developing </li>
+
+                    <ul id="skill_icons" style="padding:0;">
+                        <li> <img src="icons/skills/html.png"> </li>
+                        <li> <img src="icons/skills/css.png"> </li>
+                        <li> <img src="icons/skills/jquery.png"> </li>
+                        <!-- <li> <img src="icons/skills/javascript.png"> </li> -->
+                        <li> <img src="icons/skills/mysql.png"> </li>
+                        <li> <img src="icons/skills/php.png"> </li>
+                        <li> <img src="icons/skills/mongodb.png"> </li>
+
+                    </ul>
+                    <br>
+
+                    <li id="section"> Graphic Design </li>
+
+                    <ul id="skill_icons" style="padding:0;">
+                        <li> <img src="icons/skills/photoshop.png"> </li>
+                        <li> <img src="icons/skills/indesign.png"> </li>
+
+                    </ul>
+
+                    <li id="section"> Misc. </li>
+                    <ul id="skill_icons" style="padding:0;">
+
+                        <li> <img src="icons/skills/final_cut.png"> </li>
+                    </ul>
+
+                </ul>
+                <hr class="section_borders">
+                <!--         closing skills div -->
+            </div>
+
+
+            <!--       projects div-->
+            <div id="projects">
+                <h2> projects </h2>
+                <ul id="projects_images" style="padding: 0;">
+                    <li> <a target = "blank" href = "BodyLabs.pdf"> <img src="images/project_images/move_me.png" id="project1"> </a> </li>
+                    <li> <a target = "blank" href = "Wireframing.pdf"> <img src="images/project_images/wireframe.png" id="project2"> </a> </li>
+                    <li> <a target = "blank" href = "http://rosaswaby.tumblr.com/search/logo"> <img src="images/project_images/logo_project.png" id="project2"> </a> </li>
+                    <li> <a target = "blank" href = "http://rosaswaby.tumblr.com/search/interface"> <img src="images/project_images/visual_project2.png" id="project5"></a> </li>
+                    <li> <a target = "blank" href = "https://github.com/PaulineOC/FlawlessHacks"> <img src="images/project_images/nyu_albert.png" id="project5"> </a> </li>
+                    <li> <a target = "blank" href = "https://github.com/rosaswaby/rosaswaby.github.io/tree/master/redesign_personal_website"> <img src="images/project_images/visual_project.png" id="project5"> </a> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <hr class="section_borders">
+
+                <!--         closing the projects div -->
+            </div>
+
+            <!--       contact div -->
+            <div id="contact">
+                <h2> contact </h2>
+                <p> Thanks for checking out my page! Make sure to check out my resume and if you would like to contact me, you can reach me by contacting me via my social media or emailing me directly at <span id="bold"> rosa.swaby@nyu.edu</span>. Bye!</p>
+
+                <a target="_blank" href = "Rosa_Swaby_Resume.pdf"> <img src="icons/resume.png" id="resume_icon"> </a>
+
+                <ul id="social_media_icons">
+                    <li> <a target="_blank" href = "https://www.facebook.com/rosa.swaby.7"> <img src="icons/fb.png" id="social_media_icon"> </a> </li>
+                    <li> <a target="_blank" href = "https://github.com/rosaswaby"> <img src="icons/github.png" id="social_media_icon"> </a> </li>
+                    <li> <a target="_blank" href = "https://www.linkedin.com/in/rosaswaby"> <img src="icons/in.png" id="social_media_icon"> </a> </li>
+                    <li> <a target="_blank" href = "https://soundcloud.com/roli96"> <img src="icons/soundcloud.png" id="social_media_icon"> </a> </li>
+                </ul>
+                <hr class="section_borders" style="clear: both;">
+            </div>
+            <!--       end of content div -->
+        </div>
+
+        <footer>
+            <p> Rosa Swaby | Made with &hearts; </p>
+            <!--     end of container div -->
+    </div>
+</body>
+
+<!-- <html> -->
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+<script src="js/index.js"></script>
+
+
+
 
 </body>
 
