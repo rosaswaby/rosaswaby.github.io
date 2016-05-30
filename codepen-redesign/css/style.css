@@ -278,6 +278,9 @@ footer {
   #about_me p {
     font-size: 18px;
   }
+  #about_me_text{
+    padding-top: 2%;
+  }
   /*     fixing skills section */
   #skill_icons img {
     height: 12%;
