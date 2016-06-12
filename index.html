@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Rosa Swaby </title>
+    <title>Rosa Swaby</title>
+    <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
     <div class="container">
+
         <!--     navigation bar -->
         <ul class="navbar">
             <li class="logo"> <a href="#"> rosa swaby  </a> </li>
@@ -28,125 +29,141 @@
         </ul>
         <!--     end of navigation bar -->
 
-        <!--     about me section -->
-        <div class="content">
+        <div id="content">
             <div id="about_me">
-                <hr class="section_borders">
                 <h2> about me </h2>
-                <img src="images/rosa_swaby.jpg">
+                <img id="me" src="me.png">
                 <div id="about_me_text">
                     <p> Hi! My name is Rosa Swaby and I am a Computer Science student at NYU - College of Arts and Science. I am originally from Georgia and I have been living in NYC for 2 years. I enjoy working on web developing and design and I hope to
                         be able to be a web developer / designer in the future.</p>
                     <p>I am also really into music, dance and singing. Recently I have been listening to Lemonade (BEYONCE), and I definitely recommend it! I really enjoy eating as well, so if you want to check out some cool places in the city to eat, or
                         just want to hang out, I am definitely in. Check out my resume below and send me a message if you want to chat! </p>
-                    <p> Thanks for checking out my page!</p>
+                    <!--           <p> Thanks for checking out my page!</p> -->
                     <div style="clear: both;"></div>
+                    <!--         closing about me text div -->
                 </div>
-                <hr class="section_borders">
-                <!--     end of about me div -->
+                <!--       closing about me div -->
             </div>
 
-            <!--         beginning of skills section -->
+            <hr class="section_borders">
+
+            <!--       skills section -->
             <div id="skills">
-                <h2> skills </h2>
-                <ul id="skill_buttons" style="padding: 0;">
-
-                    <li id="section"> Computer Science </li>
-                    <ul id="skill_icons" style="padding:0;">
-                        <li> <img src="icons/skills/java.png"> </li>
-                        <li> <img src="icons/skills/ds.png"> </li>
-                        <li> <img src="icons/skills/python.png"> </li>
-                        <li> <img src="icons/skills/c.png"> </li>
-
-                    </ul>
-                    <br>
-
-                    <li id="section"> Web Developing </li>
-
-                    <ul id="skill_icons" style="padding:0;">
-                        <li> <img src="icons/skills/html.png"> </li>
-                        <li> <img src="icons/skills/css.png"> </li>
-                        <li> <img src="icons/skills/jquery.png"> </li>
-                        <!-- <li> <img src="icons/skills/javascript.png"> </li> -->
-                        <li> <img src="icons/skills/mysql.png"> </li>
-                        <li> <img src="icons/skills/php.png"> </li>
-                        <li> <img src="icons/skills/mongodb.png"> </li>
-
-                    </ul>
-                    <br>
-
-                    <li id="section"> Graphic Design </li>
-
-                    <ul id="skill_icons" style="padding:0;">
-                        <li> <img src="icons/skills/photoshop.png"> </li>
-                        <li> <img src="icons/skills/indesign.png"> </li>
-
-                    </ul>
-
-                    <li id="section"> Misc. </li>
-                    <ul id="skill_icons" style="padding:0;">
-
-                        <li> <img src="icons/skills/final_cut.png"> </li>
-                        <li> <img src="icons/skills/iphoto.png"> </li>
-                        <li> <img src="icons/skills/adobe_premiere.png"> </li>
-                        <li> <img src="icons/skills/autocad.png"> </li>
-                    </ul>
-
+                <h1> skills </h1>
+                <h2> Computer Science </h2>
+                <ul id="skill">
+                    <li><span class="bar java"></span>
+                        <h3>Java</h3></li>
+                    <li><span class="bar ds"></span>
+                        <h3>Data Structures</h3></li>
+                    <li><span class="bar python"></span>
+                        <h3>Python</h3></li>
+                    <li><span class="bar c"></span>
+                        <h3>C</h3></li>
                 </ul>
-                <hr class="section_borders">
-                <!--         closing skills div -->
+                <h2> Web Developing </h2>
+                <ul id="skill">
+                    <li><span class="bar html"></span>
+                        <h3>HTML/CSS</h3></li>
+                    <li><span class="bar jquery"></span>
+                        <h3>JQuery</h3></li>
+                    <li><span class="bar mysql"></span>
+                        <h3>MySQL</h3></li>
+                    <li><span class="bar php"></span>
+                        <h3>PHP</h3></li>
+                    <li><span class="bar mongodb"></span>
+                        <h3>MongoDB</h3></li>
+                </ul>
+                <h2> Graphic Design </h2>
+                <ul id="skill">
+                    <li><span class="bar photoshop"></span>
+                        <h3>Photoshop</h3></li>
+                    <li><span class="bar indesign"></span>
+                        <h3>InDesign</h3></li>
+                </ul>
+                <h2> Miscellaneous </h2>
+                <ul id="skill">
+                    <li><span class="bar finalcut"></span>
+                        <h3>Final Cut Pro </h3></li>
+                    <li><span class="bar iphoto"></span>
+                        <h3>iPhoto</h3></li>
+                    <li><span class="bar premiere"></span>
+                        <h3>Adobe Premiere</h3></li>
+                    <li><span class="bar autocad"></span>
+                        <h3>AutoCAD</h3></li>
+                </ul>
             </div>
 
 
+            <!-- end of skills -->
+            <hr class="section_borders">
             <!--       projects div-->
             <div id="projects">
                 <h2> projects </h2>
                 <ul id="projects_images" style="padding: 0;">
-                    <li> <a target = "blank" href = "BodyLabs.pdf"> <img src="images/project_images/move_me.png" id="project1"> </a> </li>
-                    <li> <a target = "blank" href = "Wireframing.pdf"> <img src="images/project_images/wireframe.png" id="project2"> </a> </li>
-                    <li> <a target = "blank" href = "http://rosaswaby.tumblr.com/search/logo"> <img src="images/project_images/logo_project.png" id="project2"> </a> </li>
-                    <li> <a target = "blank" href = "http://rosaswaby.tumblr.com/search/interface"> <img src="images/project_images/visual_project2.png" id="project5"></a> </li>
-                    <li> <a target = "blank" href = "https://github.com/PaulineOC/FlawlessHacks"> <img src="images/project_images/nyu_albert.png" id="project5"> </a> </li>
-                    <li> <a target = "blank" href = "https://github.com/rosaswaby/rosaswaby.github.io/tree/master/redesign_personal_website"> <img src="images/project_images/visual_project.png" id="project5"> </a> </li>
+                    <li>
+                        <a target="blank" href="BodyLabs.pdf"> <img src="images/project_images/move_me.png" id="project1"> </a>
+                    </li>
+                    <li>
+                        <a target="blank" href="Wireframing.pdf"> <img src="images/project_images/wireframe.png" id="project2"> </a>
+                    </li>
+                    <li>
+                        <a target="blank" href="http://rosaswaby.tumblr.com/search/logo"> <img src="images/project_images/logo_project.png" id="project2"> </a>
+                    </li>
+                    <li>
+                        <a target="blank" href="http://rosaswaby.tumblr.com/search/interface"> <img src="images/project_images/visual_project2.png" id="project5"></a>
+                    </li>
+                    <li>
+                        <a target="blank" href="https://github.com/PaulineOC/FlawlessHacks"> <img src="images/project_images/nyu_albert.png" id="project5"> </a>
+                    </li>
+                    <li>
+                        <a target="blank" href="https://github.com/rosaswaby/rosaswaby.github.io/tree/master/redesign_personal_website"> <img src="images/project_images/visual_project.png" id="project5"> </a>
+                    </li>
                 </ul>
                 <div style="clear: both;"></div>
-                <hr class="section_borders">
-
                 <!--         closing the projects div -->
             </div>
 
+            <hr class="section_borders">
             <!--       contact div -->
             <div id="contact">
                 <h2> contact </h2>
                 <p> Thanks for checking out my page! Make sure to check out my resume and if you would like to contact me, you can reach me by contacting me via my social media or emailing me directly at <span id="bold"> rosa.swaby@nyu.edu</span>. Bye!</p>
 
-                <a target="_blank" href = "Rosa_Swaby_Resume.pdf"> <img src="icons/resume.png" id="resume_icon"> </a>
-
                 <ul id="social_media_icons">
-                    <li> <a target="_blank" href = "https://www.facebook.com/rosa.swaby.7"> <img src="icons/fb.png" id="social_media_icon"> </a> </li>
-                    <li> <a target="_blank" href = "https://github.com/rosaswaby"> <img src="icons/github.png" id="social_media_icon"> </a> </li>
-                    <li> <a target="_blank" href = "https://www.linkedin.com/in/rosaswaby"> <img src="icons/in.png" id="social_media_icon"> </a> </li>
-                    <li> <a target="_blank" href = "https://soundcloud.com/roli96"> <img src="icons/soundcloud.png" id="social_media_icon"> </a> </li>
+                    <li>
+                        <a target="_blank" href="Rosa_Swaby_Resume.pdf"> <img src="icons/resume.png" id="social_media_icon"> </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/rosa.swaby.7"> <img src="icons/fb.png" id="social_media_icon"> </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/rosaswaby"> <img src="icons/github.png" id="social_media_icon"> </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/rosaswaby"> <img src="icons/in.png" id="social_media_icon"> </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://soundcloud.com/roli96"> <img src="icons/soundcloud.png" id="social_media_icon"> </a>
+                    </li>
                 </ul>
-                <hr class="section_borders" style="clear: both;">
+                </ul>
+
+                <!--         closing contact div -->
             </div>
             <!--       end of content div -->
         </div>
 
-        <footer>
-            <p> Rosa Swaby | Made with &hearts; </p>
-            <!--     end of container div -->
+        <!--       closing content div -->
     </div>
-</body>
+    <footer>
+        <p> Rosa Swaby | Made with &hearts; </p>
+    </footer>
+    <!--     end of container div -->
+    </div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
-<!-- <html> -->
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-
-<script src="js/index.js"></script>
-
-
-
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

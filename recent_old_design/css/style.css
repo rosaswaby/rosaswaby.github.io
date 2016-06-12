@@ -1,0 +1,369 @@
+.content {
+  background-color: #EFD3D7;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+#bold{
+ color:#f89ea4;
+ font-weight:bold;
+ font-size: 18px;
+ text-decoration: underline;
+}
+body {
+  /*   set the background to black */
+  background-color: body;
+  margin: 0;
+}
+
+h2 {
+  text-decoration: underline;
+}
+/* navigation bar styling */
+
+ul.navbar {
+  position: relative;
+  z-index: 100;
+  /*   box-shadow: 0px 4px 4px gray; */
+  opacity: 1;
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul.navbar li.logo {
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul.navbar li.navbar_items {
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul.navbar li a {
+  /*   styling */
+  font-family: "Quicksand", "Tahoma", "Ariel";
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  /*   styling */
+  border-radius: 1px;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+ul.navbar li.navbar_items a:hover {
+  background-color: #f89ea4;
+}
+
+ul.navbar li.icon {
+  display: none;
+}
+
+.div_navbar_items {
+  float: right;
+}
+/* about me styling */
+
+#about_me {
+  box-shadow: 0px 4px 4px gray;
+  /*   padding-top: 5%; */
+  width: 100%;
+  height: auto;
+  padding-top: 1px;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+#about_me h2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Quicksand", "Tahoma";
+  font-size: 22px;
+}
+
+#about_me p {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Quicksand", "Tahoma";
+  font-size: 16px;
+}
+
+#about_me img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2%;
+  opacity: .9;
+  border-radius: 1px;
+}
+
+#about_me_text {
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-bottom: 3%;
+}
+
+.section_borders {
+  border-color: #f89ea4;
+  border-style: dashed;
+  border-width: 2px;
+}
+/* skills styling */
+
+#skills {
+  box-shadow: 0px 4px 4px gray;
+  width: 100%;
+  /*   height: 700px; */
+  /*    temporary height */
+  padding-top: 1%;
+  background-color: #f3f3f3;
+  text-align: center;
+  /*   overflow: auto;  makes it look like one long page */
+}
+
+#skills h2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Quicksand", "Tahoma";
+  font-size: 22px;
+}
+
+#skill_buttons #section {
+  background-color: black;
+  list-style-type: none;
+  color: #f89ea4;
+  font-family: "Quicksand", "Tahoma";
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 1.5%;
+  border-radius: 1px;
+  width: 100%p;
+}
+
+#skill_icons li {
+  list-style-type: none;
+  display: inline;
+}
+/* bold words on the photoshop images */
+
+#skill_icons img {
+  height: 18%;
+  width: 18%;
+}
+/* end of skills section styling */
+/* projects section styling */
+
+#projects {
+  box-shadow: 0px 4px 4px gray;
+  width: 100%;
+  height: auto;
+  /*    temporary height */
+  padding-top: 1%;
+  background-color: #f3f3f3;
+  text-align: center;
+  /*   overflow: auto; */
+}
+
+#projects h2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Quicksand", "Tahoma";
+  font-size: 22px;
+}
+
+#projects li {
+  list-style-type: none;
+}
+
+#projects img {
+  height: 80%;
+  width: 80%;
+  margin-bottom: 2%;
+}
+/* end of projects styling */
+/* contact styling */
+
+#contact {
+  box-shadow: 0px 4px 4px gray;
+  width: 100%;
+  height: auto;
+  background-color: #f3f3f3;
+  padding-top: 1%;
+  text-align: center;
+  overflow: auto;
+}
+
+#contact h2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Quicksand", "Tahoma";
+  font-size: 22px;
+}
+
+#contact p {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Quicksand", "Tahoma";
+  font-size: 16px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+#resume_icon {
+  width: 15%;
+  height: 15%;
+  margin-left: 14%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  float: left;
+}
+
+#social_media_icons {
+  margin-top: 12%;
+}
+
+#social_media_icons li {
+  list-style-type: none;
+}
+
+#social_media_icon {
+  display: inline-block;
+  width: 9%;
+  height: 9%;
+  float: left;
+  margin-left: 8%;
+}
+/* end of contact styling */
+/* footer styling */
+
+footer {
+  background-color: black;
+  color: #f89ea4;
+  font-family: "Quicksand", "Tahoma";
+  text-align: center;
+  height: 30px;
+  padding-top: 1px;
+  padding-bottom: 15px;
+}
+/* ------------------------------------------------------------- */
+/* desktop css: width >= 681px */
+
+@media screen and (min-width: 681px) {
+  /*     fixing about me section */
+  #about_me img {
+    /*   changes for desktop */
+    width: 47%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 3%;
+    /*   changes for desktop */
+  }
+  #about_me p {
+    font-size: 18px;
+  }
+  #about_me_text{
+    padding-top: 1%;
+  }
+  /*     fixing skills section */
+  #skill_icons img {
+    height: 12%;
+    width: 12%;
+    padding: 1%;
+  }
+  #skill_buttons #section {
+    font-size: 18px;
+  }
+
+   #social_media_icon {
+    width: 9%;
+    height: 9%;
+    margin-left: 8%;
+  }
+}
+/* fixing project section for bigger widths */
+
+@media screen and (min-width: 769px) {
+  #projects img {
+    height: auto;
+    width: 32%;
+    margin-bottom: 2%;
+    padding-left: 1%;
+    float: left;
+  }
+  #contact p {
+    font-size: 18px;
+  }
+  #resume_icon {
+    margin-left: 15%;
+    width: 15%;
+    height: 15%;
+  }
+  #social_media_icons {
+    margin-top: 12%;
+  }
+  #social_media_icon {
+    width: 8%;
+    height: 8%;
+    margin-left: 8%;
+  }
+  /* responsive navigation bar: CSS */
+  /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("logo"). Show the list item that contains the link to open and close the topnav (li.icon) */
+  @media screen and (max-width:680px) {
+    ul.navbar li.navbar_items {
+      display: none;
+    }
+    ul.navbar li.icon {
+      float: right;
+      display: inline-block;
+    }
+  }
+  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
+  @media screen and (max-width:680px) {
+    ul.navbar.responsive {
+      position: relative;
+    }
+    ul.navbar.responsive li.logo {
+      floatL: left;
+      display: block;
+    }
+    ul.navbar.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    ul.navbar.responsive li.navbar_items {
+      float: none;
+      display: inline;
+    }
+    ul.navbar.responsive li.navbar_items a {
+      display: block;
+      text-align: left;
+    }
+    .div_navbar_items {
+      float: left;
+    }
+    ul.navbar.responsive li.navbar_items a {
+      /*     max width of the page */
+      width: 680px;
+    }
+    ul.navbar.responsive li.navbar_items a:hover {
+      background-color: #f89ea4;
+    }
+    /* end of navgation bar styling */
