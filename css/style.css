@@ -93,7 +93,7 @@ ul.navbar li.icon {
 }
 
 #about_me_text {
-  padding-top: 6%;
+  padding-top: 2%;
   margin-right: 4%;
   margin-left: 3%;
 }
@@ -739,7 +739,7 @@ footer {
 }
 @media screen and (min-width: 750px){
   #about_me_text{
-    padding-top: 8%;
+    padding-top: 6%;
   }
 
   #about_me_text p{
@@ -775,7 +775,7 @@ footer {
 }
 @media screen and (min-width: 960px){
   #about_me_text{
-    padding-top: 8%;
+    padding-top: 6%;
   }
 
   #about_me_text p{
