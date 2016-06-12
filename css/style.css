@@ -727,26 +727,26 @@ footer {
   #about_me_text{
     clear:both;
   }
-  
+
   #me{
     float:none;
     width: 65%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
-    
+
+
   }
 }
 @media screen and (min-width: 750px){
   #about_me_text{
     padding-top: 8%;
   }
-  
+
   #about_me_text p{
     font-size: 20px;
   }
-  
+
 /*   editing length of skill bars */
   #skill{
     width: 600px;
@@ -760,7 +760,7 @@ footer {
   float: left;
   margin-left: 7%;
 }
-  
+
 }
 @media screen and (min-width: 800px){
   #social_media_icon {
@@ -776,9 +776,9 @@ footer {
 }
 @media screen and (min-width: 960px){
   #about_me_text{
-    padding-top: 7%;
+    padding-top: 8%;
   }
-  
+
   #about_me_text p{
     font-size: 22px;
   }
@@ -786,7 +786,7 @@ footer {
   #skill{
     width: 700px;
   }
-  
+
 /*   editing contact icons */
    #social_media_icon {
   display: inline-block;
@@ -801,11 +801,11 @@ footer {
   #about_me_text{
     padding-top: 8%;
   }
-  
+
   #about_me_text p{
     font-size: 25px;
   }
-  
+
 }
 /* fixing project section for bigger widths */
 
