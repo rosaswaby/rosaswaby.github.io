@@ -722,7 +722,7 @@ footer {
 /* ------------------------------------------------------------- */
 
 /* Setting up for responsive-ness */
-@media screen and (max-width: 550px){
+@media screen and (max-width: 650px){
   #about_me_text{
     clear:both;
   }
