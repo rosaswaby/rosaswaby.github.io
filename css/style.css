@@ -5,6 +5,40 @@ body {
 #content{
 }
 
+/* up arrow styling */
+#up_arrow{
+  border-radius: 5px;
+  width: 0%;
+  background-color: lightgray;
+  opacity: .5;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+#up_arrow:hover{
+  opacity:1;
+}
+
+@media screen and (min-width:850px){
+   #up_arrow{
+    width: 6.5%;
+  }
+}
+
+@media screen and (min-width:1000px){
+   #up_arrow{
+    width: 6%;
+  }
+}
+
+@media screen and (min-width:1200px){
+   #up_arrow{
+    width: 4.5%;
+  }
+}
+
+/*up arrow styling*/
+
 hr.section_borders{
 	border-top: 3px double #9CE2DD;
   margin: 0;
