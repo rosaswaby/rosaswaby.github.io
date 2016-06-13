@@ -709,10 +709,6 @@ ul.navbar li.icon {
   margin-left: 10%;
 }
 
-#resume:hover{
-  background-image: url("resume_clicked.png");
-
-}
 /* footer styling */
 
 footer {
