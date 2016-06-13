@@ -3,14 +3,16 @@ function myFunction() {
 }
 
 function myFunction(social_media_image) {
-    var new_src = "icons/" + social_media_image.id + "_clicked.png";
+    var id = social_media_image.id;
+    window.alert(id);
+    var new_src = "icons/" + id + "_clicked.png";
     window.alert(new_src);
     social_media_image.src = new_src;
 }
 
 function mouseaway(my_image) {
-
-    my_image.src = "icons/" + my_image.id + ".png";
+    var id = my_image.id;
+    my_image.src = "icons/" + id + ".png";
 
 }
 
