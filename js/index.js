@@ -4,6 +4,7 @@ function myFunction() {
 
 function myFunction(social_media_image) {
     var new_src = "icons/" + social_media_image.id + "_clicked.png";
+    window.alert(new_src);
     social_media_image.src = new_src;
 }
 
