@@ -1,4 +1,4 @@
-    body {
+body {
     margin: 0;
 }
 #content {}
@@ -36,7 +36,7 @@
 
 #skills_larger_browser {
     width: 100%;
-    background-color: #FFFCF9;
+    /*background-color: #FFFCF9;*/
     height: 500px;
 }
 .tabs_menu {
@@ -54,7 +54,7 @@ ul.tabs {
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
-    background-color: #FFFCF9;
+    /*background-color: #FFFCF9;*/
 }
 ul.tabs li {
     list-style-type: none;
@@ -63,9 +63,9 @@ ul.tabs li {
     font-size: 18px;
 }
 ul.tabs li:hover {
-    border-right: 2px solid #e1386c;
-    background-color: lightgray;
-    opacity: .7;
+    border-right: 5px solid #e1386c;
+    background-color:blue;
+    /*opacity: .7;*/
 }
 #tab1_content, #tab2_content, #tab3_content, #tab4_content {
     /*   background-color:red; */
@@ -169,7 +169,7 @@ ul.navbar li.icon {
     padding-bottom: 1%;
     padding-left: 5%;
     height: auto;
-    background-color: #FFFCF9;
+    /*background-color: #FFFCF9;*/
     overflow: auto;
 }
 .skills h1 {
