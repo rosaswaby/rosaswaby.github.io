@@ -691,6 +691,7 @@ ul.navbar li.icon {
     text-align: center;
     font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 22px;
+    padding-bottom: 2%;
 }
 #projects li {
     list-style-type: none;
