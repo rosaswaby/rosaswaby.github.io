@@ -190,7 +190,7 @@ ul.navbar li.icon {
     /*background-color: #FFFCF9;*/
     overflow: auto;
 }
-.skills h1 {
+#skills h1 {
     color: #e1386c;
     font-weight: bold;
     font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
