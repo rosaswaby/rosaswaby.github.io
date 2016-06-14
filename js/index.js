@@ -23,7 +23,7 @@ function mouseaway(my_image) {
 //     $("#skills_smaller_browser").show();
 // }
 
-$("#tab1_content").hide();
+$("#tab1_content").show();
 $("#tab2_content").hide();
 $("#tab3_content").hide();
 $("#tab4_content").hide();
