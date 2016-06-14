@@ -36,7 +36,7 @@ body {
 
 #skills_larger_browser {
     width: 100%;
-    /*background-color: #FFFCF9;*/
+    background-color: #FFFCF9;
     height: 500px;
 }
 .tabs_menu {
@@ -64,8 +64,8 @@ ul.tabs li {
 }
 ul.tabs li:hover {
     border-right: 5px solid #e1386c;
-    background-color:blue;
-    /*opacity: .7;*/
+    background-color:#9CE2DD;
+    opacity: .5;
 }
 #tab1_content, #tab2_content, #tab3_content, #tab4_content {
     /*   background-color:red; */
