@@ -15,13 +15,13 @@ function mouseaway(my_image) {
 }
 
 // jquery for skills section
-if ($(window).width() > 600) {
-    $("#skills_larger_browser").show();
-    $("#skills_smaller_browser").hide();
-} else {
-    $("#skills_larger_browser").hide();
-    $("#skills_smaller_browser").show();
-}
+// if ($(window).width() > 600) {
+//     $("#skills_larger_browser").show();
+//     $("#skills_smaller_browser").hide();
+// } else {
+//     $("#skills_larger_browser").hide();
+//     $("#skills_smaller_browser").show();
+// }
 
 $("#tab1_content").hide();
 $("#tab2_content").hide();
