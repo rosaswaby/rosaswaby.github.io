@@ -63,7 +63,7 @@ ul.tabs li {
     border-right: 2px solid gray;
     font-size: 18px;
 }
-ul.tabs li:hover {
+ul.tabs li:hover, ul.tabs li:active {
     border-right: 5px solid #e1386c;
     background-color:#9CE2DD;
     opacity: .5;
