@@ -190,6 +190,9 @@ ul.navbar li.icon {
     /*background-color: #FFFCF9;*/
     overflow: auto;
 }
+#skills{
+    background-color:#FFFCF9;
+}
 #skills h1 {
     color: #e1386c;
     font-weight: bold;
