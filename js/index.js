@@ -14,6 +14,50 @@ function mouseaway(my_image) {
 
 }
 
+// jquery for skills section
+if ($(window).width() > 600) {
+    $("#skills_larger_browser").show();
+    $("#skills_smaller_browser").hide();
+} else {
+    $("#skills_larger_browser").hide();
+    $("#skills_smaller_browser").show();
+}
+
+$("#tab1_content").hide();
+$("#tab2_content").hide();
+$("#tab3_content").hide();
+$("#tab4_content").hide();
+
+$("#tab1").click(function() {
+    $("#tab1_content").show();
+    $("#tab2_content").hide();
+    $("#tab3_content").hide();
+    $("#tab4_content").hide();
+});
+
+$("#tab2").click(function() {
+    $("#tab2_content").show();
+    $("#tab1_content").hide();
+    $("#tab3_content").hide();
+    $("#tab4_content").hide();
+});
+
+$("#tab3").click(function() {
+    $("#tab3_content").show();
+    $("#tab1_content").hide();
+    $("#tab2_content").hide();
+    $("#tab4_content").hide();
+});
+
+$("#tab4").click(function() {
+    $("#tab4_content").show();
+    $("#tab1_content").hide();
+    $("#tab2_content").hide();
+    $("#tab3_content").hide();
+});
+
+// --------------------------------------------------------------------------------
+
 // $("#project1").hover(
 //   function() {
 //     $(this).attr("src", "http://cdn-6.dooziedog.com/dog_breeds/beagle/images/full/Beagle-Puppy.jpg");
