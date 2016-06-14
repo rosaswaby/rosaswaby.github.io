@@ -59,6 +59,11 @@ ul.tabs {
     width: 100%;
     background-color:#FFFCF9;
 }
+
+#tab1_content, #tab2_content,#tab3_content,#tab4_content{
+  background-color:#FFFCF9;
+}
+
 ul.tabs li {
     list-style-type: none;
     font-family: "Quicksand";
