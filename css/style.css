@@ -59,7 +59,7 @@ ul.tabs {
 }
 ul.tabs li {
     list-style-type: none;
-    font-family: "Quicksand";
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     border-right: 2px solid gray;
     font-size: 18px;
 }
@@ -754,7 +754,7 @@ footer {
     }
     /*   editing length of skill bars */
     .skill {
-        width: 600px;
+        width: 500px;
     }
 }
 /*fixing social media icons -------------------------*/
@@ -791,7 +791,7 @@ footer {
     }
     /*   editing length of skill bars */
     .skill {
-        width: 700px;
+        width: 600px;
     }
     /*   editing contact icons */
     #social_media_icon {
