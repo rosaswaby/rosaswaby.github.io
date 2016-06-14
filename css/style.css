@@ -2,7 +2,6 @@
     margin: 0;
 }
 #content {}
-
 /* up arrow styling */
 
 #up_arrow {
@@ -32,18 +31,16 @@
         width: 5%;
     }
 }
-
 /*up arrow styling*/
-
-
 /*skills re-design layout*/
 
 #skills_larger_browser {
     width: 100%;
-    background-color:#FFFCF9;
+    background-color: #FFFCF9;
+    height: 500px;
 }
 .tabs_menu {
-    background-color:#FFFCF9;
+    background-color: #FFFCF9;
     padding-top: 1%;
     width: 20%;
     float: left;
@@ -57,13 +54,8 @@ ul.tabs {
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
-    background-color:#FFFCF9;
+    background-color: #FFFCF9;
 }
-
-#tab1_content, #tab2_content,#tab3_content,#tab4_content{
-  background-color:#FFFCF9;
-}
-
 ul.tabs li {
     list-style-type: none;
     font-family: "Quicksand";
@@ -79,21 +71,12 @@ ul.tabs li:hover {
     /*   background-color:red; */
     height: auto;
 }
-@media screen and (min-width: 600px) {
-    .skills {
-        padding-top: 3%;
-        padding-bottom: 1%;
-        padding-left: 5%;
-    }
-}
-
 /*-----------------------------------------------------*/
 
 hr.section_borders {
     border-top: 3px double #9CE2DD;
     margin: 0;
 }
-
 /* navigation bar styling */
 
 ul.navbar {
@@ -135,8 +118,8 @@ ul.navbar li.navbar_items a:hover {
     border-bottom-style: solid;
     border-bottom-color: #e1386c;
     /*     border-top-color: black;
-  border-left-color: black;
-  border-right-color: black; */
+border-left-color: black;
+border-right-color: black; */
     padding-bottom: 5px;
 }
 ul.navbar li.icon {
@@ -145,7 +128,6 @@ ul.navbar li.icon {
 .div_navbar_items {
     float: right;
 }
-
 /* about me styling */
 
 #about_me {
@@ -180,13 +162,12 @@ ul.navbar li.icon {
     font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 18px;
 }
-
 /* skills styling */
 
 .skills {
-    /*width: 100%;*/
-    padding-top: 1%;
+    padding-top: 3%;
     padding-bottom: 1%;
+    padding-left: 5%;
     height: auto;
     background-color: #FFFCF9;
     overflow: auto;
@@ -355,7 +336,6 @@ ul.navbar li.icon {
         width: 65%;
     }
 }
-
 /* web developing styling */
 
 .html {
@@ -498,7 +478,6 @@ ul.navbar li.icon {
         width: 60%;
     }
 }
-
 /* graphic design styling */
 
 .photoshop {
@@ -557,7 +536,6 @@ ul.navbar li.icon {
         width: 85%;
     }
 }
-
 /* miis. styling */
 
 .finalcut {
@@ -672,7 +650,6 @@ ul.navbar li.icon {
         width: 65%;
     }
 }
-
 /* projects section styling */
 
 #projects {
@@ -701,10 +678,7 @@ ul.navbar li.icon {
     width: 65%;
     margin-bottom: 2%;
 }
-
 /* end of projects styling */
-
-
 /* contact styling */
 
 #contact {
@@ -744,7 +718,6 @@ ul.navbar li.icon {
     float: left;
     margin-left: 10%;
 }
-
 /* footer styling */
 
 footer {
@@ -756,10 +729,7 @@ footer {
     padding-top: 1px;
     padding-bottom: 15px;
 }
-
 /* ------------------------------------------------------------- */
-
-
 /* Setting up for responsive-ness */
 
 @media screen and (max-width: 650px) {
@@ -786,7 +756,6 @@ footer {
         width: 600px;
     }
 }
-
 /*fixing social media icons -------------------------*/
 
 @media screen and (max-width: 400px) {
@@ -810,7 +779,6 @@ footer {
         font-size: 18px;
     }
 }
-
 /*---------------------------------------------------------*/
 
 @media screen and (min-width: 960px) {
@@ -845,7 +813,6 @@ footer {
         margin-left: 8%;
     }
 }
-
 /* fixing project section for bigger widths */
 
 @media screen and (min-width: 681px) {
@@ -858,10 +825,7 @@ footer {
         overflow: auto;
     }
 }
-
 /* responsive navigation bar: CSS */
-
-
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("logo"). Show the list item that contains the link to open and close the topnav (li.icon) */
 
 @media screen and (max-width:680px) {
@@ -873,7 +837,6 @@ footer {
         display: inline-block;
     }
 }
-
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
 
 @media screen and (max-width:680px) {
