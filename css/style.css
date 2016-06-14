@@ -32,7 +32,19 @@ body {
     }
 }
 /*up arrow styling*/
+
 /*skills re-design layout*/
+@media screen and (max-width: 549px){
+  #skills_larger_browser{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 550px){
+  #skills_smaller_browser{
+    display:none;
+  }
+}
 
 #skills_larger_browser {
     width: 100%;
