@@ -46,6 +46,11 @@ body {
   }
 }
 
+#skills_smaller_browser {
+    width: 100%;
+    background-color: #FFFCF9;
+}
+
 #skills_larger_browser {
     width: 100%;
     background-color: #FFFCF9;
