@@ -703,7 +703,10 @@ ul.navbar li.icon {
 }
 /* end of projects styling */
 /* contact styling */
-
+#email_style{
+  font-weight:bold;
+  color:#e1386c;
+}
 #contact {
     /*   box-shadow: 0px 4px 4px gray; */
     width: 100%;
