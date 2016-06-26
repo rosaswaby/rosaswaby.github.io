@@ -1,0 +1,901 @@
+body {
+    margin: 0;
+}
+#content {}
+/* up arrow styling */
+
+#up_arrow {
+    border-radius: 5px;
+    width: 0%;
+    background-color: lightgray;
+    opacity: .4;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#up_arrow:hover {
+    opacity: .7;
+}
+@media screen and (min-width:850px) {
+    #up_arrow {
+        width: 6.5%;
+    }
+}
+@media screen and (min-width:1000px) {
+    #up_arrow {
+        width: 6%;
+    }
+}
+@media screen and (min-width:1200px) {
+    #up_arrow {
+        width: 5%;
+    }
+}
+/*up arrow styling*/
+
+/*skills re-design layout*/
+@media screen and (max-width: 549px){
+  #skills_larger_browser{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 550px){
+  #skills_smaller_browser{
+    display:none;
+  }
+}
+
+#skills_smaller_browser {
+    width: 100%;
+    background-color: #FFFCF9;
+}
+
+#skills_larger_browser {
+    width: 100%;
+    background-color: #FFFCF9;
+    height: 500px;
+}
+.tabs_menu {
+    /*background-color: #FFFCF9;*/
+    padding-top: 1%;
+    width: 20%;
+    float: left;
+    padding-left: 4%;
+}
+ul.tabs {
+    padding: 0;
+}
+#tab1, #tab2, #tab3, #tab4 {
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    /*background-color: #FFFCF9;*/
+}
+ul.tabs li {
+    list-style-type: none;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    border-right: 2px solid gray;
+    font-size: 18px;
+}
+ul.tabs li:hover, ul.tabs li:active {
+    border-right: 5px solid #e1386c;
+    background-color:#9CE2DD;
+    opacity: .5;
+}
+#tab1_content, #tab2_content, #tab3_content, #tab4_content {
+    /*   background-color:red; */
+    height: auto;
+}
+/*-----------------------------------------------------*/
+
+hr.section_borders {
+    border-top: 3px double #9CE2DD;
+    margin: 0;
+}
+/* navigation bar styling */
+
+ul.navbar {
+    position: relative;
+    z-index: 100;
+    /*   box-shadow: 0px 4px 4px gray; */
+    opacity: 1;
+    background-color: #9CE2DD;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul.navbar li.logo {
+    list-style-type: none;
+    display: inline-block;
+}
+ul.navbar li.navbar_items {
+    list-style-type: none;
+    display: inline-block;
+}
+ul.navbar li a {
+    /*   styling */
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    /*   styling */
+    border-radius: 1px;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    transition: all .3s ease-in, padding 0.5s linear;
+    font-size: 15px;
+}
+ul.navbar li.navbar_items a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #e1386c;
+    /*     border-top-color: black;
+border-left-color: black;
+border-right-color: black; */
+    padding-bottom: 5px;
+}
+ul.navbar li.icon {
+    display: none;
+}
+.div_navbar_items {
+    float: right;
+}
+/* about me styling */
+
+#about_me {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: auto;
+    background-color: #FFFCF9;
+    overflow: hidden;
+}
+#about_me h2 {
+    color: #e1386c;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 22px;
+}
+#me {
+    float: left;
+    width: 30%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+}
+#about_me_text {
+    padding-top: 2%;
+    margin-right: 4%;
+    margin-left: 3%;
+}
+#about_me p {
+    color: black;
+    text-align: center;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 18px;
+}
+/* skills styling */
+
+.skills {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    height: auto;
+    /*background-color: #FFFCF9;*/
+    overflow: auto;
+}
+#skills{
+    background-color:#FFFCF9;
+    padding-top: 1%;
+}
+#skills h1 {
+    color: #e1386c;
+    font-weight: bold;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 22px;
+    text-align: center;
+}
+.skills h2 {
+    color: #8ccbc6;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.skill {
+    list-style: none;
+    font: 12px "Quicksand", Arial, Helvetica, Geneva, sans-serif;
+    width: 300px;
+    margin: 50px auto 0;
+    position: relative;
+    line-height: 2em;
+    padding: 0px 0;
+}
+.skill li {
+    margin-bottom: 50px;
+    background: #C5E2E0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#C5E2E0), to(#C5E2E0));
+    background-image: -webkit-linear-gradient(top, #C5E2E0, #C5E2E0);
+    background-image: -moz-linear-gradient(top, #C5E2E0, #C5E2E0);
+    background-image: -ms-linear-gradient(top, #C5E2E0, #C5E2E0);
+    background-image: -o-linear-gradient(top, #C5E2E0, #C5E2E0);
+    background-image: linear-gradient(top, #C5E2E0, #C5E2E0);
+    height: 20px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #C5E2E0;
+    -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #C5E2E0;
+    box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #C5E2E0;
+}
+.skill li h3 {
+    position: relative;
+    top: -25px;
+}
+.bar {
+    height: 18px;
+    margin: 1px 2px;
+    position: absolute;
+    border-radius: 10px;
+    -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+    -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+    box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+.java {
+    width: 80%;
+    -moz-animation: java 2s ease-out;
+    -webkit-animation: java 2s ease-out;
+    background-color: #e1386c;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c #e1386c);
+}
+.ds {
+    width: 70%;
+    -moz-animation: ds 2s ease-out;
+    -webkit-animation: ds 2s ease-out;
+    background-color: #f0bb4b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c);
+}
+.python {
+    width: 70%;
+    -moz-animation: python 2s ease-out;
+    -webkit-animation: python 2s ease-out;
+    background-color: #e1386c;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386cb, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386cb, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c);
+}
+.c {
+    width: 65%;
+    -moz-animation: c 2s ease-out;
+    -webkit-animation: c 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes java {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@-moz-keyframes ds {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@-moz-keyframes python {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@-moz-keyframes c {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 65%;
+    }
+}
+@-webkit-keyframes java {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@-webkit-keyframes ds {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@-webkit-keyframes python {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@-webkit-keyframes c {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 65%;
+    }
+}
+/* web developing styling */
+
+.html {
+    width: 90%;
+    -moz-animation: html 2s ease-out;
+    -webkit-animation: html 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes html {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes html {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.jquery {
+    width: 60%;
+    -moz-animation: jquery 2s ease-out;
+    -webkit-animation: jquery 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes jquery {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@-webkit-keyframes jquery {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+.mysql {
+    width: 70%;
+    -moz-animation: mysql 2s ease-out;
+    -webkit-animation: mysql 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes mysql {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@-webkit-keyframes mysql {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+.php {
+    width: 60%;
+    -moz-animation: php 2s ease-out;
+    -webkit-animation: php 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes php {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@-webkit-keyframes php {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+.mongodb {
+    width: 60%;
+    -moz-animation: mongodb 2s ease-out;
+    -webkit-animation: mongodb 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes mongodb {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@-webkit-keyframes mongodb {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+/* graphic design styling */
+
+.photoshop {
+    width: 90%;
+    -moz-animation: photoshop 2s ease-out;
+    -webkit-animation: photoshop 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes photoshop {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes photoshop {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.indesign {
+    width: 85%;
+    -moz-animation: indesign 2s ease-out;
+    -webkit-animation: indesign 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes indesign {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 85%;
+    }
+}
+@-webkit-keyframes indesign {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 85%;
+    }
+}
+/* miis. styling */
+
+.finalcut {
+    width: 90%;
+    -moz-animation: finalcut 2s ease-out;
+    -webkit-animation: finalcut 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes finalcut {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes finalcut {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.iphoto {
+    width: 90%;
+    -moz-animation: iphoto 2s ease-out;
+    -webkit-animation: iphoto 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes iphoto {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes iphoto {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.premiere {
+    width: 90%;
+    -moz-animation: premiere 2s ease-out;
+    -webkit-animation: premiere 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes premiere {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes premiere {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.autocad {
+    width: 65%;
+    -moz-animation: autocad 2s ease-out;
+    -webkit-animation: autocad 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1386c), to(#e1386c));
+    background-image: -webkit-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -moz-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -ms-linear-gradient(top, #e1386c, #e1386c);
+    background-image: -o-linear-gradient(top, #e1386c, #e1386c);
+    background-image: linear-gradient(top, #e1386c, #e1386c)
+}
+@-moz-keyframes autocad {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 65%;
+    }
+}
+@-webkit-keyframes autocad {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 65%;
+    }
+}
+/* projects section styling */
+
+#projects {
+    /*   box-shadow: 0px 4px 4px gray; */
+    width: 100%;
+    /*    temporary height: set to auto afterwards */
+    height: auto;
+    /*    temporary height */
+    padding-top: 1%;
+    background-color: #FFFCF9;
+    text-align: center;
+    overflow: auto;
+}
+#projects h2 {
+    color: #e1386c;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 22px;
+    padding-bottom: 2%;
+}
+#projects li {
+    list-style-type: none;
+}
+#projects img {
+    height: 65%;
+    width: 65%;
+    margin-bottom: 2%;
+}
+/* end of projects styling */
+/* contact styling */
+#email_style{
+  font-weight:bold;
+  color:#e1386c;
+}
+#contact {
+    /*   box-shadow: 0px 4px 4px gray; */
+    width: 100%;
+    /*    temporary height */
+    padding-top: 1%;
+    padding-bottom: 3%;
+    background-color: #FFFCF9;
+    text-align: center;
+    overflow: auto;
+}
+#contact h2 {
+    color: #e1386c;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 22px;
+}
+#contact p {
+    color: black;
+    text-align: center;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1em;
+    margin: 2%;
+}
+.social_media_icons {
+    margin-top: 6%;
+}
+.social_media_icons li {
+    list-style-type: none;
+}
+.social_media_icon {
+    display: inline-block;
+    width: 7%;
+    height: 7%;
+    float: left;
+    margin-left: 10%;
+}
+/* footer styling */
+
+footer {
+    background-color: #9CE2DD;
+    color: white;
+    font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
+    height: 30px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+}
+/* ------------------------------------------------------------- */
+/* Setting up for responsive-ness */
+
+@media screen and (max-width: 650px) {
+    #about_me_text {
+        clear: both;
+    }
+    #me {
+        float: none;
+        width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 750px) {
+    #about_me_text {
+        padding-top: 2%;
+    }
+    #about_me_text p {
+        font-size: 20px;
+    }
+    /*   editing length of skill bars */
+    .skill {
+        width: 500px;
+    }
+}
+/*fixing social media icons -------------------------*/
+
+@media screen and (max-width: 400px) {
+    .social_media_icon {
+        display: inline-block;
+        width: 10%;
+        height: 10%;
+        float: left;
+        margin-left: 7%;
+    }
+}
+@media screen and (min-width: 800px) {
+    .social_media_icon {
+        display: inline-block;
+        width: 6%;
+        height: 6%;
+        float: left;
+        margin-left: 11%;
+    }
+    #contact p {
+        font-size: 18px;
+    }
+}
+/*---------------------------------------------------------*/
+
+@media screen and (min-width: 960px) {
+    #about_me_text {
+        padding-top: 3%;
+    }
+    #about_me_text p {
+        font-size: 20px;
+    }
+    /*   editing length of skill bars */
+    .skill {
+        width: 600px;
+    }
+    /*   editing contact icons */
+    .social_media_icon {
+        display: inline-block;
+        width: 5%;
+        height: 5%;
+        float: left;
+        margin-left: 12%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #about_me_text {
+        padding-top: 4%;
+        margin-right: 6%;
+    }
+    #about_me_text p {
+        font-size: 22px;
+    }
+    #me {
+        margin-left: 8%;
+    }
+}
+/* fixing project section for bigger widths */
+
+@media screen and (min-width: 681px) {
+    #projects img {
+        height: auto;
+        width: 32%;
+        margin-bottom: 2%;
+        padding-left: 1%;
+        float: left;
+        overflow: auto;
+    }
+}
+/* responsive navigation bar: CSS */
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("logo"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:680px) {
+    ul.navbar li.navbar_items {
+        display: none;
+    }
+    ul.navbar li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
+
+@media screen and (max-width:680px) {
+    ul.navbar.responsive {
+        position: relative;
+    }
+    ul.navbar.responsive li.logo {
+        floatL: left;
+        display: block;
+    }
+    ul.navbar.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.navbar.responsive li.navbar_items {
+        float: none;
+        display: inline;
+    }
+    ul.navbar.responsive li.navbar_items a {
+        display: block;
+        text-align: left;
+    }
+    .div_navbar_items {
+        float: left;
+    }
+    ul.navbar.responsive li.navbar_items a {
+        /*     max width of the page */
+        width: 680px;
+        transition: background-color .7s ease-in;
+    }
+    ul.navbar.responsive li.navbar_items a:hover {
+        background-color: #e1386c;
+        padding: 14px 10px;
+    }
+    /* end of navgation bar styling */
