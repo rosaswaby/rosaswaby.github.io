@@ -833,12 +833,14 @@
       margin: 3%;
       width: 125px;
       display: inline-block;
+      -webkit-appearance: none;
     }
 
     #submit:hover,
     #reset:hover {
       border-color: #9CE2DD;
       background-color: #9CE2DD;
+      -webkit-appearance: none;
     }
 
     input[type=text]:focus,
