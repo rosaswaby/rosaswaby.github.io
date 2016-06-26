@@ -821,7 +821,7 @@
     }
     /* send and reset buttons styling for mobile */
 
-    input[type=submit],
+    #submit,
     #reset {
       background-color: #e1386c;
       padding: 2%;
@@ -835,7 +835,7 @@
       display: inline-block;
     }
 
-    input[type=submit]:hover,
+    #submit:hover,
     #reset:hover {
       border-color: #9CE2DD;
       background-color: #9CE2DD;
