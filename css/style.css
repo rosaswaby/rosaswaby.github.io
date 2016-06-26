@@ -1026,6 +1026,12 @@
         width: 200px;
       }
     }
+
+    @media screen and (min-width:1000px) {
+     .skill {
+       width: 500px;
+     }
+   }
     /* projects styling- responsive */
     /* fixing project section for bigger widths */
 
