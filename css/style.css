@@ -916,7 +916,7 @@
     footer {
         background-color: #9CE2DD;
         color: white;
-        font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
         text-align: center;
         height: 30px;
         padding-top: 1px;
@@ -967,6 +967,7 @@
         border-bottom-style: solid;
         border-bottom-color: #e1386c;
         transition: background-color .7s ease-in;
+        font-size: 12px;
       }
       ul.navbar.responsive li.navbar_items a:hover {
         background-color: #e1386c;
