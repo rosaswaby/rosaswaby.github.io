@@ -980,12 +980,12 @@
     /* responsive about me styling */
     @media screen and (max-width:650px){
       #me {
-        width: 60%;
+        width: 70%;
         margin: auto;
         display: block;
       }
     }
-    
+
     @media screen and (min-width:900px) {
       #me {
         margin-top: 1%;
