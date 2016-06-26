@@ -909,6 +909,10 @@
       text-align: center;
     }
 
+    #social_links a{
+      text-decoration: none;
+    }
+
     footer {
         background-color: #9CE2DD;
         color: white;
