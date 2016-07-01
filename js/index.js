@@ -7,6 +7,8 @@ function projects_hover(image) {
     image_src = image_src.split(".").pop();
     image_src = image_src + "_hover.png";
     image.src = new_src;
+    testing out switching images
+    alert(image.src);
 }
 
 function projects_mouseaway(image) {
@@ -14,6 +16,8 @@ function projects_mouseaway(image) {
     image_src = image_src.split("_hover").pop();
     image_src = image_src + ".png";
     image.src = new_src;
+    testing out switching images
+    alert(image.src);
 }
 
 // skills tab js
