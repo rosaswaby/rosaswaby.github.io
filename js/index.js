@@ -1,6 +1,20 @@
-
 function navBarFunction() {
     document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+}
+
+function projects_hover(image) {
+    var image_src = image.src;
+    image_src = image_src.split(".").pop();
+    image_src = image_src + "_hover.png";
+    image.src = new_src;
+}
+
+function projects_mouseaway(image) {
+    var image_src = image.src;
+    image_src = image_src.split("_hover").pop();
+    image_src = image_src + ".png";
+    image.src = new_src;
+
 }
 
 // skills tab js
