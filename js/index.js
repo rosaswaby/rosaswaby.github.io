@@ -5,7 +5,7 @@ function navBarFunction() {
 function projects_hover(project_image) {
     var project_image_src = project_image.src;
     // alert(project_image.src);
-    project_image_src =  project_image_src.split(".png").pop();
+    project_image_src =  project_image_src.split(".png").shift();
     var new_src = project_image_src + "_hover.png";
     project_image.src = new_src;
     // testing out switching images
@@ -15,7 +15,7 @@ function projects_hover(project_image) {
 function projects_mouseaway(project_image) {
   var project_image_src = project_image.src;
   // alert(project_image.src);
-  project_image_src =   project_image_src.split("_hover.png").pop();
+  project_image_src =   project_image_src.split("_hover.png").shift();
   var new_src = project_image_src + ".png";
   project_image.src = new_src;
   // testing out switching images
