@@ -2,22 +2,22 @@ function navBarFunction() {
     document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
 }
 
-function projects_hover(image) {
-    var image_src = image.src;
-    image_src = image_src.split(".").pop();
-    image_src = image_src + "_hover.png";
-    image.src = new_src;
+function projects_hover(project_image) {
+    var project_image_src = project_image.src;
+    project_image_src = project_image.src.split(".").pop();
+    var new_src = project_image_src + "_hover.png";
+    project_image.src = new_src;
     // testing out switching images
-    alert(image.src);
+    alert(project_image.src);
 }
 
-function projects_mouseaway(image) {
-    var image_src = image.src;
-    image_src = image_src.split("_hover").pop();
-    image_src = image_src + ".png";
-    image.src = new_src;
-    // testing out switching images
-    alert(image.src);
+function projects_mouseaway(project_image) {
+  var project_image_src = project_image.src;
+  project_image_src = project_image.src.split("_hover").pop();
+  var new_src = project_image_src + ".png";
+  project_image.src = new_src;
+  // testing out switching images
+  alert(project_image.src);
 }
 
 // skills tab js
