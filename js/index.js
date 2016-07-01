@@ -14,7 +14,6 @@ function projects_mouseaway(image) {
     image_src = image_src.split("_hover").pop();
     image_src = image_src + ".png";
     image.src = new_src;
-
 }
 
 // skills tab js
