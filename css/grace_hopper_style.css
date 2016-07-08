@@ -1,0 +1,38 @@
+/*styling for grace hopper page*/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+body {
+  margin: 0;
+  background-color: #fcebf0;
+}
+
+#content{
+  width:90%;
+  height: auto;
+  background-color: #FFFCF9;
+  margin:auto;
+  text-align:center;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+p, h1, h2, h3{
+  font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
+}
+
+h1{
+  color: #e1386c;
+  font-weight:bold;
+  text-decoration: underline;
+  margin:0;
+  padding-top: 3%;
+}
+
+p{
+  font-size: 20px;
+}
+
+a{
+  color: #e1386c;
+}
