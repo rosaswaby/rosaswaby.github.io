@@ -1029,6 +1029,8 @@
       #skills_smaller_browser {
         display: none;
       }
+      .skill li {
+        margin-bottom: 75px;
     }
 
     @media screen and (max-width:399px) {
