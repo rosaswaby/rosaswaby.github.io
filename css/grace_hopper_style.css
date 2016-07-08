@@ -37,6 +37,10 @@ a{
   color: #e1386c;
 }
 
+img{
+  width:70%;
+}
+
 .social_media_icons {
   margin-top: 6%;
 }
@@ -58,6 +62,8 @@ a{
 section #social_links {
   text-align: center;
   transform: translatez(0);
+  margin-bottom:0;
+  padding-bottom:5%;
 }
 
 section #social_links li {
@@ -110,4 +116,9 @@ footer {
     padding-top: 1px;
     padding-bottom: 15px;
     width: 100%;
+
+}
+
+footer p{
+  font-size:16px;
 }
