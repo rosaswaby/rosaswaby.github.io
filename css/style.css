@@ -110,7 +110,7 @@
       border-color: #e1386c;
       font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
       font-size: 17px;
-      font-weight: bold;
+      font-weight: bolder;
       margin: auto;
       margin-top: 3%;
       margin-bottom: 5%;
@@ -238,7 +238,7 @@
     /* skill bars */
 
     .skill li {
-      margin-bottom: 50px;
+      margin-bottom: 65px;
       background: #C5E2E0;
       background-image: -webkit-gradient(linear, left top, left bottom, from(#C5E2E0), to(#C5E2E0));
       background-image: -webkit-linear-gradient(top, #C5E2E0, #C5E2E0);
@@ -829,7 +829,7 @@
       border-color: #e1386c;
       font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
       font-size: 17px;
-      font-weight: bold;
+      font-weight: bolder;
       margin: 3%;
       width: 125px;
       display: inline-block;
@@ -969,7 +969,7 @@
         border-bottom-style: solid;
         border-bottom-color: #e1386c;
         transition: background-color .7s ease-in;
-        font-size: 12px;
+        font-size: 14px;
       }
       ul.navbar.responsive li.navbar_items a:hover {
         background-color: #e1386c;
