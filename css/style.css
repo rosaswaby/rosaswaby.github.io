@@ -754,7 +754,7 @@
 
     #projects img {
       height: 62%;
-      width: 62%;
+      width: 75%;
       margin-bottom: 5%;
     }
     /* contact styling */
@@ -1026,6 +1026,7 @@
       .skill li {
         margin-bottom: 75px;
     }
+  }
 
     @media screen and (max-width:399px) {
       .skill {
