@@ -123,6 +123,7 @@
     }
     
     #tumblr{
+        text-decoration:underline;
         color:black;
     }
     /* end of about me styling - mobile */
