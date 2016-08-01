@@ -121,6 +121,11 @@
       border-color: #9CE2DD;
       background-color: #9CE2DD;
     }
+    
+    #tumblr{
+        text-decoration:none
+        font-color:black;
+    }
     /* end of about me styling - mobile */
     /* skills styling */
 
