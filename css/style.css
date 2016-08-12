@@ -397,12 +397,12 @@ section #social_links li {
 }
 
 section #social_links li div {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   color: white;
   font-size: 2.5em;
   text-align: center;
-  line-height: 100px;
+  line-height: 85px;
   border: 4px solid #ff9bb4;
   background-color: #ff9bb4;
   transition: all 0.5s ease;
