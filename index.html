@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rosa Swaby</title>
+    <!-- for responsive website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--     nav bar -->
+        <div class="navbar">
+
+            <ul style="padding-left: 0px;">
+
+                <li class="logo"> <a href="#"> rosa swaby  </a> </li>
+
+                <section class="div_navbar_items">
+                    <li class="navbar_items"> <a href="#intro"> about me </a> </li>
+                    <li class="navbar_items"> <a href="#skills"> skills </a> </li>
+                    <li class="navbar_items"> <a href="#projects"> projects </a> </li>
+                    <li class="navbar_items"> <a href="#contact"> contact </a> </li>
+                </section>
+
+                <li class="icon">
+                    <a id="icon" href="#" onclick="navBarFunction()"> &#9776;</a>
+                </li>
+            </ul>
+        </div>
+        <!--         closing navbar  -->
+
+        <!-- closing div -->
+        <div id="intro">
+            <h1 class="styled_intro"> Hi! I'm Rosa! </h1>
+            <p> I am a rising junior at New York University, majoring in Computer Science and minoring in Web Programming & Applications. I have moved around a bit but I mainly grew up in good ole Georgia and I am currently living in NYC for school. I have
+                a passion for front-end web development, design and programming. Second to my passion for tech is definitely food and Game of Thrones, so if you want to check out a cool place to eat or chill and rant about GOT, <a href="#contact" class="links"> hit me up! </a>
+
+                <p> <a href="http://rosaswaby.tumblr.com/" class="links"> Here</a> I have a blog dedicated to the design work that I have done and <a href="#projects" class="links"> below</a> you can check out some of my projects. Thank you so much for checking
+                    out my website and dont't feel afraid to leave a message! (psst..I don't bite!). I hope you have a wonderful day! </p>
+
+        </div>
+        <!--       closing intro div -->
+
+        <!--     skills div -->
+        <div id="skills">
+
+            <h1 class="styled_intro"> Skills </h1>
+            <div class="skill_tabs">
+
+                <ul class="tabs" style="padding-left:0px">
+                    <li id="tab1" class="tab" onclick="activeTab('tab1')"> Programming </li>
+                    <li id="tab2" class="tab" onclick="activeTab('tab2')"> Web Dev </li>
+                    <li id="tab3" class="tab" onclick="activeTab('tab3')"> Design </li>
+                    <li id="tab4" class="tab" onclick="activeTab('tab4')"> Misc. </li>
+                </ul>
+
+                <div class="tab_content">
+                    <div id="tab1_content">
+                        <ul>
+                            <li> Data Structures </li>
+                            <li> Java </li>
+                            <li> Python </li>
+                            <li> C </li>
+                        </ul>
+                        <!--       closes tab 1 content -->
+                    </div>
+
+                    <div id="tab2_content">
+                        <ul>
+                            <li> HTML / CSS </li>
+                            <li> Javascript / JQuery </li>
+                            <li> MongoDB </li>
+                            <li> SQL </li>
+                            <li> PHP </li>
+                        </ul>
+                        <!--       closes tab 2 content -->
+                    </div>
+
+                    <div id="tab3_content">
+                        <ul>
+                            <li> Photoshop </li>
+                            <li> Illustrator </li>
+                            <li> InDesign </li>
+                        </ul>
+                        <!--       closes tab 3 content -->
+                    </div>
+
+                    <div id="tab4_content">
+                        <ul>
+                            <li> Final Cut Pro X </li>
+                            <li> Adobe Premiere </li>
+                            <li> AutoCAD </li>
+                        </ul>
+                        <!--       closes tab 4 content -->
+                    </div>
+
+                    <!--     closing tab content div -->
+                </div>
+
+            </div>
+            <!--   closing skill tabs div -->
+
+            <div class="skills_mobile">
+
+                <p> Programming </p>
+                <section class="skill_tab_mobile">
+                    <ul>
+                        <li> Data Structures </li>
+                        <li> Java </li>
+                        <li> Python </li>
+                        <li> C </li>
+                    </ul>
+                </section>
+                <p> Web Dev </p>
+                <section class="skill_tab_mobile">
+                    <ul>
+                        <li> HTML / CSS </li>
+                        <li> Javascript / JQuery </li>
+                        <li> MongoDB </li>
+                        <li> SQL </li>
+                        <li> PHP </li>
+                    </ul>
+                </section>
+                <p> Design </p>
+                <section class="skill_tab_mobile">
+                    <ul>
+                        <li> Photoshop </li>
+                        <li> Illustrator </li>
+                        <li> InDesign </li>
+                    </ul>
+                </section>
+                <p> Misc. </p>
+                <section class="skill_tab_mobile">
+                    <ul>
+                        <li> Final Cut Pro X </li>
+                        <li> AutoCAD </li>
+                        <li> Adobe Premiere </li>
+                    </ul>
+                </section>
+
+            </div>
+            <!--   closing skills mobile -->
+        </div>
+        <!--     closing skills div -->
+
+        <!--     projects div -->
+        <div id="projects">
+            <h1 class="styled_intro"> Projects </h1>
+            <ul id="projects_images" style="padding: 0;">
+                <li>
+                    <a target="blank" href= "documents/move_me.pdf"> <img onmouseover="projects_hover(this)" onmouseout = "projects_mouseaway(this)" src="images/move_me.png" id="project1"> </a>
+                </li>
+                <li>
+                    <a target="blank" href="documents/wireframe.pdf"> <img onmouseover="projects_hover(this)" onmouseout = "projects_mouseaway(this)" src="images/wireframe.png" id="project2"> </a>
+                </li>
+                <li>
+                    <a target="blank" href="http://rosaswaby.tumblr.com/search/logo"> <img onmouseover="projects_hover(this)" onmouseout = "projects_mouseaway(this)" src="images/logo_project.png" id="project3"> </a>
+                </li>
+                <li>
+                    <a target="blank" href="http://rosaswaby.tumblr.com/search/interface"> <img onmouseover="projects_hover(this)" onmouseout = "projects_mouseaway(this)" src="images/interface_project.png" id="project4"></a>
+                </li>
+                <li>
+                    <a target="blank" href="https://github.com/PaulineOC/FlawlessHacks"> <img onmouseover="projects_hover(this)" onmouseout = "projects_mouseaway(this)" src="images/nyu_albert.png" id="project5"> </a>
+                </li>
+                <li>
+                    <a target="blank" href="http://rosaswaby.tumblr.com/post/143878924070/video-capture-of-my-final-draft"> <img onmouseover="projects_hover(this)" onmouseout = "projects_mouseaway(this)" src="images/interface_website.png" id="project6"> </a>
+                </li>
+            </ul>
+            <div style="clear: both;"></div>
+        </div>
+        <!--     closing projects div -->
+
+        <!--     contact div -->
+        <div id="contact">
+            <h1 class="styled_intro"> Contact </h1>
+            <p> Thanks for checking out my page! Send me a message by filling out the form below or email me directly at <span style="font-weight:bold; color:#ff9bb4">  [rosa.swaby@nyu.edu] </span>. Bye!</p>
+            <!--         using formspree to host form -->
+            <form action="https://formspree.io/rosa.swaby@nyu.edu" method="POST">
+                <input type="text" name="name" value="name" onFocus="this.value=''">
+                <input type="email" name="_replyto" value="email" value="name" onFocus="this.value=''">
+                <textarea name="message" rows="4" cols="50" value="name" onFocus="this.value=''">message </textarea>
+                <input type="submit" value="send">
+                <input type="hidden" name="_next" value="rosaswaby.github.io" />
+            </form>
+
+            <section>
+                <ul id='social_links' style="padding-left:0">
+                    <li>
+                        <a target="blank" href = "https://www.facebook.com/rosa.swaby.7"><div class='entypo-facebook'></div></a>
+                        <span>Facebook</span>
+                    </li>
+                    <li>
+                        <a target="blank" href = "https://www.linkedin.com/in/rosaswaby"><div class='entypo-linkedin'></div></a>
+                        <span>LinkedIn</span>
+                    </li>
+                    <li>
+                        <a target="blank" href = "https://github.com/rosaswaby"><div class='entypo-github'></div></a>
+                        <span>Github</span>
+                    </li>
+                    <li>
+                        <a target="blank" href = "http://rosaswaby.tumblr.com/"><div class='entypo-tumblr'></div></a>
+                        <span>Tumblr</span>
+                    </li>
+                </ul>
+            </section>
+
+
+        </div>
+        <!--      closing contact div -->
+
+
+    </div>
+    <!--   closing container div -->
+</body>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+<script src="js/index.js"></script>
+
+</body>
+
+</html>

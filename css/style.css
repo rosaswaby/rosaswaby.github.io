@@ -1,0 +1,503 @@
+@import 'http://fonts.googleapis.com/css?family=Quicksand';
+
+/* pink color: #ff9bb4 */
+
+
+/* dark background-color:#17171e */
+
+body {
+  background-color: #17171e;
+}
+
+hr {
+  border: none;
+  border-top: medium double white;
+  color: #ff9bb4;
+  text-align: center;
+  font-family: Quicksand;
+}
+
+hr:after {
+  content: "RS";
+  font-family: Quicksand;
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+}
+
+.container {
+  /*
+  background-color: pink;
+  height:1500px; testing*/
+  margin: auto;
+  width: 85%;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
+  margin: auto;
+  background-color: #17171e;
+  /*border-bottom-style: solid;
+  border-bottom-color: #ff9bb4;
+  border-bottom-width: 1px;*/
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.navbar li.logo,
+.navbar li.navbar_items {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar li a {
+  font-family: Quicksand;
+  font-size: 1.05em;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.navbar li.navbar_items a:hover {
+  border-bottom-style: solid;
+  border-bottom-color:#ff9bb4;
+  /*   padding-bottom: 5px; */
+}
+
+.navbar li.icon {
+  display: none;
+}
+
+.div_navbar_items {
+  float: right;
+  padding-right: 1%;
+}
+
+
+/* ---------------intro styling-------------------------- */
+
+#intro {
+  position: relative;
+  text-align: center;
+  line-height: 180%;
+  max-width: 1400px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  font-family: Quicksand;
+}
+
+.styled_intro {
+  text-align: center;
+  font-family: "League-Gothic", Courier;
+  font-size: 50px;
+  color: white;
+  text-shadow: 4px 4px 0 rgba(255, 155, 180, 0.7);
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.links {
+  color: #ff9bb4;
+  border-bottom-style: solid;
+  border-bottom-color: #ff9bb4;
+  text-decoration:none;
+}
+
+.links:hover {
+  border-bottom-style: dashed;
+  border-bottom-color: #ff9bb4;
+}
+
+/* ---------------------skills styling------------------------- */
+
+@media screen and (max-width: 770px) {
+  .skill_tabs {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 771px) {
+  .skills_mobile {
+    display: none;
+  }
+}
+
+#skills{
+  height:auto;
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.skill_tabs {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tabs {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.tabs li {
+  color: white;
+  font-family: 'Quicksand';
+  border-top-left-radius: .6em;
+  border-top-right-radius: .6em;
+  display: inline-block;
+  padding: 4%;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.tabs li:hover {}
+
+.tab_content {
+  background: rgba(255, 155, 180, 0.4);
+  text-align: center;
+  margin: auto;
+  font-family: 'Quicksand';
+  font: 16px;
+  color: white;
+  padding: 3%;
+  border: thick solid #ff9bb4;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+
+#tab1_content ul,
+#tab2_content ul,
+#tab3_content ul,
+#tab4_content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#tab1_content li,
+#tab2_content li,
+#tab3_content li,
+#tab4_content li {
+  padding: 3%;
+  font-size: 18px;
+}
+
+
+/* skills mobile styling */
+
+.skills_mobile {
+  text-align: center;
+}
+
+.skills_mobile p {
+  font-size: 20px;
+  font-family: 'Quicksand';
+  color: white;
+  text-decoration:underline;
+}
+
+.skill_tab_mobile {
+  background: rgba(255, 155, 180, 0.4);
+  text-align: center;
+  margin: auto;
+  font-family: 'Quicksand';
+  color: white;
+  padding: 3%;
+  border: thick solid #ff9bb4;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 15%;
+
+}
+
+.skill_tab_mobile ul{
+    list-style: none;
+    padding-left:0;
+}
+
+.skill_tab_mobile li{
+  padding: 3%;
+  font-size: 18px;
+}
+
+/*-------------------------project styling--------------------*/
+#projects {
+  /*   box-shadow: 0px 4px 4px gray; */
+  width: 100%;
+  /*    temporary height: set to auto afterwards */
+  height: auto;
+  /*    temporary height */
+  text-align: center;
+  overflow: auto;
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+#projects h2 {
+  color: #e1386c;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Quicksand", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 22px;
+}
+
+#projects li {
+  list-style-type: none;
+}
+
+#projects img {
+  height: 65%;
+  width: 65%;
+  margin-bottom: 2%;
+}
+
+/*projects mobile styling*/
+
+@media screen and (min-width: 681px) {
+  #projects img {
+    height: auto;
+    width: 32%;
+    margin-bottom: 2%;
+    padding-left: 1%;
+    float: left;
+    overflow: auto;
+  }
+}
+
+/* -----------contact styling--------------------------- */
+
+#contact {
+  width: 100%;
+  padding-bottom: 3%;
+  text-align: center;
+  overflow: auto;
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+#contact p {
+  color: white;
+  text-align: center;
+  font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+input[type=text],
+input[type=email] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  border: 4px solid #ff9bb4;
+  background-color: #17171e;
+  border-radius: 4px;
+  font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
+  font-size: 17px;
+  color: white;
+}
+
+textarea {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 20px 15%;
+  box-sizing: border-box;
+  border: 4px solid #ff9bb4;
+  background-color: #17171e;
+  border-radius: 4px;
+  font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
+  font-size: 17px;
+  color: white;
+  display: block;
+}
+
+
+/* send and reset buttons styling for mobile */
+
+input[type=submit],
+#reset {
+  background-color: #17171e;
+  padding: 1%;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: #ff9bb4;
+  font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 3%;
+  width: 150px;
+  display: inline-block;
+  color: white;
+/*   border-style:dashed */
+}
+
+input[type=submit]:hover,
+#reset:hover {
+  border-color: #ff9bb4;
+  background-color: #ff9bb4;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  border: 4px dashed #ff9bb4;
+  outline: none;
+}
+
+
+/* social media icons -mobile styling */
+
+.social_media_icons {
+  margin-top: 6%;
+}
+
+.social_media_icons li {
+  list-style-type: none;
+}
+
+.social_media_icon {
+  float: left;
+  display: block;
+}
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+section #social_links {
+  text-align: center;
+  transform: translatez(0);
+}
+
+section #social_links li {
+  width: 100px;
+  height: 140px;
+  display: inline-block;
+  margin: 15px;
+  list-style: none;
+}
+
+section #social_links li div {
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-size: 3.4em;
+  text-align: center;
+  line-height: 120px;
+  border: 4px solid #ff9bb4;
+  background-color: #ff9bb4;
+  transition: all 0.5s ease;
+  border-radius: 100px;
+}
+
+section #social_links li div:hover {
+  transform: rotate(360deg);
+  border: 4px dashed #ff9bb4;
+  background-color: #17171e
+}
+
+section #social_links li span {
+  width: 105px;
+  height: 20px;
+  display: block;
+  padding: 15px 0px;
+  color: white;
+  font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
+  text-transform: lowercase;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* @media screen and (max-width:700px) {
+  section #social_links li div {
+    width: 60%;
+    height: 40%;
+  }
+  section #social_links li span {
+    display: none;
+  }
+  #social_links {
+    background-color:blue;
+    margin:auto;
+  }
+  section #social_links li {
+    margin: 0;
+    height: 150px;
+  }
+}
+ */
+
+/* responsive navigation bar: CSS */
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("navbar_name"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:875px) {
+  .navbar li.navbar_items {
+    display: none;
+  }
+  .navbar li.icon {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 19px;
+  }
+}
+
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
+
+@media screen and (max-width:875px) {
+  .navbar.responsive {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba( 255, 155, 180, .9);
+    transition: background-color .8s linear;
+  }
+  .navbar.responsive li.logo {
+    floatL: left;
+    display: block;
+  }
+  .navbar.responsive .div_navbar_items {
+    float: none;
+    padding-right: 0;
+  }
+  .navbar.responsive li.navbar_items {
+    display: block;
+    padding: 0px;
+  }
+  .navbar.responsive li.navbar_items a {
+    display: block;
+    text-align: center;
+    font-size: 1.8em;
+    /*     padding in the responsive nav bar menu */
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+
+  .navbar.responsive li.navbar_items a:hover{
+    border-bottom: transparent;
+    color:#17171e;
+    font-weight:bold;
+  }
+}
+
+
+/* end of navgation bar styling - responsive */
