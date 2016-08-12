@@ -385,6 +385,9 @@ section #social_links {
   transform: translatez(0);
 }
 
+#social_links a{
+  text-decoration:none;
+}
 section #social_links li {
   width: 100px;
   height: 140px;
