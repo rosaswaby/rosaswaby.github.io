@@ -291,14 +291,14 @@ p {
   text-align: center;
   overflow: auto;
   padding-top: 50px;
-  margin-top: -50px;
+  margin:auto;
 }
 
 #contact p {
   color: white;
   text-align: center;
   font-family: "Quicksand", "Century Gothic", Futura, Helvetica, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 input[type=text],
