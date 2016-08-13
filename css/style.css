@@ -209,9 +209,15 @@ p {
 
 .skills_mobile p {
   font-size: 20px;
-  font-family: 'Quicksand';
-  color: white;
-  text-decoration:underline;
+   font-family: 'Quicksand';
+   color: white;
+ /*   text-decoration:underline; */
+   background-color:#ff9bb4;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   width: 50%;
+   margin:auto;
+   padding:4%;
 }
 
 .skill_tab_mobile {
