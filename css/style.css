@@ -129,6 +129,9 @@ p {
   .skill_tabs {
     display: none;
   }
+  #skills h1{
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 771px) {
