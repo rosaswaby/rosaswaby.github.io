@@ -132,6 +132,10 @@ p {
   #skills h1{
     padding-bottom: 30px;
   }
+
+  #projects h1{
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 771px) {
