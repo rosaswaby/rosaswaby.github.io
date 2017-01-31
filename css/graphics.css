@@ -16,7 +16,7 @@ body {
   margin-top: 5%;
 }
 
-p, li{
+p, li, ul{
   color: white;
   font-size: 18px;
   font-family: Quicksand;
