@@ -3,6 +3,7 @@
 
 body {
   background-color: #17171e;
+  text-align:center;
 }
 
 .title {
@@ -18,10 +19,10 @@ body {
 
 p, li, ul{
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   font-family: Quicksand;
 }
 
 ul{
-  list-style-type: none;
+  list-style-type:circle;
 }
