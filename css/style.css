@@ -94,7 +94,7 @@ hr:after {
   margin: auto;
 }
 
-p, li {
+p{
   color: white;
   font-size: 18px;
   font-family: Quicksand;

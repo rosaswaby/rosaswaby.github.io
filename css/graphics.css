@@ -1,0 +1,27 @@
+/*styling for graphics page*/
+@import 'http://fonts.googleapis.com/css?family=Quicksand';
+
+body {
+  background-color: #17171e;
+}
+
+.title {
+  text-align: center;
+  font-family: "League-Gothic", Courier;
+  font-size: 3em;
+  line-height: 85%;
+  color: white;
+  text-shadow: 4px 4px 0 rgba(255, 155, 180, 0.7);
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+p, li{
+  color: white;
+  font-size: 18px;
+  font-family: Quicksand;
+}
+
+ul{
+  list-style-type: none;
+}
