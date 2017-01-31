@@ -25,4 +25,5 @@ p, li, ul{
 
 ul{
   list-style-type:circle;
+   display: inline-block;
 }
