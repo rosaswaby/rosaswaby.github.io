@@ -20,10 +20,13 @@
 
 ---------------------------------------------------------------------
 
+
 varying vec3 vPos;                               // Position in image
 uniform float uTime;                             // Time
 vec3 LDir = normalize(vec3(1.,-sin(uTime),.5));  // Light direction
-vec3 LDir2 = normalize(vec3(-1,-cos(uTime),.5));  // Light2 direction
+vec3 LDir2 = normalize(vec3(1,-cos(uTime),.5));  // Light2 direction
+vec3 LDir3 = normalize(vec3(-1,-cos(uTime),.5));  // Light2 direction
+
 
 
 // ray trace function
@@ -46,7 +49,7 @@ void main() {
 
    vec3 V = vec3(0.,0.,0.);                      // Ray origin
    vec3 W = normalize(vec3(vPos.xy, -3.));       // Ray direction
-   vec4 S = vec4(cos(uTime),sin(uTime),-5.,.5);  // Animate sphere
+   vec4 S = vec4(sin(uTime),cos(uTime),-5.,.3);  // Animate sphere
 
 
    // Sphere1
@@ -55,24 +58,57 @@ void main() {
       vec3 P = V + t.x * W;                      // Point on sphere
       vec3 N = normalize(P - S.xyz);             // Surface normal
       float brightness = max(0., dot(N, LDir));
-      brightness = mix(.1, brightness, .4);      // Diffuse surface
-      c = vec3(1.6,1.,8.) * brightness;
+      brightness = mix(.1, brightness, .1);      // Diffuse surface
+      c = vec3(1.,6.,3.) * brightness;
+      //c = vec3(1.,1.,1.) * brightness;
+      // added colored lights
+      c += vec3(0., cos(uTime), 3.);
+
    }
 
+
    // Sphere2
-   vec4 S2 = vec4(sin(uTime),cos(uTime),-5.,.5);  // Animate sphere
+   vec4 S2 = vec4(cos(uTime),sin(uTime),-5.,.3);  // Animate sphere
+
    vec2 t2 = raytraceSphere(V, W, S2);             // Ray trace sphere
    if (t2.x > 0.) {
       vec3 P2 = V + t2.x * W;                      // Point on sphere
       vec3 N2 = normalize(P2 - S2.xyz);             // Surface normal
       float brightness2 = max(0., dot(N2, LDir2));
-      brightness2 = mix(.1, brightness2, .4);      // Diffuse surface
-      c = vec3(2.,.2,2.) * brightness2;
+
+      brightness2 = mix(.1, brightness2, .1);      // Diffuse surface
+      c = vec3(3.,.2,2.) * brightness2;
+
+      //c = vec3(1.,1.,1.) * brightness2;
+
+      // added colored lights
+      c += vec3(sin(uTime), 0., .5);
+
    }
 
 
+   // Sphere 3
+   vec4 S3 = vec4(sin(uTime),sin(uTime),-5.,.3);  // Animate sphere
+
+   vec2 t3 = raytraceSphere(V, W, S3);             // Ray trace sphere
+   if (t3.x > 0.) {
+      vec3 P3 = V + t3.x * W;                      // Point on sphere
+      vec3 N3 = normalize(P3 - S3.xyz);             // Surface normal
+      float brightness3 = max(0., dot(N3, LDir3));
+
+      brightness3 = mix(.1, brightness3, .1);      // Diffuse surface
+      c = vec3(0.,2.,3.) * brightness3;
+
+      //c = vec3(1.,1.,1.) * brightness3;
+
+      // added colored lights
+      c += vec3(sin(uTime), 0., .5);
+
+   }
+
    gl_FragColor = vec4(sqrt(c), 1.);             // Final pixel color
 }
+
 
 </script>
 
