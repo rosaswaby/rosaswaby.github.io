@@ -137,7 +137,7 @@ function addTextEditor(fss, callback) {                      // Add a text edito
       ,    '<TD>'
       ,    '</TD>'
       ,    '<TD>'
-      ,        createIndexButtons()
+      // ,        createIndexButtons()
       ,    '</TD>'
       ,    '</TR>'
 
@@ -156,15 +156,15 @@ function addTextEditor(fss, callback) {                      // Add a text edito
 
       ,        '<tr>'
       ,        '<td width=100%>'
-      // ,            '<button id=prevButton style="color:black;background:black;border-style:none;outline-width:0">'
-      // ,                '<big><b><big>&larr;</big> PREV</b></big>'
-      // ,            '</button>'
+      ,            '<button id=prevButton style="color:black;background:black;border-style:none;outline-width:0">'
+      ,                '<big><b><big>&larr;</big> PREV</b></big>'
+      ,            '</button>'
 
       ,            '&nbsp;'
 
-      // ,            '<button id=nextButton style="color:black;background:' + accentColor(true) + ';border-style:none;outline-width:0">'
-      // ,                '<big><b>NEXT <big>&rarr;</big></b></big>'
-      // ,            '</button>'
+      ,            '<button id=nextButton style="color:black;background:' + accentColor(true) + ';border-style:none;outline-width:0">'
+      ,                '<big><b>NEXT <big>&rarr;</big></b></big>'
+      ,            '</button>'
       ,        '</td>'
       ,        '</tr>'
 
