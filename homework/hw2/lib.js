@@ -137,7 +137,7 @@ function addTextEditor(fss, callback) {                      // Add a text edito
       ,    '<TD>'
       ,    '</TD>'
       ,    '<TD>'
-      // ,        createIndexButtons()
+      ,        createIndexButtons()
       ,    '</TD>'
       ,    '</TR>'
 
