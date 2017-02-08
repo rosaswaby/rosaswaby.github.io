@@ -156,9 +156,9 @@ function addTextEditor(fss, callback) {                      // Add a text edito
 
       ,        '<tr>'
       ,        '<td width=100%>'
-      ,            '<button id=prevButton style="color:black;background:black;border-style:none;outline-width:0">'
-      ,                '<big><b><big>&larr;</big> PREV</b></big>'
-      ,            '</button>'
+      // ,            '<button id=prevButton style="color:black;background:black;border-style:none;outline-width:0">'
+      // ,                '<big><b><big>&larr;</big> PREV</b></big>'
+      // ,            '</button>'
 
       ,            '&nbsp;'
 
