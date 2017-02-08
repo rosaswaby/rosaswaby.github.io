@@ -12,7 +12,7 @@ function gl_start(canvas, vertexShader) {           // START WEBGL RUNNING IN A 
    fragmentShader = textArea.fss[1];
 
    setTimeout(function() {
-      try { 
+      try {
          canvas.gl = canvas.getContext('experimental-webgl');                 // Make sure WebGl is supported.
       } catch (e) { throw 'Sorry, your browser does not support WebGL.'; }
 
@@ -99,12 +99,12 @@ function setIndex(i) {
    highlightPattern = fss[index];
    textArea.setCode(fss[index + 1]);
    narrative.innerHTML = fss[index + 2];
-   prevButton.style.background = index == 0 ? 'black' : accentColor(true); 
+   prevButton.style.background = index == 0 ? 'black' : accentColor(true);
    nextButton.style.background = index == fss.length - 3 ? 'black' : accentColor(true);
    canvas1.setShaders(gl_vertexShader, fss[index + 1], fss[index + 2]);
    for (i = 0 ; i < fss.length ; i += 3)
       window['indexButton' + i].style.background = accentColor(i == index);
-}  
+}
 
 function accentColor(isTrue) { return isTrue ? '#aaddff' : '#006080'; }
 
@@ -162,9 +162,9 @@ function addTextEditor(fss, callback) {                      // Add a text edito
 
       ,            '&nbsp;'
 
-      ,            '<button id=nextButton style="color:black;background:' + accentColor(true) + ';border-style:none;outline-width:0">'
-      ,                '<big><b>NEXT <big>&rarr;</big></b></big>'
-      ,            '</button>'
+      // ,            '<button id=nextButton style="color:black;background:' + accentColor(true) + ';border-style:none;outline-width:0">'
+      // ,                '<big><b>NEXT <big>&rarr;</big></b></big>'
+      // ,            '</button>'
       ,        '</td>'
       ,        '</tr>'
 
@@ -231,4 +231,3 @@ function addTextEditor(fss, callback) {                      // Add a text edito
    textArea.setCode(code);
    textArea.onkeyup = callback;                                              // User-provided callback function on keystroke.
 }
-
