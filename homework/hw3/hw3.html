@@ -18,81 +18,56 @@
 <script id='fss_script' type='x-shader/x-fragment'>
 
 ---------------------------------------------------------------------
-varying vec3 vPos;                             // Position in image
-uniform float uTime;                           // Time
+varying vec3 vPos;                               // Position in image
+uniform float uTime;                             // Time
 
 vec2 raytraceSphere(vec3 V, vec3 W, vec4 S) {
    V -= S.xyz;
    float B = 2. * dot(V, W);
    float C = dot(V, V) - S.w * S.w;
    float discrim = B*B - 4.*C;
-   vec2 t = vec2(1000., 1000.);
-   if (discrim > 0.)
-      t = vec2(-B - discrim, -B + discrim) / 2.;
-   return t.x > 0. ? t : vec2(1000., 1000.);
-}
-
-vec3 reflection(vec3 L, vec3 N) {
-   return 2. * dot(N, L) * N - L;
-}
-
-vec3 backgroundColor(vec3 dir) {
-   float t = .5 - .5 * dir.y;
-   return mix(vec3(.2,.01,.01), vec3(.01,.01,.1), 1. - t * t);
+   return discrim < 0. ? vec2(1000., 1000.)
+                       : vec2(-B - discrim, -B + discrim) / 2.;
 }
 
 vec3 phong(vec3 N, vec3 E, vec3 A, vec3 D, vec4 S) {
-   vec3 c = A * backgroundColor(N);            // Ambient color
+   vec3 c = A;                                 // Ambient color
    for (int i = 0 ; i < uLDirs_length ; i++) { // Loop through lights
-      vec3  LDir = normalize(uLDirs[i]);
+      vec3 LDir = normalize(uLDirs[i]);
       float d = max(0., dot(N, LDir));           // Diffuse value
-      vec3  R = reflection(LDir, N);
+      vec3 R = 2. * dot(N, LDir) * N - LDir;     // Reflection dir
       float s = pow(max(0., dot(E, R)), S.a);    // Specular value
       c += uLColors[i] * (d * D + s * S.rgb * .1*S.a);
    }
    return c;
 }
 
-vec4 C;
-vec3 V, W, P, E, N;
+void main() {
+   vec3 c = vec3(.01,.01,.04);                   // Dark background
 
-bool raytrace() {
+   vec3 V = vec3(0.,0.,0.);                      // Ray origin
+   vec3 W = normalize(vec3(vPos.xy, -3.));       // Ray direction
+   vec3 E = -W;                                  // Direction to eye
    float distance = 1000.;
-   for (int i = 0 ; i < uSpheres_length ; i++) {
-      vec2 t = raytraceSphere(V, W, uSpheres[i]);
+   for (int i = 0 ; i < 2 ; i++) {
+      vec4 S = uSpheres[i];
+      vec2 t = raytraceSphere(V, W, S);             // Trace sphere
       if (t.x < distance) {
-         C = uSColors[i];
-         P = V + t.x * W;                      // Point on sphere
-         E = -normalize(P);                    // Direction to eye
-         N = normalize(P - uSpheres[i].xyz);   // Surface normal
          distance = t.x;
+         vec3 P = V + t.x * W;                      // Point on sphere
+         vec3 N = normalize(P - S.xyz);             // Surface normal
+	 c = phong(N, E, vec3(.01,.1,.01),
+	                 vec3(.05,.5,.05),
+			 vec4(.5,.5,.5,10.));
       }
    }
-   return distance < 1000.;
+
+   gl_FragColor = vec4(sqrt(c), 1.);             // Final pixel color
 }
 
-void main() {
-   vec3 c = vec3(0.,0.,0.);
-
-   V = vec3(0.,0.,0.);                         // Ray origin
-   W = normalize(vec3(vPos.xy, -3.));          // Ray direction
-   if (! raytrace())
-      c = backgroundColor(vPos);
-   else
-      for (int bounce = 0 ; bounce < 5 ; bounce++) {
-	 c += phong(N, E, .1*C.rgb, .5*C.rgb, C);
-	 V = P + .001 * W;
-	 W = reflection(-W, N);
-         if (! raytrace()) {
-            c += .05 * backgroundColor(W);
-	    break;
-         }
-      }
-
-   gl_FragColor = vec4(sqrt(c), 1.);           // Final pixel color
-}
 ---------------------------------------------------------------------
-Spheres reflect background, and make spheres metallic.
+Rosa Swaby - Graphics Homework3
+
 </script>
 
 <script>
