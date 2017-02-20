@@ -82,7 +82,7 @@ declareUniform('uLColors', 'vec3', 2);
 gl_start(canvas1, vs_script.innerHTML, function() {
    var s = .5 * Math.sin(2 * time);
    // sphere (x,y,z,radius)
-   setUniform('uSpheres', [-.5,.4,-4,.5, .5,.4,-4,.2, s,-.5,-4,.5]);
+   setUniform('uSpheres', [-.5,.2,-4,.4, .5,.4,-4,.3, s,-.5,-4,.5]);
    // uSpheres has 3 spheres?
    setUniform('uSColors', [1,.3,.3,2, .3,.3,1,6, 1,.7,0,10]);
    setUniform('uLDirs', [1,1,1, -1,-1,-1]);
