@@ -30,22 +30,21 @@ vec2 raytraceSphere(vec3 V, vec3 W, vec4 S) {
                        : vec2(-B - discrim, -B + discrim) / 2.;
 }
 
-vec3 phong(vec3 N, vec3 E, vec3 A, vec3 D, vec4 S) {
+vec3 phong(vec3 N, vec3 E, vec3 A, vec3 D, vec4 S, vec3 P) {
    vec3 c = A;                                 // Ambient color
    for (int i = 0 ; i < uLDirs_length ; i++) { // Loop through lights
-     // shadow ray: [ V' , W' ] = [ S + ε , Li ]
      // V' origin of the ray --> S surface point + (ε) slight margin
-     // W direction of the light source
+     // W direction of the light source --> light source (Li)
 
-      vec3 LDir = normalize(uLDirs[i]);
+    vec3 LDir = normalize(uLDirs[i]);
 
-      // form a shadow ray at each iteration
-      //vec2 shadowRay = (N + .01, LDir);           // Shadow Ray
+      //for each light source shoot a ray from the surface in the direction of that light source
+     // shadow ray: [ V' , W' ] = [ S + ε , Li ]
+     vec3 shadowRay = P;                           // Ray origin
 
-      // test that ray against every sphere in the scene
 
 
-      // if there is a hit - do not add diffuse or specular components
+      //if the ray hits another sphere, then don't add in the diffuse and specular reflection from that light.
 
       float d = max(0., dot(N, LDir));           // Diffuse value
       vec3 R = 2. * dot(N, LDir) * N - LDir;     // Reflection dir
@@ -71,7 +70,7 @@ void main() {
          vec3 N = normalize(P - S.xyz);             // Surface normal
          c = phong(N, E, vec3(.1,.1,.4),
      	                   vec3(.5,.5,.5),
-     			               vec4(.5,.5,.5,10.));
+     			               vec4(.5,.5,.5,10.),P);
       }
    }
 
