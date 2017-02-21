@@ -19,6 +19,8 @@
 
 ---------------------------------------------------------------------
 
+
+
 varying vec3 vPos;                               // Position in image
 uniform float uTime;                             // Time
 
@@ -31,38 +33,18 @@ vec2 raytraceSphere(vec3 V, vec3 W, vec4 S) {
                        : vec2(-B - discrim, -B + discrim) / 2.;
 }
 
-vec3 phong(vec3 N, vec3 E, vec3 A, vec3 D, vec4 S, vec3 P, vec4 sph) {
+vec3 phong(vec3 N, vec3 E, vec3 A, vec3 D, vec4 S, vec3 P) {
    vec3 c = A;                                 // Ambient color
    for (int i = 0 ; i < uLDirs_length ; i++) { // Loop through lights
-     // V' origin of the ray --> S surface point + (ε) slight margin
-     // W direction of the light source --> light source (Li)
 
       vec3 LDir = normalize(uLDirs[i]);
+      vec3 dir = uLDirs[i]- P;
+      vec3 P = P + 0.01;
 
-      //for each light source shoot a ray from the surface in the direction of that light source
-      // shadow ray: [ V' , W' ] = [ S + ε , Li ]
-      // find surface point on sphere
+      for (int j = 0 ; j < uSpheres_length; j++) {
 
-      vec3 V = vec3(0.,0.,0.);                         // Ray origin
-      vec3 W = normalize(vec3(vPos.xy, -1.));          // Ray direction
-
-      vec2 t = raytraceSphere(V, W, uSpheres[0]);             // Trace sphere
-
-      vec3 surfacePoint = V + t.x * W;                       // Point on sphere
-
-      // move off by a bit
-
-      for (int i = 0 ; i < uSpheres_length; i++) {
-
-       vec2 t2 = raytraceSphere(surfacePoint, LDir, uSpheres[i]);
-       if(t2.x < 1000.){
-
-    //if the ray hits another sphere, then don't add in the diffuse and specular reflection from that light.
-        float d = max(0., dot(N, LDir));           // Diffuse value
-        vec3 R = 2. * dot(N, LDir) * N - LDir;     // Reflection dir
-        c -= uLColors[i];
-       }
-       else{
+       vec2 t2 = raytraceSphere(P, LDir, uSpheres[j]);
+       if(t2.x == 1000.){
         float d = max(0., dot(N, LDir));           // Diffuse value
         vec3 R = 2. * dot(N, LDir) * N - LDir;     // Reflection dir
         float s = pow(max(0., dot(E, R)), S.a);    // Specular value
@@ -90,12 +72,14 @@ void main() {
          vec3 N = normalize(P - S.xyz);             // Surface normal
          c = phong(N, E, vec3(.1,.1,.4),
      	                   vec3(.5,.5,.5),
-     			               vec4(.5,.5,.5,10.),P, S);
+     			               vec4(.5,.5,.5,10.),P);
       }
    }
 
    gl_FragColor = vec4(sqrt(c), 1.);             // Final pixel color
 }
+
+
 
 
 ---------------------------------------------------------------------
@@ -116,7 +100,7 @@ declareUniform('uLColors', 'vec3', 2);
 gl_start(canvas1, vs_script.innerHTML, function() {
    var s = .5 * Math.sin(2 * time);
    // sphere (x,y,z,radius)
-   setUniform('uSpheres', [-.5,-.3,-4,.4, .5,.4,-4,.3, s,-.5,-4,.5]);
+   setUniform('uSpheres', [-.5,-.3,-4,.4, .5,.4,-4,.3);
    // uSpheres has 3 spheres?
    setUniform('uSColors', [1,.3,.3,2, .3,.3,1,6, 1,.7,0,10]);
    // sphere colors

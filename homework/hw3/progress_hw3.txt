@@ -1,4 +1,5 @@
 
+
 varying vec3 vPos;                               // Position in image
 uniform float uTime;                             // Time
 
@@ -23,35 +24,19 @@ vec3 phong(vec3 N, vec3 E, vec3 A, vec3 D, vec4 S, vec3 P, vec4 sph) {
       // shadow ray: [ V' , W' ] = [ S + ε , Li ]
       // find surface point on sphere
 
-      vec3 V = vec3(0.,0.,0.);                         // Ray origin
-      vec3 W = normalize(vec3(vPos.xy, -1.));          // Ray direction
+      for (int j = 0 ; j < uSpheres_length; j++) {
 
-      vec2 t = raytraceSphere(V, W, uSpheres[0]);             // Trace sphere
-
-      vec3 surfacePoint = V + t.x * W;                       // Point on sphere
-
-      // move off by a bit
-
-      for (int i = 0 ; i < uSpheres_length; i++) {
-
-             vec2 t2 = raytraceSphere(surfacePoint, LDir, uSpheres[i]);
-             if(t2.x < 1000.){
-
-          //if the ray hits another sphere, then don't add in the diffuse and specular reflection from that light.
-              float d = max(0., dot(N, LDir));           // Diffuse value
-              vec3 R = 2. * dot(N, LDir) * N - LDir;     // Reflection dir
-              c -= uLColors[i];
-            }
-             else{
-              float d = max(0., dot(N, LDir));           // Diffuse value
-              vec3 R = 2. * dot(N, LDir) * N - LDir;     // Reflection dir
-              float s = pow(max(0., dot(E, R)), S.a);    // Specular value
-              c += uLColors[i] * (d * D + s* S.rgb * .1*S.a);
-
-
-             }
+       vec2 t2 = raytraceSphere(P + .001 * LDir, LDir, uSpheres[j]);
+       if(t2.x < 1000.){
+        break;
+       }
+       if(t2.x == 1000.){
+        float d = max(0., dot(N, LDir));           // Diffuse value
+        vec3 R = 2. * dot(N, LDir) * N - LDir;     // Reflection dir
+        float s = pow(max(0., dot(E, R)), S.a);    // Specular value
+        c += uLColors[j] * (d * D + s* S.rgb * .1*S.a);
+       }
      }
-
 
    }
    return c;
