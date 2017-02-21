@@ -40,10 +40,10 @@ vec3 phong(vec3 N, vec3 E, vec3 A, vec3 D, vec4 S) {
       vec3 LDir = normalize(uLDirs[i]);
 
       // form a shadow ray at each iteration
-      vec2 shadowRay = [N + .01, LDir];           // Shadow Ray
+      vec2 shadowRay = (N + .01, LDir);           // Shadow Ray
 
       // test that ray against every sphere in the scene
-      
+
 
       // if there is a hit - do not add diffuse or specular components
 
