@@ -61,7 +61,7 @@ void main() {
    vec3 W = normalize(vec3(vPos.xy, -3.));       // Ray direction
    vec3 E = -W;                                  // Direction to eye
    float distance = 1000.;
-   for (int i = 0 ; i < 2 ; i++) {
+   for (int i = 0 ; i < 3 ; i++) {
       vec4 S = uSpheres[i];
       vec2 t = raytraceSphere(V, W, S);             // Trace sphere
       if (t.x < distance) {
