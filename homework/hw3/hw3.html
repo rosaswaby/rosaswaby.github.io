@@ -37,7 +37,7 @@ vec3 phong(vec3 P,vec3 N, vec3 E, vec3 A, vec3 D, vec4 S) {
    for (int i = 0 ; i < uLDirs_length; i++) { // Loop through lights
 
       vec3 LDir = normalize(uLDirs[i]);
-      for (int j = 0 ; j < uSpheres_length; j++) {
+      for (int j = 0 ; j < uSpheres_length -1 ; j++) {
        vec2 t2 = raytraceSphere(P + .001, LDir, uSpheres[j]);
        if(t2.x == 1000.){
         float d = max(0., dot(N, LDir));           // Diffuse value
