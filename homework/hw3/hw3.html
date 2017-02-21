@@ -69,7 +69,6 @@ void main() {
          vec3 P = V + t.x * W;                      // Point on sphere
          vec3 N = normalize(P - S.xyz);             // Surface normal
          vec4 C = uSColors[i];
-         //c = phong(P,N, E, .1*C.rgb, .5*C.rgb, vec4(.5,.5,.5,C.a));
          c = phong(P, N, E, vec3(.1,.1,.4),
     	                      vec3(.5,.5,.5),
     			                  vec4(.5,.5,.5,10.));
