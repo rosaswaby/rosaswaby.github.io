@@ -1,4 +1,8 @@
+
+
+<!-- Your homework assignment for this week, due before the start of class next Thursday, March 2, is to creatively apply noise() and turbulence() based textures. Have fun with this. See whether you can create fun and aesthetic patterns. Use sin() and cos() functions together with the noise() and turbulence() functions to create interesting effects. Apply the textures to different parts of the rendering process to get striking or unusual effects. Use color. -->
 <script src=lib5.js></script>
+
 <script src=noise_shader.js></script>
 
 <body bgcolor=black text=white>
@@ -19,6 +23,8 @@
 <script id='fss_script' type='x-shader/x-fragment'>
 
 ---------------------------------------------------------------------
+
+
 varying vec3 vPos;                             // Position in image
 uniform float uTime;                           // Time
 
@@ -55,26 +61,24 @@ vec2 raytraceSphere(vec3 V, vec3 W, Sphere S) {
 }
 
 vec3 backgroundColor(vec3 dir) {
-   float t = .5 - .5 * dir.y;
-   return mix(vec3(.2,.01,.01), vec3(.01,.01,.1), 1. - t * t);
+   float t = .0 - .6 * dir.y;
+   return mix(vec3(.7,.13,.2), vec3(.2,.01,.1), 1. - t * t);
+
 }
 
 vec3 phong(vec3 P, vec3 N, vec3 E, Material C) {
    vec3 c = C.ambient * backgroundColor(N);            // Ambient color
    for (int i = 0 ; i < NLIGHTS ; i++) { // Loop through lights
+      vec3 rand = vec3(5.,5.,5.);
+      float r = noise(rand);
       vec3 L = normalize(uLights[i].direction);
       vec2 t;
-      for (int j = 0 ; j < NSPHERES ; j++) {           // Loop through spheres.
-         t = raytraceSphere(P+.001*L, L, uSpheres[j]); // If any casts a shadow
-         if (t.x < 1000.)                              // then stop looping.
-            break;
-      }
-      if (t.x == 1000.) {                              // If not in shadow:
-         float d = max(0., dot(N, L));                     // Diffuse value
-         vec3  R = reflect(-L, N);
-         float s = pow(max(0., dot(E, R)), C.power);       // Specular value
-         c += uLights[i].color * (d * C.diffuse + s * C.specular * .1*C.power);
-      }
+      float d = max(0., dot(N, L));                     // Diffuse value
+      vec3  R = reflect(-L, N);
+      float s = pow(max(0., dot(E, R)), C.power);       // Specular value
+      c *= 1.5 + r * tan(7. * vec3(1.,2.,1.)) * turbulence(vec3(.4, 7., 5. * uTime));
+
+
    }
    return c;
 }
@@ -105,7 +109,7 @@ void main() {
    if (! raytrace())
       c = backgroundColor(vPos);
    else
-      for (int bounce = 0 ; bounce < 5 ; bounce++) {
+      for (int bounce = 0 ; bounce < 1 ; bounce++) {
          float attenuation = pow(0.6, float(bounce + 1));
          c += attenuation * phong(P, N, E, C);
          c += .5 * attenuation * backgroundColor(W);
@@ -118,7 +122,6 @@ void main() {
    gl_FragColor = vec4(sqrt(c), 1.);           // Final pixel color
 }
 ---------------------------------------------------------------------
-Many differently colored light sources.
 </script>
 
 <script>
