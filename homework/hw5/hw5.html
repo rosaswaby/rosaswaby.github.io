@@ -1,0 +1,33 @@
+<!-- CanvasRenderingContext2D -->
+
+<table>
+
+<tr>
+<td><canvas id=canvas1 width=800 height=800></td>
+<td width=50></td>
+<td>
+<!-- put text here -->
+</td>
+</tr>
+
+<!-- close table tags -->
+</table>
+
+<script src=drawlib1.js></script>
+<script>
+   canvas1.update = function(g) {
+     g.lineWidth = 5;
+
+     g.fillStyle = 'rgb(255,128,100)';
+
+     g.beginPath();
+     g.moveTo(0, 0);
+     g.lineTo(this.width, 0);
+     g.lineTo(this.width, this.height);
+     g.lineTo(0, this.height);
+     g.lineTo(0, 0);
+     g.stroke();
+
+   }
+   draw2DCanvases([ canvas1 ]);
+</script>
