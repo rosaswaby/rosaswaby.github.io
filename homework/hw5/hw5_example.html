@@ -22,7 +22,7 @@ Hi, I am a bird who has had its morning espresso.
 <script>
    canvas1.update = function(g) {
       var blue = 128 + Math.floor(128 * Math.sin(10 * time));
-      blue = 0;
+      //blue = 0;
 
       g.fillStyle = 'rgb(255,128,' + blue + ')';
       g.lineWidth = 20;
@@ -36,6 +36,7 @@ Hi, I am a bird who has had its morning espresso.
       g.lineTo(0, this.height);
       g.lineTo(0, 0);
       g.stroke();
+      g.fill();
 
       g.beginPath();
 
@@ -94,5 +95,5 @@ Hi, I am a bird who has had its morning espresso.
       g.stroke();
    }
 
-   draw2DCanvases([ canvas1, canvas2 ]);
+   draw2DCanvases([ canvas1]);
 </script>

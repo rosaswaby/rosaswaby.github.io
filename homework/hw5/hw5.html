@@ -3,7 +3,7 @@
 <table>
 
 <tr>
-<td><canvas id=canvas1 width=800 height=800></td>
+<td><canvas id=canvas1 width=600 height=600></td>
 <td width=50></td>
 <td>
 <!-- put text here -->
@@ -18,7 +18,9 @@
    canvas1.update = function(g) {
      g.lineWidth = 5;
 
-     g.fillStyle = 'rgb(255,128,100)';
+// background
+     g.fillStyle = 'rgb(242, 219, 1)';
+     g.strokeStyle = 'rgb(242, 219, 1)';
 
      g.beginPath();
      g.moveTo(0, 0);
@@ -26,7 +28,265 @@
      g.lineTo(this.width, this.height);
      g.lineTo(0, this.height);
      g.lineTo(0, 0);
+
      g.stroke();
+     g.fill();
+//  end of background
+
+   // hair at back of neck
+
+    g.strokeStyle = 'rgb(248, 185, 44)';
+    g.fillStyle = 'rgb(248, 185, 44)';
+    //g.lineWidth = ;
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(300, 480, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    g.stroke();
+    g.fill();
+
+
+
+        // -----------------**************-------------------------------------------------
+
+        //  START hair - 1
+          var blue = 99 + Math.floor(128 * Math.sin(10 * time));
+          g.fillStyle = 'rgb(82, 80,' + blue + ')';
+
+          g.strokeStyle = 'rgb(82, 80, 199)';
+          //g.fillStyle = 'rgb(82, 80, 199)';
+          //g.lineWidth = ;
+
+          g.beginPath();
+          // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+          g.ellipse(110, 430, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+          //g.stroke();
+          g.fill();
+
+          // -2
+          g.strokeStyle = 'rgb(252, 68, 63)';
+          g.fillStyle = 'rgb(252, 68, 63)';
+          //g.lineWidth = ;
+
+          g.beginPath();
+          // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+          g.ellipse(110, 300, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+          g.stroke();
+          g.fill();
+
+          // -3
+          var blue = 90 + Math.floor(128 * Math.sin(15 * time));
+          g.fillStyle = 'rgb(247, 169,' + blue + ')';
+
+          g.strokeStyle = 'rgb(247, 169, 90)';
+          //g.fillStyle = 'rgb(247, 169, 90)';
+          //g.lineWidth = ;
+
+          g.beginPath();
+          // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+          g.ellipse(200, 200, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+          //g.stroke();
+          g.fill();
+
+          // -4
+          g.strokeStyle = 'rgb(190, 130, 209)';
+          g.fillStyle = 'rgb(190, 130, 209)';
+          //g.lineWidth = ;
+
+          g.beginPath();
+          // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+          g.ellipse(390, 200, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+          g.stroke();
+          g.fill();
+
+
+        // --- repeat on the other side
+
+        //  hair
+
+        // -2
+         var blue = 170 + Math.floor(128 * Math.sin(20 * time));
+         g.fillStyle = 'rgb(221, 114,' + blue + ')';
+         //g.strokeStyle = 'rgb(221, 114, 170)';
+         //g.fillStyle = 'rgb(221, 114, 170)';
+          //g.lineWidth = ;
+
+          g.beginPath();
+          // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+          g.ellipse(480, 430, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+          //g.stroke();
+          g.fill();
+
+          // -1
+          g.strokeStyle = 'rgb(146, 224, 112)';
+          g.fillStyle = 'rgb(146, 224, 112)';
+          //g.lineWidth = ;
+
+          g.beginPath();
+          // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+          g.ellipse(480, 320, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+          g.stroke();
+          g.fill();
+
+
+
+// -------------------------------------
+
+  //  START hair - 1
+    g.strokeStyle = 'rgb(221, 114, 170)';
+    g.fillStyle = 'rgb(221, 114, 170)';
+    //g.lineWidth = ;
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(170, 460, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    g.stroke();
+    g.fill();
+
+    // -2
+    var blue = 159 + Math.floor(128 * Math.sin(17 * time));
+    g.fillStyle = 'rgb(190, 130,' + blue + ')';
+
+    g.strokeStyle = 'rgb(190, 130, 209)';
+    //g.fillStyle = 'rgb(190, 130, 209)';
+    //g.lineWidth = ;
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(150, 370, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    //g.stroke();
+    g.fill();
+
+    // -3
+    g.strokeStyle = 'rgb(146, 224, 112)';
+    g.fillStyle = 'rgb(146, 224, 112)';
+    //g.lineWidth = ;
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(220, 270, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    g.stroke();
+    g.fill();
+
+    // -4
+    var blue = 199 + Math.floor(128 * Math.sin(12 * time));
+    g.fillStyle = 'rgb(162, 80,' + blue + ')';
+
+    g.strokeStyle = 'rgb(82, 80, 199)';
+    //g.fillStyle = 'rgb(82, 80, 199)';
+    //g.lineWidth = ;
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(350, 270, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    //g.stroke();
+    g.fill();
+
+
+  // --- repeat on the other side
+
+  //  hair - 1
+    g.strokeStyle = 'rgb(247, 169, 90)';
+    g.fillStyle = 'rgb(247, 169, 90)';
+    //g.lineWidth = ;
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(430, 460, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    g.stroke();
+    g.fill();
+
+    // -2
+    g.strokeStyle = 'rgb(252, 68, 63)';
+    g.fillStyle = 'rgb(252, 68, 63)';
+    //g.lineWidth = ;
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(420, 370, 100, 100, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    g.stroke();
+    g.fill();
+
+    // end of first layer of hair
+
+
+    // head
+    g.filter = 'blur(0px)';
+    g.strokeStyle = 'rgb(198, 161, 122)';
+    g.fillStyle = 'rgb(198, 161, 122)';
+    //g.lineWidth = ;
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(300, 400, 110, 120, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    g.stroke();
+    g.fill();
+
+    // neck
+    g.strokeStyle = 'rgb(0, 0, 0)';
+    g.fillStyle = 'rgb(198, 161, 122)';
+    g.lineWidth = 1;
+    // void ctx.rect(x, y, width, height);
+    g.rect(260, 450, 80, 200);
+    g.fill();
+
+    //lips (upper)
+    g.strokeStyle = 'rgb(202, 38, 32)';
+    g.fillStyle = 'rgb(202, 38, 32)';
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(300, 465, 20, 10, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    g.stroke();
+    g.fill();
+
+    //lips (upper)
+    g.strokeStyle = 'rgb(202, 38, 32)';
+    g.fillStyle = 'rgb(202, 38, 32)';
+
+    g.beginPath();
+    // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+    g.ellipse(300, 475, 25, 11, 0 * Math.PI/180, 0, 2 * Math.PI);
+
+    g.stroke();
+    g.fill();
+
+    // eyes (closed) - 1
+    // void ctx.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+    g.strokeStyle = 'rgb(0, 0, 0)';
+    g.lineWidth = 3;
+
+    g.beginPath();
+    g.arc(250, 380, 20, 2 * Math.PI, 3 * Math.PI, false);
+    g.stroke();
+
+    // eyes (closed) - 2
+    // void ctx.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+    g.strokeStyle = 'rgb(0, 0, 0)';
+    g.lineWidth = 3;
+
+    g.beginPath();
+    g.arc(350, 380, 20, 2 * Math.PI, 3 * Math.PI, false);
+    g.stroke();
+
+
+
+
 
    }
    draw2DCanvases([ canvas1 ]);
