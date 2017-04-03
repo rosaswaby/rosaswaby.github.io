@@ -5,7 +5,7 @@
 
 var M = {};
 
-M._stack = [];
+M.stack = [];
 
 //////////////////////////////////////////////////////////////////////////////
 // Your task is to implement the following methods of object M:
@@ -31,25 +31,53 @@ M.translate = function(m, v)       {           } // Modify m, translating by v[0
 
 // init matrix
 M.identity = function(m){
- return [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0];
+  var id_matrix = [1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1];
+  //sets m values to identity values
+  for (i=0; i<16; i++){
+    m[i]=id_matrix[i];
+  }
 }
 
 // from notes
 M.restore = function(m) {
-   var i, _m = M._stack.pop();       // POP THE COPY OFF THE STACK
+   var i, _m = M.stack.pop();       // POP THE COPY OFF THE STACK
    for (i = 0 ; i < m.length ; i++)  // COPY ITS VALUES INTO MATRIX
       m[i] = _m[i];
 }
 
 M.rotateX = function(m,radians){
+  var rotateX =[
+    1,0,0,0,
+    0,Math.cos(radians),-Math.sin(radians),0,
+    0,Math.sin(radians),Math.cos(radians),0,
+    0,0,0,1
+  ];
 
+  M.matrixMultiply(m,rotateX,m);
 }
 
 M.rotateY = function(m,radians){
+  var rotateY=
+  [
+    Math.cos(radians),0,Math.sin(radians),0,
+    0,1,0,0,
+    -Math.sin(radians),0,Math.cos(radians),0,
+    0,0,0,1
+  ];
 
+  M.matrixMultiply(m,rotateY,m);
 }
 
 M.rotateZ = function(m,radians){
+  var rotateZ=
+  [
+    Math.cos(radians),-Math.sin(radians),0,0,
+    Math.sin(radians),Math.cos(radians),0,0,
+    0,0,1,0,
+    0,0,0,1
+  ];
+
+  M.matrixMultiply(m,rotateZ,m);
 
 }
 
@@ -59,11 +87,28 @@ M.save = function(m) {
    var i, _m = [];
    for (i = 0 ; i < m.length ; i++)
       _m.push(m[i]);                 // MAKE A COPY OF MATRIX
-   M._stack.push(_m);                // PUSH IT ONTO THE STACK
+   M.stack.push(_m);                // PUSH IT ONTO THE STACK
 }
 
 M.scale = function(m,v){
+  var x,y,z;
+  if (v instanceof Array) {
+    x = v[0];
+    y = v[1];
+    z = v[2];
+  }
+  else{
+    x = y = z = v;
+  }
+  var scale=
+  [
+    x,0,0,0,
+    0,y,0,0,
+    0,0,z,0,
+    0,0,0,1
+  ];
 
+  M.matrixMultiply(m,scale,m);
 }
 
 M.translate = function(m, v) {
