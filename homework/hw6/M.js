@@ -46,7 +46,8 @@ M.restore = function(m) {
 }
 
 M.rotateX = function(m,radians){
-  var rotateX =[
+  var rotateX =
+  [
     1,0,0,0,
     0,Math.cos(radians),-Math.sin(radians),0,
     0,Math.sin(radians),Math.cos(radians),0,
@@ -84,7 +85,8 @@ M.rotateZ = function(m,radians){
 // from notes
 M.save = function(m) {
   // tmp variables
-   var i, _m = [];
+   var i;
+   var _m = [];
    for (i = 0 ; i < m.length ; i++)
       _m.push(m[i]);                 // MAKE A COPY OF MATRIX
    M.stack.push(_m);                // PUSH IT ONTO THE STACK
