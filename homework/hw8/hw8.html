@@ -1,4 +1,6 @@
 
+<!-- Your homework, due before the start of class on Thursday April 6, is to extend what I implemented in class into a way of drawing multiple multi-spline curves (my example shows only a single multi-spline curve).   -->
+
 <table>
 
 <tr>
@@ -6,7 +8,7 @@
 <td width=50></td>
 <td valign=top>
 <big><b>
-Example of Hermite curve.
+Rosa Swaby: Homework 8
 </b></big>
 </td>
 </tr>
@@ -20,8 +22,10 @@ Example of Hermite curve.
 
    var m = [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0];
 
+   // hermite matrix
    var Hermite = [ 2,-3,0,1,  -2,3,0,0,  1,-2,1,0,  1,-1,0,0 ];
 
+   // cubic function
    function cubic(A, t) { return A[0] * t*t*t + A[1] * t*t + A[2] * t + A[3]; }
 
    canvas1.update = function(g) {
@@ -39,39 +43,111 @@ Example of Hermite curve.
       g.lineTo(0,0);
       g.stroke();
 
+      // position
       var P = [
-                [ -.5, -.5,  0],
-                [  .5,  .5, .5],
-		[  .5, -.5,  0],
+
+                // petal 1
+                [ 0, 0,  0],
+                [  1,  0, 0],
+		            [  0, 0,  0],
+
+                // petal 2
+                [ 0, 0,  0],
+                [  1,  .2, .2],
+		            [  0, 0,  0],
+
+                // petal3
+                [ 0, 0,  0],
+                [  -1,  -.4, 0],
+		            [  0, 0,  0],
+
+                // petal4
+                [ 0, 0,  0],
+                [  -1.2,  -.1, 0],
+		            [  0, 0,  0],
+
+                // petal5
+                [ .1, 0,  0],
+                [  -.2,  -.55, 0],
+                [  0.1, 0,  0],
+
+                // petal6
+                [ -.1, 0,  0],
+                [  -.1,  .4, 0],
+                [ -.1, 0,  0],
+
+                // petal7
+                // petal8
+                [ 0, 0,  0],
+                [  1,  -.2, 0],
+                [  0, 0,  0],
+                // petal9
+
+
 	      ];
+
+      // rate
       var R = [
                 [   1,   0,  0],
-                [   0,   1,  Math.sin(time)],
-		[   1,   0,  0],
+                [   0,   1,  0],
+		            [   1,   0,  0],
+
+                [   1,   0,  0],
+                [   0,   1,  0],
+                [   1,   0,  0],
+
+                [   1,   0,  0],
+                [   0,   1,  0],
+                [   1,   0,  0],
+
+                [   1,   0,  0],
+                [   0,   1,  0],
+                [   1,   0,  0],
+
+                [   1,   0,  0],
+                [   0,   1,  0],
+                [   1,   0,  0],
+
+                [   1,   0,  0],
+                [   0,   1,  0],
+                [   1,   0,  0],
+
+                [   1,   0,  0],
+                [   0,   1,  0],
+                [   1,   0,  0],
+
+
+
               ];
+
 
       M.identity(m);
       M.save(m);
 
-         M.rotateY(m, Math.PI/4);
+      M.rotateY(m, Math.PI/4);
 
-         var curves = [];
+      // curves array
+      var curves = [];
 
-         for (var n = 0 ; n < P.length-1 ; n++) {
-            var X = M.transform(Hermite, [ P[n][0], P[n+1][0], R[n][0], R[n+1][0] ]);
-            var Y = M.transform(Hermite, [ P[n][1], P[n+1][1], R[n][1], R[n+1][1] ]);
-            var Z = M.transform(Hermite, [ P[n][2], P[n+1][2], R[n][2], R[n+1][2] ]);
+      for (var n = 0 ; n < P.length-1 ; n++) {
+          var X = M.transform(Hermite, [ P[n][0], P[n+1][0], R[n][0], R[n+1][0] ]);
+          var Y = M.transform(Hermite, [ P[n][1], P[n+1][1], R[n][1], R[n+1][1] ]);
+          var Z = M.transform(Hermite, [ P[n][2], P[n+1][2], R[n][2], R[n+1][2] ]);
 
-            var curve = [];
-            for (var t = 0 ; t < 1.0001 ; t += 1/20)
-               curve.push( [ cubic(X, t), cubic(Y, t), cubic(Z, t) ] );
-            curves.push(curve);
-         }
 
-         this.drawCurves(m, curves );
+          var curve = [];
+          for (var t = 0 ; t < 1.0001 ; t += 1/20) {
+             curve.push( [ cubic(X, t), cubic(Y, t), cubic(Z, t) ] );
+             curves.push(curve);
+          }
+      }
+
+      // draw cruves
+      this.drawCurves(m, curves);
 
       M.restore(m);
-   }
+
+   }// end of canvas update
 
    drawCanvases([canvas1]);
 </script>
