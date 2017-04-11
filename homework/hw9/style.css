@@ -14,7 +14,7 @@ h3 {
   color:#c33776;
 }
 
-p {
+p, ul {
   font-size: 15px;
   font-family: 'News Cycle', sans-serif;
 }
