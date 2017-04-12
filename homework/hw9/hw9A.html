@@ -10,15 +10,7 @@
 <p> Rosa Swaby: Homework 9 </p>
 
 <ul>
-<li>Click midpoint between two key points to insert a new key point.
-<li>Click on a key point to delete it.
-<li>Toggle between open and closed curve.
-<li>Toggle curve appearance: stroke or fill or both in different colors.
-<li>Toggle key points between visible and invisible.
-<li>Support multiple curves.
-<li>Use multiple bsplines to create your own font.
-<li>Build a font designer.
-<li>Use multiple bsplines to make an animated face.
+  <li>Click on a key point to delete it.
 </ul>
 
 </td>
@@ -53,8 +45,8 @@
              [  .8, -.5,  0],
            ];
 
-   var fill_num = 2;
-   var fill_bool = true;
+  //  var fill_num = 2;
+  //  var fill_bool = true;
 
    canvas1.update = function(g) {
       g.lineCap = 'round';
@@ -100,25 +92,25 @@
                      // here I know that the keypoint has been clicked
                      // n = number of the point
                      // DELETE THE KEYPOINT
-                     //P.splice(n,n);
-                     
+                     P.splice(n,n);
+
                      // filling in circle
                      // odd
-                     if(fill_num % 2 == 1){
-                       console.log(fill_num);
-                       console.log("odd");
-                       fill_bool = false;
-                       fill_num++;
-                     }
-
-                     else if(fill_num % 2 == 0){
-                       console.log(fill_num);
-                       console.log("even");
-                       fill_bool = true;
-                       fill_num++;
-
-                     }
-                     break;
+                    //  if(fill_num % 2 == 1){
+                    //    console.log(fill_num);
+                    //    console.log("odd");
+                    //    fill_bool = false;
+                    //    fill_num++;
+                    //  }
+                     //
+                    //  else if(fill_num % 2 == 0){
+                    //    console.log(fill_num);
+                    //    console.log("even");
+                    //    fill_bool = true;
+                    //    fill_num++;
+                     //
+                    //  }
+                    //  break;
                   }
                    // keypoint was not selected or the cursor is not near
                    // add keypoint to P array
@@ -160,12 +152,7 @@
          g.strokeStyle = '#bb96ff';
          g.fillStyle = '#E5DAF9';
 
-         if(fill_bool == true){
-           this.drawCurves(m, [ curve ], true); // Set isFill flag to true.
-         }
-         else{
-           this.drawCurves(m, [ curve ], false); // Set isFill flag to false
-         }
+         this.drawCurves(m, [ curve ], true); // Set isFill flag to true.
 
 
 	 // Draw the key points as small disks.
