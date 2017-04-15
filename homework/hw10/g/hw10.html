@@ -1,3 +1,8 @@
+<!-- Your homework:
+
+(1) Starting with the code in subfolder g, change this boring geometry into a more interesting one.
+(2) Now that you have the surface normal, add Phong shading into the fragment shader. -->
+
 <script src=M.js></script>
 <script src=lib2g.js></script>
 
@@ -14,13 +19,6 @@
    void main() {
       vec4 pos = matrix * vec4(aPos, 1.);
       vec4 nor = vec4(aNor, 0.) * invMatrix;
-
-// dot(nor, pos);
-// dot(nor * invMatrix, matrix * pos);
-// nor . invMatrix . matrix . pos
-// nor . (invMatrix . matrix) . pos
-// nor . pos
-
       gl_Position = pos;
       vPos = pos.xyz;
       vNor = nor.xyz;
@@ -52,12 +50,12 @@ gl_start(canvas1, vs, fs,
       M.rotateY(m, time);
 
       M.save(m);
-         obj1.setMatrix(m);
+      obj1.setMatrix(m);
       M.restore(m);
 
       M.save(m);
-         M.rotateX(m, .5);
-         obj2.setMatrix(m);
+      M.rotateX(m, .5);
+      obj2.setMatrix(m);
       M.restore(m);
    }
 );
@@ -75,17 +73,17 @@ gl_start(canvas1, vs, fs,
    ]);
    scene.addObject(obj1);
 
-   obj2 = new SceneObject();
-   obj2.setVertices([
-      -.2,-.2,-.3,  -1.5,0,1,
-       .4,-.2, .3,  -0.5,0,1,
-       .4, .4, .3,  -0.5,0,1,
-
-       .4, .4, .3,  -0.5,0,1,
-      -.2, .4,-.3,  -1.5,0,1,
-      -.2,-.2,-.3,  -1.5,0,1,
-   ]);
-   scene.addObject(obj2);
+  //  obj2 = new SceneObject();
+  //  obj2.setVertices([
+  //     -.2,-.2,-.3,  -1.5,0,1,
+  //      .4,-.2, .3,  -0.5,0,1,
+  //      .4, .4, .3,  -0.5,0,1,
+   //
+  //      .4, .4, .3,  -0.5,0,1,
+  //     -.2, .4,-.3,  -1.5,0,1,
+  //     -.2,-.2,-.3,  -1.5,0,1,
+  //  ]);
+  //  scene.addObject(obj2);
 
    canvas1.scene = scene;
 

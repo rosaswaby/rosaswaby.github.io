@@ -19,5 +19,3 @@ Your homework:
 
 (1) Starting with the code in subfolder g, change this boring geometry into a more interesting one.
 (2) Now that you have the surface normal, add Phong shading into the fragment shader.
-(3) For extra credit, make a really fun animation using matrix math.
-(4) For extra credit, do something else really cool.  Surprise me.
