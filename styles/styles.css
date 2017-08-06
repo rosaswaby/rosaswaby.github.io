@@ -13,11 +13,16 @@ h2{
 
 .photo{
   background-color: white;
-  width: 300px;
+  width: 30%;
   height: 300px;
   display: inline-block;
   list-style-type: none;
   font-family: 'Questrial', sans-serif;
   font-size: 1.2em;
   /*font-family: 'Special Elite', cursive;*/
+
+}
+
+.nav{
+  padding-left: 0px;
 }
