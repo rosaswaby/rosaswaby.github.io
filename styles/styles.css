@@ -9,11 +9,13 @@ body{
 h2 {
   font-size: 2.2em;
   font-family: 'Give You Glory', cursive;
+  color:#1c1a1e;
 }
 
 .subtitle{
   font-size: 1.2em;
   font-family: 'Raleway', cursive;
+  color:#1c1a1e;
 }
 
 .container{
