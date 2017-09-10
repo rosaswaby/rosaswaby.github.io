@@ -1,4 +1,5 @@
 body{
+  background-color: #fefbfb;
   color: black;
   text-align: center;
   width: 100%;
@@ -17,7 +18,7 @@ h2{
 hr {
   height: 30px;
   border-style: solid;
-  border-color: #fefbfb;
+  border-color: #F7E8EA;
   border-width: 1px 0 0 0;
   border-radius: 20px;
 }
@@ -27,7 +28,7 @@ hr:before{
   height: 30px;
   margin-top: -31px;
   border-style: solid;
-  border-color: #fefbfb;
+  border-color: #F7E8EA;
   border-width: 0 0 1px 0;
   border-radius: 20px;
 }
