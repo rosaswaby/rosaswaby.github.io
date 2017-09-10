@@ -16,14 +16,14 @@ h2{
   margin:a 0 auto;
 }
 
-hr {
+hr.border {
   height: 30px;
   border-style: solid;
   border-color: #F7E8EA;
   border-width: 1px 0 0 0;
   border-radius: 20px;
 }
-hr:before{
+hr.border:before{
   display: block;
   content: "";
   height: 30px;
