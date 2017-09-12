@@ -1,8 +1,15 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
 body{
   background-color: #fefcfc;
   text-align: center;
   width: 100%;
   height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color:#323232;
 }
 
 h1 {
@@ -12,21 +19,21 @@ h1 {
 }
 
 .subtitle{
-  font-size: 1.1em;
-  font-family: 'Raleway', cursive;
+  font-size: 1.4em;
+  font-family: 'Give You Glory', cursive;
   color:#323232;
   text-align: left;
   padding-left: 20px;
 }
 
-#intro{
+.body{
   font-size: 1em;
   font-family: 'Raleway', cursive;
   color:#323232;
   text-align: left;
   padding-left: 20px;
-  padding-right: 20px;
-
+  padding-bottom: 10px;
+  /*padding-right: 20px;*/
 }
 
 .container{
@@ -89,7 +96,7 @@ section #social_links li {
 section #social_links li div {
   width: 85px;
   height: 85px;
-  color: white;
+  color: #fefcfc;
   font-size: 2.5em;
   text-align: center;
   line-height: 85px;
@@ -100,8 +107,8 @@ section #social_links li div {
 }
 
 section #social_links li div:hover {
-  transform: rotate(360deg);
-  border: 5px dotted #eac2c7;
+  transform: rotate(180deg);
+  border: 4px double #eac2c7;
   /*background-color: lightgray;*/
 }
 
@@ -110,7 +117,7 @@ section #social_links li span {
   height: 20px;
   display: block;
   padding: 15px 0px;
-  color: white;
+  color:#323232;
   font-family: 'Raleway', cursive;
   text-transform: lowercase;
   font-size: 1em;
