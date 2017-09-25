@@ -28,7 +28,7 @@ a{
 }
 
 .subtitle{
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-family: 'Give You Glory', cursive;
   color:#323232;
   text-align: left;
@@ -44,13 +44,16 @@ a{
 }
 
 #my_picture{
-  width: 40%;
+  width: 48%;
   length: 40%;
 }
 
 #intro_text{
-  width:50%;
+  padding-top: 80px;
+  width:48%;
   float:right;
+  line-height: 150%;
+  font-size: 1.1em;
 }
 
 hr.border {
@@ -69,6 +72,11 @@ hr.border:before{
   border-color: #eac2c7;
   border-width: 0 0 2px 0;
   border-radius: 20px;
+}
+
+.work{
+  font-size: 1.1em;
+  padding-bottom:15px;
 }
 
 /*social links styling */
@@ -141,10 +149,12 @@ section #social_links li span {
   background-color:#F7E8EA;
   color:#323232;
   width: 100%;
-  height: 50px;
+  height: 60px;
   text-align: center;
 }
 
 .footer_text{
-  padding-top: 15px;
+  font-size: 1.1em;
+  padding-top: 20px;
+  font-family: 'Give You Glory', cursive;
 }
