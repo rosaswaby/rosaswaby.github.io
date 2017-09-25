@@ -7,6 +7,8 @@ body{
   text-align: center;
   width: 100%;
   height: 100%;
+  padding:0;
+  margin:0
 }
 
 .container{
@@ -42,8 +44,8 @@ a{
 }
 
 #my_picture{
-  width: 30%;
-  length: 30%;
+  width: 40%;
+  length: 40%;
 }
 
 #intro_text{
@@ -90,6 +92,7 @@ hr.border:before{
 section #social_links {
   text-align: center;
   transform: translatez(0);
+  padding-bottom: 50px;
 }
 
 #social_links a{
@@ -138,5 +141,10 @@ section #social_links li span {
   background-color:#F7E8EA;
   color:#323232;
   width: 100%;
-  height: 10%;
+  height: 50px;
+  text-align: center;
+}
+
+.footer_text{
+  padding-top: 15px;
 }
